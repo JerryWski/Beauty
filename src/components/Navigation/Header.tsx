@@ -3,7 +3,6 @@ import './Header.css';
 import { useMediaQuery } from '../../utils/useMediaQuery';
 import { motion } from 'framer-motion';
 
-
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
   const [menuClicked, setMenuClicked] = useState(false);
@@ -33,27 +32,26 @@ const Header: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: .3,
+        duration: 0.3,
         ease: 'linear',
         staggerChildren: 0.01,
       },
     },
   };
   const item = {
-    hidden: { opacty: 0, y: -10},
-    show: { opacty: 1, y: 0},
+    hidden: { opacty: 0, y: -10 },
+    show: { opacty: 1, y: 0 },
   };
 
   return (
     <header>
       <nav className='nav-container'>
-        <div className='logo-container'>
-          <a href='/'>
-            <div className='logo-wrapper'>
-              <img src='../../src/assets/base_logo_2.png'alt='logo-icon' />
-            </div>
-          </a>
-        </div>
+        <a className='logo-link-desktop' href='/'>
+          <div className='logo-wrapper'>
+            <img src='../../src/assets/base_logo_2.png' alt='logo-icon' />
+          </div>
+        </a>
+
         <div className='contact-wrapper'>
           <a
             className='contact-icon'
@@ -82,6 +80,13 @@ const Header: React.FC = () => {
             <a className='link' href='/blog'>
               Galeria
             </a>
+            
+            <a className='logo-link-mobile' href='/'>
+          <div className='logo-wrapper-mobile'>
+            <img src='../../src/assets/base_logo.png' alt='logo-icon' />
+          </div>
+        </a>
+
             <a className='link' href=''>
               Blog
             </a>
@@ -148,7 +153,7 @@ const Header: React.FC = () => {
           </motion.div>
         )}
       </nav>
-      <span className="navbar-underline"></span>
+      {/* <span className='navbar-underline'></span> */}
     </header>
   );
 };
