@@ -34,19 +34,20 @@
     flex-direction: column;
     z-index: 9;
   }
-  .aloha-logo-wrapper {
-    margin: 5px auto 0px;
-    width: 80px;
+  .logo-wrapper {
+    margin: 5px 0 0px;
+    width: 70%;
   }
-  .aloha-logo-wrapper img {
+  .logo-wrapper img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .contact-wrapper {
     display: flex;
     margin-left: auto;
   }
   .contact-icon {
+    color: var(--main-pink);
     padding: 2.5px;
   }
   .fa-solid {
@@ -81,31 +82,7 @@
     outline: 1px solid var(--base-white);
   }
   
-  .heading,
-  .span_hash {
-    text-align: left;
-    font-family: var(--main-font);
-  }
-  .logo-heading {
-    color: var(--base-white);
-    font-family: var(--font_3);
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-  .logo-subheading {
-    text-align: center;
-    color: var(--base-orange);
-    font-family: var(--font-roboto);
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1rem;
-    font-style: italic;
-    letter-spacing: 1px;
-  }
-  
-  .span_hash {
-    font-size: clamp(1.5rem, 3vw, 2.3rem);
-  }
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -116,33 +93,25 @@
     padding: 10px;
     z-index: 100;
   }
+  .burger-line {
+    background-color: var(--main-pink);
+  }
   .burger-line:nth-child(1) {
-    background: red;
     width: 34px;
     height: 1px;
     display: block;
   }
-  .burger-line:nth-child(2) {
-    background: red;
+  /* .burger-line:nth-child(2) {
     width: 32px;
     height: 1px;
     display: block;
-  }
+  } */
   .burger-line:nth-child(3) {
-    background: red;
     width: 30px;
     height: 1px;
     display: block;
   }
   
-  @media (max-width: 350px) {
-    .logo-heading {
-      font-size: .9rem;
-    }
-    .logo-subheading {
-      font-size: 0.6rem;
-    }
-  }
   @media (max-width: 315px) {
     .nav-container {
       justify-content: center;

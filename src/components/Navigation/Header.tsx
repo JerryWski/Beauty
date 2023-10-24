@@ -3,6 +3,7 @@ import './Header.css';
 import { useMediaQuery } from '../../utils/useMediaQuery';
 import { motion } from 'framer-motion';
 
+
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
   const [menuClicked, setMenuClicked] = useState(false);
@@ -34,7 +35,6 @@ const Header: React.FC = () => {
       transition: {
         duration: .3,
         ease: 'linear',
-        // staggerDirection: 1,
         staggerChildren: 0.01,
       },
     },
@@ -49,8 +49,8 @@ const Header: React.FC = () => {
       <nav className='nav-container'>
         <div className='logo-container'>
           <a href='/'>
-            <div className='aloha-logo-wrapper'>
-              <img src='' alt='logo-icon' />
+            <div className='logo-wrapper'>
+              <img src='../../src/assets/base_logo_2.png'alt='logo-icon' />
             </div>
           </a>
         </div>
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
               animate={{
                 rotateZ: toggle ? -45 : 0,
                 y: toggle ? -8 : 0,
-                width: toggle ? 34 : 30,
+                width: toggle ? 34 : 28,
               }}
               className='burger-line'
             ></motion.span>
