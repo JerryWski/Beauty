@@ -1,27 +1,106 @@
 ---
+import { Image } from 'astro:assets';
+import heroImg from '../../assets/hero.png';
 ---
 
-<div class="hero-container">
-    <div class="wrapper one">
-      <h1 class="wrapper__header">
-        <span class="wrapper__header wrapper__header-beauty">Beauty</span>
-        <span class="wrapper__header wrapper__header-logic">Logic</span>
-      </h1>
-      <h2 class="wrapper__subheader">by Agata Pulchny</h2>
-      <p class="wrapper__text">
-        Odkryj piękno swojej natury z Beauty Logic. Nasz zespół specjalistów
-        dąży do tego, aby pomóc Ci poczuć się jak najlepiej. Zaufaj Beauty
-        Logic i pozwól nam wyjąć to, co najlepsze w Tobie.
-      </p>
-      <a class="button-link" href="#offers">
-        <span class="wrapper__button">Sprawdź Ofertę</span>
-      </a>
-    </div>
-    <div class="wrapper two">
-      <img
-        class="wrapper__image"
-        src="./src/img/hero-img.png"
-        alt="woman"
-      />
+<div class='hero-container'>
+  <div class='wrapper-two'>
+    <Image class='wrapper__image' src={heroImg} alt='woman' />
+  </div>
+  <div class='wrapper-one'>
+    <h1 class='hero-header'>
+      Aloha
+       <span>Beauty</span>
+       Logic
+      <span>Clinic</span>
+    </h1>
+    <div class="texts-container">
+      <p class='hero-text'>Aloha - Kochać to dzielić szczęście.</p>
+      <p class='hero-text'>Aloha - kochaj Siebie.</p>
+      <p class='hero-text'>Od Ciebie i w Tobie zaczyna się wszystko.</p>
+      <p class='hero-text'>Każdy sukces, każda porażka i spokój codzienności.</p>
+      <p class='hero-text'>Każda burza i każde tsunami.</p>
+      <p class='hero-text'>Wszystko jest w Tobie.</p>
     </div>
   </div>
+  <a class='hero-link' href='#offers'> Sprawdź Ofertę</a>
+</div>
+
+<style>
+  .hero-container {
+    background-color: var(--second-pink);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .wrapper-two {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .wrapper-two img {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+    border-radius: 50px 5px 50px 5px;
+  }
+  .wrapper-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-header {
+    font-family: var(--logo-font);
+    text-transform: uppercase;
+    text-align: center;
+    /* white-space: pre-line; */
+    letter-spacing: 5px;
+    line-height: 62px;
+    font-weight: 700;
+    color: var(--text-font);
+    /* text-shadow:
+      -1px -1px 0 var(--main-pink),
+      1px -1px 0 var(--main-pink),
+      -1px 1px 0 var(--main-pink),
+      1px 1px 0 var(--main-pink); */
+    font-size: clamp(4.8rem, 4vw, 5rem);
+    margin-bottom: 30px;
+  }
+  span {
+    font-size: clamp(4.5rem, 4vw, 5rem);
+    color: var(--main-pink);
+    text-shadow: none;
+  }
+  .texts-container {
+    margin-bottom: 30px;
+  }
+  .hero-text {
+    text-align: center;
+    font-family: var(--main-font);
+    line-height: normal;
+    color: var(--text-font);
+    font-style: italic;
+  }
+  .hero-link {
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 8px 25px;
+  background-color: transparent;
+  color: var(--text-font);
+  outline: 1px solid var(--text-font);
+  font-family: var(--main-font);
+  border-radius: 20px;
+  transition: 0.3s all ease;
+  }
+  .hero-link:hover {
+    outline: none;
+    color: var(--bg-white);
+    background-color: var(--main-pink);
+  }
+  
+</style>
