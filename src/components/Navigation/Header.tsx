@@ -148,6 +148,7 @@ const Header: React.FC = () => {
           </motion.div>
         )}
       </nav>
+      <span className="navbar-underline"></span>
     </header>
   );
 };

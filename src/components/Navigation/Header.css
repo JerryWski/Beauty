@@ -50,10 +50,11 @@
     color: var(--base-orange);
   }
   .link, .link-mobile {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-family: var(--main-font);
+    font-weight: 300;
     text-decoration: none;
     outline: none;
-    color: rgb(48, 42, 47);
+    color: var(--text-font);
     font-size: 1rem;
     transition: .3s all ease;
   }
@@ -76,6 +77,21 @@
   a[href='#contact']:hover {
     color: var(--second-tur);
     outline: 1px solid var(--base-white);
+  }
+  .navbar-underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(
+      0.55turn,
+      hsl(295, 29%, 67%),
+      var(--main-pink),
+      hsl(0, 30%, 75%)
+    );
+    border-image-slice: 1;
+    width: 80%;
+    margin: 0 auto;
   }
   
 
