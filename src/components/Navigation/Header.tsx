@@ -82,13 +82,13 @@ const Header: React.FC = () => {
             <a className='link' href='/blog'>
               Galeria
             </a>
-            <a className='link' href='#contact'>
+            <a className='link' href=''>
               Blog
             </a>
-            <a className='link' href='#contact'>
+            <a className='link' href=''>
               Sklep
             </a>
-            <a className='link' href='#contact'>
+            <a className='link' href=''>
               Kontakt
             </a>
           </div>
