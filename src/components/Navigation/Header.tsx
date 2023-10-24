@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useMediaQuery } from '../../utils/useMediaQuery';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,17 +27,22 @@ const Header: React.FC = () => {
 
   //animatons
   const container = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: -30 },
     show: {
       opacity: 1,
+      y: 0,
       transition: {
-        delayChildren: 0.5
-      }
-    }
-  }
-
-
-
+        duration: .3,
+        ease: 'linear',
+        // staggerDirection: 1,
+        staggerChildren: 0.01,
+      },
+    },
+  };
+  const item = {
+    hidden: { opacty: 0, y: -10},
+    show: { opacty: 1, y: 0},
+  };
 
   return (
     <header>
@@ -113,62 +118,34 @@ const Header: React.FC = () => {
           </div>
         )}
         {toggle && !matches && (
-          <AnimatePresence>
-            <motion.div
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ ease: 'linear', duration: .5}}
-              initial={{ opacity: 0, y: -90 }}
-              exit={{ opacity: 0 }}
-              className='nav-links-mobile'
+          <motion.div
+            variants={container}
+            initial='hidden'
+            animate='show'
+            exit={{ opacity: 0 }}
+            className='nav-links-mobile'
+          >
+            <motion.a variants={item} className='link-mobile' href=''>
+              O Nas
+            </motion.a>
+            <motion.a variants={item} className='link-mobile' href=''>
+              Cennik
+            </motion.a>
+            <motion.a variants={item} className='link-mobile' href=''>
+              Blog
+            </motion.a>
+            <motion.a variants={item} className='link-mobile' href=''>
+              Sklep
+            </motion.a>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href='#contact'
+              onClick={handleMenuClick}
             >
-              <motion.a
-                initial={{ opacity: 0.6}}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.1 }}
-                className='link-mobile'
-                href=''
-              >
-                O Nas
-              </motion.a>
-              <motion.a
-                initial={{ opacity: 0.6}}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
-                className='link-mobile'
-                href=''
-              >
-                Cennik
-              </motion.a>
-              <motion.a
-                initial={{ opacity: 0.6}}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
-                className='link-mobile'
-                href=''
-              >
-                Blog
-              </motion.a>
-              <motion.a
-                initial={{ opacity: 0.6}}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-                className='link-mobile'
-                href=''
-              >
-                Sklep
-              </motion.a>
-              <motion.a
-                initial={{ opacity: 0.6}}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className='link-mobile'
-                href='#contact'
-                onClick={handleMenuClick}
-              >
-                Kontakt
-              </motion.a>
-            </motion.div>
-          </AnimatePresence>
+              Kontakt
+            </motion.a>
+          </motion.div>
         )}
       </nav>
     </header>
