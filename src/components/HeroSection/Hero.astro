@@ -27,6 +27,8 @@ import heroImg from '../../assets/hero.png';
 <style>
   .hero-container {
     background-color: var(--second-pink);
+    /* background-image: url('../../assets/test3.jpg'); */
+    background-repeat: no-repeat;
     padding: 0 60px;
     padding-top: 114px;
     display: flex;
@@ -43,6 +45,7 @@ import heroImg from '../../assets/hero.png';
     width: 100%;
     height: fit-content;
     object-fit: contain;
+    box-shadow: 1px 4px 24px 0px rgba(228, 152, 154, 1);
     border-radius: 50px 5px 50px 5px;
   }
   .wrapper-one {
@@ -55,7 +58,7 @@ import heroImg from '../../assets/hero.png';
   }
   .hero-header {
     font-family: var(--play-font);
-    text-align: center;
+    text-align: left;
     letter-spacing: -1.5px;
     line-height: 62px;
     font-weight: 800;
@@ -75,12 +78,12 @@ import heroImg from '../../assets/hero.png';
     margin-bottom: 60px;
   }
   .hero-text {
-    text-align: center;
+    text-align: left;
     font-family: var(--main-font);
     line-height: normal;
     color: var(--text-font);
     font-style: italic;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     max-width: 600px;
   }
   .hero-link {
@@ -105,6 +108,7 @@ import heroImg from '../../assets/hero.png';
       flex-direction: row;
       gap: 40px;
       padding-top: 20px;
+      padding-bottom: 20px;
     }
     .hero-header {
       text-align: left;
@@ -115,6 +119,10 @@ import heroImg from '../../assets/hero.png';
     .hero-text {
       text-align: left;
       max-width: 600px;
+    }
+    .hero-link {
+      font-size: 1.5rem;
+      font-weight: 300;
     }
     .texts-container {
       align-items: flex-start;
