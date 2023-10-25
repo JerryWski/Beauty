@@ -81,22 +81,6 @@ a[href='#contact']:hover {
   color: var(--second-tur);
   outline: 1px solid var(--base-white);
 }
-.navbar-underline {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: .6;
-  border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-    0.55turn,
-    hsl(295, 29%, 67%),
-    var(--main-pink),
-    hsl(0, 30%, 75%)
-  );
-  border-image-slice: 1;
-  width: 80%;
-  margin: 0 auto;
-}
 .logo-link-mobile {
   display: none;
 }
@@ -160,7 +144,7 @@ a[href='#contact']:hover {
     color: var(--bg-white);
     padding: 8px 15px;
     border-radius: 20px;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
   }
   .nav-links a:last-child:hover {
     background-color: var(--main-pink);
@@ -168,9 +152,5 @@ a[href='#contact']:hover {
   .contact-wrapper {
     margin-left: 20px;
     display: none;
-  }
-  .navbar-underline {
-    margin-top: 20px;
-    
   }
 }
