@@ -3,31 +3,31 @@ import { Image } from 'astro:assets';
 import heroImg from '../../assets/hero.png';
 ---
 
-
 <div class='hero-container'>
   <div class='wrapper-two'>
     <Image class='wrapper__image' src={heroImg} alt='woman' />
   </div>
   <div class='wrapper-one'>
-    <h1 class='hero-header'>
-      Beauty Logic
-      <span> Clinic</span>
-    </h1>
     <div class='texts-container'>
+      <h1 class='hero-header'>
+        <span> Aloha</span>
+         BeautyLogic
+        <span> Clinic</span>
+      </h1>
       <p class='hero-text'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ad
         nemo repudiandae voluptatum porro inventore soluta ratione maxime
         debitis.
       </p>
+      <a class='hero-link' href='#offers'> Sprawdź Ofertę</a>
     </div>
-    <a class='hero-link' href='#offers'> Sprawdź Ofertę</a>
   </div>
 </div>
 
 <style>
   .hero-container {
     background-color: var(--second-pink);
-    padding: 0 20px;
+    padding: 0 60px;
     padding-top: 114px;
     display: flex;
     flex-direction: column;
@@ -55,21 +55,24 @@ import heroImg from '../../assets/hero.png';
   }
   .hero-header {
     font-family: var(--play-font);
-    text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: -1.5px;
     line-height: 62px;
     font-weight: 800;
     color: var(--text-font);
-    font-size: clamp(3rem, 3vw, 5rem);
+    font-size: clamp(2.6rem, 5vw, 6rem);
     margin-bottom: 20px;
   }
   span {
-    font-size: clamp(2.9rem, 3vw, 5rem);
+    font-size: clamp(2.6rem, 5vw, 5rem);
     color: var(--main-pink);
   }
   .texts-container {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
   }
   .hero-text {
     text-align: center;
@@ -77,11 +80,13 @@ import heroImg from '../../assets/hero.png';
     line-height: normal;
     color: var(--text-font);
     font-style: italic;
+    margin-bottom: 60px;
     max-width: 600px;
   }
   .hero-link {
+    width: fit-content;
     /* margin: auto; */
-    margin-bottom: 30px;
+    text-align: center;
     padding: 8px 25px;
     background-color: transparent;
     color: var(--text-font);
@@ -98,21 +103,26 @@ import heroImg from '../../assets/hero.png';
   @media (min-width: 900px) {
     .hero-container {
       flex-direction: row;
-      gap: 50px;
+      gap: 40px;
       padding-top: 20px;
     }
     .hero-header {
-      text-align: center;
+      text-align: left;
       font-weight: 900;
+      line-height: 64px;
+      max-width: 600px;
     }
     .hero-text {
-      text-align: center;
-      max-width: 500px;
+      text-align: left;
+      max-width: 600px;
+    }
+    .texts-container {
+      align-items: flex-start;
     }
     .wrapper-one {
       width: 50%;
-      justify-content: center;
-      align-content: center;
+      justify-content: flex-start;
+      align-content: flex-start;
     }
     .wrapper-two {
       order: 1;
