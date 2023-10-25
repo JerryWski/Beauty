@@ -3,57 +3,36 @@ import { Image } from 'astro:assets';
 import heroImg from '../../assets/hero.png';
 ---
 
+
 <div class='hero-container'>
-  <span class='navbar-underline'></span>
   <div class='wrapper-two'>
     <Image class='wrapper__image' src={heroImg} alt='woman' />
   </div>
   <div class='wrapper-one'>
     <h1 class='hero-header'>
-      Aloha
-      <span>Beauty</span>
-       Logic
-      <span>Clinic</span>
+      Beauty Logic
+      <span> Clinic</span>
     </h1>
     <div class='texts-container'>
-      <p class='hero-text'>Aloha - Kochać to dzielić szczęście.</p>
-      <p class='hero-text'>Aloha - kochaj Siebie.</p>
-      <p class='hero-text'>Od Ciebie i w Tobie zaczyna się wszystko.</p>
       <p class='hero-text'>
-        Każdy sukces, każda porażka i spokój codzienności.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ad
+        nemo repudiandae voluptatum porro inventore soluta ratione maxime
+        debitis.
       </p>
-      <p class='hero-text'>Każda burza i każde tsunami.</p>
-      <p class='hero-text'>Wszystko jest w Tobie.</p>
     </div>
+    <a class='hero-link' href='#offers'> Sprawdź Ofertę</a>
   </div>
-  <a class='hero-link' href='#offers'> Sprawdź Ofertę</a>
 </div>
 
 <style>
   .hero-container {
     background-color: var(--second-pink);
     padding: 0 20px;
+    padding-top: 114px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-  .navbar-underline {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    opacity: 0.6;
-    padding-top: 20px;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(
-      0.55turn,
-      hsl(295, 29%, 67%),
-      var(--main-pink),
-      hsl(0, 30%, 75%)
-    );
-    border-image-slice: 1;
-    width: 80%;
-    margin: 0 auto;
+    justify-content: space-around;
   }
   .wrapper-two {
     margin: auto;
@@ -75,26 +54,19 @@ import heroImg from '../../assets/hero.png';
     width: 100%;
   }
   .hero-header {
-    font-family: var(--logo-font);
+    font-family: var(--play-font);
     text-transform: uppercase;
     text-align: center;
-    /* white-space: pre-line; */
     letter-spacing: 1px;
     line-height: 62px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--text-font);
-    /* text-shadow:
-      -1px -1px 0 var(--main-pink),
-      1px -1px 0 var(--main-pink),
-      -1px 1px 0 var(--main-pink),
-      1px 1px 0 var(--main-pink); */
-    font-size: clamp(3.8rem, 4vw, 5rem);
-    margin-bottom: 30px;
+    font-size: clamp(3rem, 3vw, 5rem);
+    margin-bottom: 20px;
   }
   span {
-    font-size: clamp(3.6rem, 4vw, 5rem);
+    font-size: clamp(2.9rem, 3vw, 5rem);
     color: var(--main-pink);
-    text-shadow: none;
   }
   .texts-container {
     margin-bottom: 30px;
@@ -105,9 +77,10 @@ import heroImg from '../../assets/hero.png';
     line-height: normal;
     color: var(--text-font);
     font-style: italic;
+    max-width: 600px;
   }
   .hero-link {
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 30px;
     padding: 8px 25px;
     background-color: transparent;
@@ -121,5 +94,29 @@ import heroImg from '../../assets/hero.png';
     outline: none;
     color: var(--bg-white);
     background-color: var(--main-pink);
+  }
+  @media (min-width: 900px) {
+    .hero-container {
+      flex-direction: row;
+      gap: 50px;
+      padding-top: 20px;
+    }
+    .hero-header {
+      text-align: center;
+      font-weight: 900;
+    }
+    .hero-text {
+      text-align: center;
+      max-width: 500px;
+    }
+    .wrapper-one {
+      width: 50%;
+      justify-content: center;
+      align-content: center;
+    }
+    .wrapper-two {
+      order: 1;
+      max-width: 600px;
+    }
   }
 </style>

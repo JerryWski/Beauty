@@ -3,11 +3,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  /* position: fixed; */
+  position: fixed;
+  width: 100%;
   min-height: 114px;
   padding: 10px;
-  backdrop-filter: blur(8px);
-  background-color: var(--second-pink);
+  backdrop-filter: blur(18px);
+  background-color: rgb(255, 255, 255, .6);
 }
 .nav-links {
   display: flex;
@@ -30,6 +31,7 @@
   flex-direction: column;
   z-index: 9;
 }
+
 .logo-wrapper {
   margin: 5px 0 0px 15px;
   max-width: 130px;
@@ -126,6 +128,7 @@ a[href='#contact']:hover {
 @media (min-width: 900px) {
   .nav-container {
     justify-content: center;
+    position: static;
   }
   .logo-link-desktop {
     display: none;
