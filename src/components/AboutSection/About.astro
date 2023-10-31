@@ -1,0 +1,181 @@
+---
+import { Image } from 'astro:assets';
+import flower from '../../assets/welcome2.png';
+---
+
+<section class='about-section'>
+  <div class='about-welcome'>
+    <span class='about-welcome-flower'></span>
+    <p class='about-welcome-text'>"Niezawodna jakość i profesjonalizm"</p>
+  </div>
+
+  <div class='about-container'>
+    <span class='bg-title'>Beauty</span>
+    <span class='bg-subtitle'>Logic</span>
+    <div class='about-image-wrapper'>
+      <Image class='about-image' src={flower} alt='woman' />
+    </div>
+    <div class='text-wrapper'>
+      <h2 class='text-header'>Lorem Ipsum Lorem ins</h2>
+      <p class='text'>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+        commodi, totam porro molestiae, cumque quaerat dolorem, possimus quam
+        sint molestias perspiciatis dolores est earum vero a reprehenderit
+        magnam eveniet nobis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+        commodi, totam porro molestiae, cumque quaerat dolorem, possimus quam
+        sint molestias perspiciatis dolores est earum vero a reprehenderit
+        magnam eveniet nobis!
+      </p>
+      <a href='#contact' class='about-link'> Skontaktuj się z nami</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: 20px;
+    padding-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  .about-welcome {
+    font-family: var(--dance-font);
+    margin-top: 60px;
+    margin-bottom: 10px;
+    color: var(--main-pink);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-welcome-flower {
+    background-image: url('../../assets/flower.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    width: 15%;
+    height: 70px;
+  }
+  .about-welcome-text {
+    font-size: clamp(1.1rem, 3vw, 2rem);
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .text-wrapper {
+    margin-top: 20px;
+    padding: 0px 5px 0px 5px;
+  }
+  .text-header {
+    margin-bottom: 30px;
+    font-family: var(--main-font);
+    color: var(--lightgrey);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-top: 30px;
+  }
+  .text {
+    font-family: var(--main-font);
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--black);
+    line-height: 1.5rem;
+  }
+  .about-link {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    font-family: var(--main-font);
+    margin-top: 30px;
+    font-size: 1rem;
+    max-width: 300px;
+    padding: 14px 22px;
+    color: var(--text-font);
+    outline: 1px solid var(--text-font);
+    cursor: pointer;
+    border-radius: 10px;
+    
+    transition: 0.3s background ease;
+    background: transparent;
+  }
+  .about-link:hover {
+    outline: none;
+    color: var(--bg-white);
+    background-color: var(--main-pink);
+  }
+  .about-image-wrapper {
+    margin-top: 30px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    order: 1;
+  }
+  .about-image {
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+    border-radius: 5px 50px 5px 50px;
+  }
+  .bg-title,
+  .bg-subtitle {
+    display: none;
+  }
+  @media (min-width: 900px) {
+    .about-section {
+      align-items: center;
+      padding: 0 60px;
+    }
+    .about-container {
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      justify-content: space-around;
+      margin-top: 40px;
+      overflow: hidden;
+    }
+    .bg-title,
+    .bg-subtitle {
+      display: block;
+      width: 100%;
+      height: fit-content;
+      position: absolute;
+      font-size: clamp(15rem, 24vw, 24rem);
+      top: -3%;
+      left: 13%;
+      color: rgb(221, 208, 208);
+      font-family: 'Dancing Script', cursive;
+      letter-spacing: 18px;
+      opacity: 0.2;
+      z-index: -10;
+    }
+    .bg-title {
+      z-index: 100;
+    }
+    .bg-subtitle {
+      color: #ebb7d2;
+      top: 42%;
+      left: 43%;
+    }
+    .text-wrapper {
+      margin-left: 15px;
+      width: 50%;
+      padding: 35px;
+    }
+    .about-image-wrapper {
+      order: 0;
+      min-width: 40%;
+    }
+    .about-image {
+      min-width: 70%;
+    }
+  }
+</style>

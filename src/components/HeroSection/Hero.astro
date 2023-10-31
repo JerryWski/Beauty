@@ -10,10 +10,13 @@ import heroImg from '../../assets/hero.png';
   <div class='wrapper-one'>
     <div class='texts-container'>
       <h1 class='hero-header'>
-        <span> Aloha</span>
-         BeautyLogic
-        <span> Clinic</span>
+        <!-- <span class="span-header"> Aloha</span> -->
+         BEautyLogic
+        <span class="span-header">Clinic</span>
       </h1>
+      <h3 class='hero-text'>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit
+      </h3>
       <p class='hero-text'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ad
         nemo repudiandae voluptatum porro inventore soluta ratione maxime
@@ -29,7 +32,7 @@ import heroImg from '../../assets/hero.png';
     background-color: var(--second-pink);
     /* background-image: url('../../assets/test3.jpg'); */
     background-repeat: no-repeat;
-    padding: 0 60px;
+    padding: 0 20px;
     padding-top: 114px;
     display: flex;
     flex-direction: column;
@@ -45,7 +48,7 @@ import heroImg from '../../assets/hero.png';
     width: 100%;
     height: fit-content;
     object-fit: contain;
-    box-shadow: 1px 4px 24px 0px rgba(228, 152, 154, 1);
+    box-shadow: 1px 2px 3px 0px rgb(136, 128, 128);
     border-radius: 50px 5px 50px 5px;
   }
   .wrapper-one {
@@ -57,16 +60,17 @@ import heroImg from '../../assets/hero.png';
     width: 100%;
   }
   .hero-header {
-    font-family: var(--play-font);
+    font-family: var(--logo-font);
     text-align: left;
-    letter-spacing: -1.5px;
+    letter-spacing: 2.5px;
     line-height: 62px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--text-font);
     font-size: clamp(2.6rem, 5vw, 6rem);
     margin-bottom: 20px;
   }
-  span {
+  
+  .span-header {
     font-size: clamp(2.6rem, 5vw, 5rem);
     color: var(--main-pink);
   }
@@ -74,8 +78,12 @@ import heroImg from '../../assets/hero.png';
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 60px;
+  }
+  .texts-container :nth-child(3) {
+    margin-bottom: 30px;
+    color: grey;
   }
   .hero-text {
     text-align: left;
@@ -83,11 +91,12 @@ import heroImg from '../../assets/hero.png';
     line-height: normal;
     color: var(--text-font);
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     max-width: 600px;
   }
   .hero-link {
     width: fit-content;
+    font-size: 1rem;
     /* margin: auto; */
     text-align: center;
     padding: 8px 25px;
@@ -95,7 +104,7 @@ import heroImg from '../../assets/hero.png';
     color: var(--text-font);
     outline: 1px solid var(--text-font);
     font-family: var(--main-font);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.3s all ease;
   }
   .hero-link:hover {
@@ -107,8 +116,9 @@ import heroImg from '../../assets/hero.png';
     .hero-container {
       flex-direction: row;
       gap: 40px;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding: 0 60px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     .hero-header {
       text-align: left;
@@ -121,7 +131,6 @@ import heroImg from '../../assets/hero.png';
       max-width: 600px;
     }
     .hero-link {
-      font-size: 1.5rem;
       font-weight: 300;
     }
     .texts-container {
