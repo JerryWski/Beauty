@@ -1,11 +1,14 @@
 ---
-
+import { Image } from 'astro:assets';
+import biala from '../../assets/kosmetyka_biala.png';
+import estetic from '../../assets/kosmetyka_este.png';
+import makeup from '../../assets/makijaz_perm.png'
 ---
 
 <div class='offer-container'>
   <div class='offer one'>
     <h3 class='offer-title'>Kosmetologia estetyczna</h3>
-    <img class='offer-image' src='./src/img/syringe.png' alt='syringe-image' />
+    <Image class='offer-image' src={estetic} alt='beauty-woman' />
     <!-- <p class='offer-description'>
         Kosmetologia estetyczna to dziedzina, która zajmuje się pielęgnacją
         skóry, włosów i paznokci w celu poprawy ich wyglądu i zdrowia. W naszym
@@ -23,8 +26,7 @@
         class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-            px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -34,7 +36,7 @@
 
   <div class='offer two'>
     <h3 class='offer-title'>Kosmetyka Biała</h3>
-    <img class='offer-image' src='./src/img/syringe.png' alt='syringe-image' />
+    <Image class='offer-image' src={biala} alt='beauty-woman' />
     <!-- <p class='offer-description'>
           Kosmetologia estetyczna to dziedzina, która zajmuje się pielęgnacją
           skóry, włosów i paznokci w celu poprawy ich wyglądu i zdrowia. W naszym
@@ -52,8 +54,7 @@
         class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-              px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -63,7 +64,7 @@
 
   <div class='offer three'>
     <h3 class='offer-title'>Makijaż permanentny</h3>
-    <img class='offer-image' src='./src/img/syringe.png' alt='syringe-image' />
+    <Image class='offer-image' src={makeup} alt='beauty-woman' />
     <!-- <p class='offer-description'>
           Kosmetologia estetyczna to dziedzina, która zajmuje się pielęgnacją
           skóry, włosów i paznokci w celu poprawy ich wyglądu i zdrowia. W naszym
@@ -81,8 +82,7 @@
         class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-              px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -92,7 +92,7 @@
 
   <div class='offer four'>
     <h3 class='offer-title'>Depilacja( laserowa oraz woskiem )</h3>
-    <img class='offer-image' src='./src/img/syringe.png' alt='syringe-image' />
+    <Image class='offer-image' src={biala} alt='beauty-clinic' />
     <!-- <p class='offer-description'>
           Kosmetologia estetyczna to dziedzina, która zajmuje się pielęgnacją
           skóry, włosów i paznokci w celu poprawy ich wyglądu i zdrowia. W naszym
@@ -110,8 +110,7 @@
         class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-              px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -120,12 +119,8 @@
   </div>
 
   <div class='offer five'>
-    <h3 class='offer__title'>Pielęgnacja Ciała, Dłoni oraz Stóp</h3>
-    <img
-      class='offer__image'
-      src='./src/img/face-mask3.png'
-      alt='woman-with-face-mask'
-    />
+    <h3 class='offer-title'>Pielęgnacja Ciała, Dłoni oraz Stóp</h3>
+    <Image class='offer-image' src={biala} alt='beauty-clinic' />
     <!-- <p class='offer__description'>
         W zabiegach kosmetycznych dla naszych klientów wykorzystujemy skuteczne
         i bezpieczne preparaty kosmetyczne w celu osiągnięcia najlepszych
@@ -137,14 +132,13 @@
         <li class='offer__list-item'>mezoterapia bezigłowa</li>
         <li class='offer__list-item'>i wiele innych</li>
       </ul> -->
-    <a class='offer__link' href='price-list.html'>
-      <span class='offer__link-text'>Odkryj więcej</span>
+    <a class='offer-link' href='price-list.html'>
+      <span class='offer-link-text'>Odkryj więcej</span>
       <svg
-        class='offer__link-svg middle'
+        class='offer-link-svg middle'
         viewBox='0 0 14 10'
         height='13px'
-        width='25
-            px'
+        width='25px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -153,12 +147,8 @@
   </div>
 
   <div class='offer six'>
-    <h3 class='offer__title'>Podologia</h3>
-    <img
-      class='offer__image'
-      src='./src/img/permament.png'
-      alt='woman-with-permament-makeup'
-    />
+    <h3 class='offer-title'>Podologia</h3>
+    <Image class='offer-image' src={biala} alt='beauty-clinic' />
     <!-- <p class='offer__description'>
         Jakiś krótki tekst o makijaży permanentnym i zrobi poniżej odwołanie
         linkiem do podstrony z pełną ofertą
@@ -169,14 +159,13 @@
         <li class='offer__list-item'>powieki (zagęszczanie rzęs)</li>
         <li class='offer__list-item'>i inne</li>
       </ul> -->
-    <a class='offer__link' href='price-list.html'>
-      <span class='offer__link-text'>Odkryj więcej</span>
+    <a class='offer-link' href='price-list.html'>
+      <span class='offer-link-text'>Odkryj więcej</span>
       <svg
-        class='offer__link-svg'
+        class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-            px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -185,12 +174,8 @@
   </div>
 
   <div class='offer seven'>
-    <h3 class='offer__title'>Wizaż</h3>
-    <img
-      class='offer__image'
-      src='./src/img/permament.png'
-      alt='woman-with-permament-makeup'
-    />
+    <h3 class='offer-title'>Wizaż</h3>
+    <Image class='offer-image' src={biala} alt='beauty-clinic' />
     <!-- <p class='offer__description'>
           Jakiś krótki tekst o makijaży permanentnym i zrobi poniżej odwołanie
           linkiem do podstrony z pełną ofertą
@@ -201,14 +186,13 @@
           <li class='offer__list-item'>powieki (zagęszczanie rzęs)</li>
           <li class='offer__list-item'>i inne</li>
         </ul> -->
-    <a class='offer__link' href='price-list.html'>
-      <span class='offer__link-text'>Odkryj więcej</span>
+    <a class='offer-link' href='price-list.html'>
+      <span class='offer-link-text'>Odkryj więcej</span>
       <svg
-        class='offer__link-svg'
+        class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-              px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -217,12 +201,8 @@
   </div>
 
   <div class='offer eight'>
-    <h3 class='offer__title'>Dla Panów</h3>
-    <img
-      class='offer__image'
-      src='./src/img/permament.png'
-      alt='woman-with-permament-makeup'
-    />
+    <h3 class='offer-title'>Dla Panów</h3>
+    <Image class='offer-image' src={biala} alt='beauty-clinic' />
     <!-- <p class='offer__description'>
           Jakiś krótki tekst o makijaży permanentnym i zrobi poniżej odwołanie
           linkiem do podstrony z pełną ofertą
@@ -233,14 +213,13 @@
           <li class='offer__list-item'>powieki (zagęszczanie rzęs)</li>
           <li class='offer__list-item'>i inne</li>
         </ul> -->
-    <a class='offer__link' href='price-list.html'>
-      <span class='offer__link-text'>Odkryj więcej</span>
+    <a class='offer-link' href='price-list.html'>
+      <span class='offer-link-text'>Odkryj więcej</span>
       <svg
-        class='offer__link-svg'
+        class='offer-link-svg'
         viewBox='0 0 14 10'
         height='13px'
-        width='21
-              px'
+        width='21px'
       >
         <path d='M1,5 L11,5'></path>
         <polyline points='8 1 12 5 8 9'></polyline>
@@ -255,28 +234,79 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: var(--second-pink);
     justify-content: space-around;
     align-items: center;
+    padding: 40px 10px;
     margin-bottom: 50px;
     gap: 50px;
   }
   .offer {
     margin: 5px;
-    background-color: var(--lightrose);
-    border: 1px solid var(--main-pink);
+    /* border: 1px solid var(--main-pink); */
     border-radius: 5px;
+    background-color: var(--bg-white);
     display: flex;
     text-align: center;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     font-family: var(--main-font);
-    color: var(--black);
-    height: 420px;
+    color: var(--text-font);
+    height: 380px;
+    outline: 1px solid transparent;
     width: 100%;
-    max-width: 350px;
+    max-width: 360px;
     padding: 20px;
+    transform: scale(1);
+    transition: all 0.3s linear;
+    box-shadow: 8px 10px 31px -5px rgba(177, 178, 202, 1);
   }
+  .offer:hover {
+    transform: scale(1.03);
+  }
+  .offer-title {
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  .offer-image {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: contain;
+  }
+  .offer-link {
+    outline: 1px solid black;
+    padding: 8px 20px 8px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  .offer-link:hover {
+    outline: 1px solid var(--main-pink);
+  }
+  .offer-link-text {
+    color: var(--text-font);
+    padding-right: 10px;
+    transition: 0.3s all ease;
+  }
+  .offer-link:hover span {
+    color: var(--main-pink);
+  }
+  .offer-link-svg {
+    width: auto;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--text-font);
+    stroke-width: 1;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .offer-link:hover svg {
+    transform: translateX(5px);
+    stroke: var(--main-pink);
+  }
+
   @media (min-width: 900px) {
     .offer-container {
       flex-direction: row;
