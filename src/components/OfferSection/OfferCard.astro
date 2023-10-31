@@ -2,7 +2,12 @@
 import { Image } from 'astro:assets';
 import biala from '../../assets/kosmetyka_biala.png';
 import estetic from '../../assets/kosmetyka_este.png';
-import makeup from '../../assets/makijaz_perm.png'
+import makeup from '../../assets/makijaz_perm.png';
+import depilation from '../../assets/depilation.png';
+import radio from '../../assets/radio.png';
+import podology from '../../assets/podology.png';
+import makecourse from '../../assets/makeup-course.png';
+import beautymen from '../../assets/formen.png';
 ---
 
 <div class='offer-container'>
@@ -35,8 +40,8 @@ import makeup from '../../assets/makijaz_perm.png'
   </div>
 
   <div class='offer two'>
+      <Image class='offer-image' src={biala} alt='beauty-woman' />
     <h3 class='offer-title'>Kosmetyka Biała</h3>
-    <Image class='offer-image' src={biala} alt='beauty-woman' />
     <!-- <p class='offer-description'>
           Kosmetologia estetyczna to dziedzina, która zajmuje się pielęgnacją
           skóry, włosów i paznokci w celu poprawy ich wyglądu i zdrowia. W naszym
@@ -92,7 +97,7 @@ import makeup from '../../assets/makijaz_perm.png'
 
   <div class='offer four'>
     <h3 class='offer-title'>Depilacja( laserowa oraz woskiem )</h3>
-    <Image class='offer-image' src={biala} alt='beauty-clinic' />
+    <Image class='offer-image' src={depilation} alt='depilation-legs' />
     <!-- <p class='offer-description'>
           Kosmetologia estetyczna to dziedzina, która zajmuje się pielęgnacją
           skóry, włosów i paznokci w celu poprawy ich wyglądu i zdrowia. W naszym
@@ -120,7 +125,7 @@ import makeup from '../../assets/makijaz_perm.png'
 
   <div class='offer five'>
     <h3 class='offer-title'>Pielęgnacja Ciała, Dłoni oraz Stóp</h3>
-    <Image class='offer-image' src={biala} alt='beauty-clinic' />
+    <Image class='offer-image' src={radio} alt='beauty-woman' />
     <!-- <p class='offer__description'>
         W zabiegach kosmetycznych dla naszych klientów wykorzystujemy skuteczne
         i bezpieczne preparaty kosmetyczne w celu osiągnięcia najlepszych
@@ -148,7 +153,7 @@ import makeup from '../../assets/makijaz_perm.png'
 
   <div class='offer six'>
     <h3 class='offer-title'>Podologia</h3>
-    <Image class='offer-image' src={biala} alt='beauty-clinic' />
+    <Image class='offer-image' src={podology} alt='healthy-feets' />
     <!-- <p class='offer__description'>
         Jakiś krótki tekst o makijaży permanentnym i zrobi poniżej odwołanie
         linkiem do podstrony z pełną ofertą
@@ -174,8 +179,8 @@ import makeup from '../../assets/makijaz_perm.png'
   </div>
 
   <div class='offer seven'>
-    <h3 class='offer-title'>Wizaż</h3>
-    <Image class='offer-image' src={biala} alt='beauty-clinic' />
+    <h3 class='offer-title'>Lekcje Makijażu</h3>
+    <Image class='offer-image' src={makecourse} alt='makeup-tools' />
     <!-- <p class='offer__description'>
           Jakiś krótki tekst o makijaży permanentnym i zrobi poniżej odwołanie
           linkiem do podstrony z pełną ofertą
@@ -202,7 +207,7 @@ import makeup from '../../assets/makijaz_perm.png'
 
   <div class='offer eight'>
     <h3 class='offer-title'>Dla Panów</h3>
-    <Image class='offer-image' src={biala} alt='beauty-clinic' />
+    <Image class='offer-image' src={beautymen} alt='beauty-men' />
     <!-- <p class='offer__description'>
           Jakiś krótki tekst o makijaży permanentnym i zrobi poniżej odwołanie
           linkiem do podstrony z pełną ofertą
