@@ -24,14 +24,28 @@ import OfferCard from './OfferCard.astro';
     text-align: center;
     letter-spacing: 0.5px;
     font-weight: 700;
+    position: relative;
     font-size: clamp(3.2rem, 4vw, 3.5rem);
+}
+.offer-header::after {
+    position: absolute;
+    content: '';
+    width: 14%;
+    height: 100%;
+    background-image: url('../../assets/flower4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -10px;
+    top: -5px;
+    opacity: .6;
 }
 .offer-underline {
     display: flex;
-    height: 1px;
+    height: 2px;
     width: 60%;
     background-color: var(--main-pink);
     margin-bottom: 30px;
+    opacity: .5;
 }
 
 </style>
