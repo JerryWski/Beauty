@@ -10,9 +10,9 @@ import heroImg from '../../assets/hero.png';
   <div class='wrapper-one'>
     <div class='texts-container'>
       <h1 class='hero-header'>
-        <!-- <span class="span-header"> Aloha</span> -->
-         BEautyLogic
-        <span class="span-header">Clinic</span>
+        <span class="span-header"> Aloha</span>
+         BEauty<span class="span-header">Logic</span>
+         Clinic
       </h1>
       <h3 class='hero-text'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit
@@ -63,15 +63,15 @@ import heroImg from '../../assets/hero.png';
     font-family: var(--logo-font);
     text-align: left;
     letter-spacing: 2.5px;
-    line-height: 62px;
+    line-height:64px;
     font-weight: 700;
     color: var(--text-font);
-    font-size: clamp(2.6rem, 5vw, 6rem);
+    font-size: clamp(3.9rem, 7vw, 9rem);
     margin-bottom: 20px;
   }
   
   .span-header {
-    font-size: clamp(2.6rem, 5vw, 5rem);
+    font-size: clamp(3.9rem, 7vw, 9rem);
     color: var(--main-pink);
   }
   .texts-container {
@@ -116,6 +116,7 @@ import heroImg from '../../assets/hero.png';
     .hero-container {
       flex-direction: row;
       gap: 40px;
+      justify-content: center;
       padding: 0 60px;
       padding-top: 30px;
       padding-bottom: 30px;
@@ -123,8 +124,8 @@ import heroImg from '../../assets/hero.png';
     .hero-header {
       text-align: left;
       font-weight: 900;
-      line-height: 64px;
-      max-width: 600px;
+      line-height: 96px;
+      max-width: 800px;
     }
     .hero-text {
       text-align: left;
@@ -134,16 +135,23 @@ import heroImg from '../../assets/hero.png';
       font-weight: 300;
     }
     .texts-container {
+      margin-top: 60px;
       align-items: flex-start;
     }
     .wrapper-one {
-      width: 50%;
+      width: fit-content;
       justify-content: flex-start;
       align-content: flex-start;
     }
     .wrapper-two {
+      margin: 60px 0;
       order: 1;
       max-width: 600px;
+    }
+  }
+  @media (min-width: 2000px) {
+    .wrapper-one {
+      width: fit-content;
     }
   }
 </style>
