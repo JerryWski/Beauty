@@ -1,21 +1,23 @@
 ---
 import OfferCard from './OfferCard.astro';
 ---
+
 <section id='offers' class='offer-section'>
-    <h2 class='offer-header'>Nasze zabiegi</h2>
-    <span class='offer-underline'></span>
-    <OfferCard />
+  <h2 class='offer-header'>Nasze zabiegi</h2>
+  <span class='offer-underline'></span>
+  <OfferCard />
 </section>
 
 <style>
-.offer-section {
+  .offer-section {
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:var(--second-pink)
-    }
-.offer-header {
+    position: relative;
+    background-color: var(--second-pink);
+  }
+  .offer-header {
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 20px 0 0px 0px;
@@ -26,26 +28,26 @@ import OfferCard from './OfferCard.astro';
     font-weight: 700;
     position: relative;
     font-size: clamp(3.2rem, 4vw, 3.5rem);
-}
-.offer-header::after {
+  }
+  .offer-header::after {
     position: absolute;
     content: '';
     width: 14%;
     height: 100%;
-    background-image: url('../../assets/flower4.png');
+    background-image: url('../../assets/flower2.png');
     background-repeat: no-repeat;
     background-size: contain;
     right: -10px;
     top: -5px;
-    opacity: .6;
-}
-.offer-underline {
+    opacity: 0.8;
+  }
+  .offer-underline {
     display: flex;
     height: 2px;
     width: 60%;
-    background-color: var(--main-pink);
+    background-color: var(--text-font);
     margin-bottom: 30px;
-    opacity: .5;
-}
-
+    opacity: 0.7;
+  }
+  
 </style>

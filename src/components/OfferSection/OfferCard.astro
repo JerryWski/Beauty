@@ -38,7 +38,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+<span class="star"></span>
   <div class='offer two'>
       <Image class='offer-image' src={biala} alt='beauty-woman' />
     <h3 class='offer-title'>Kosmetyka Biała</h3>
@@ -66,7 +66,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+  <span class="star"></span>
   <div class='offer three'>
     <h3 class='offer-title'>Makijaż permanentny</h3>
     <Image class='offer-image' src={makeup} alt='beauty-woman' />
@@ -94,7 +94,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+  <span class="star"></span>
   <div class='offer four'>
     <h3 class='offer-title'>Depilacja( laserowa oraz woskiem )</h3>
     <Image class='offer-image' src={depilation} alt='depilation-legs' />
@@ -122,7 +122,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+  <span class="star"></span>
   <div class='offer five'>
     <h3 class='offer-title'>Pielęgnacja Ciała, Dłoni oraz Stóp</h3>
     <Image class='offer-image' src={radio} alt='beauty-woman' />
@@ -150,7 +150,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+  <span class="star"></span>
   <div class='offer six'>
     <h3 class='offer-title'>Podologia</h3>
     <Image class='offer-image' src={podology} alt='healthy-feets' />
@@ -177,7 +177,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+  <span class="star"></span>
   <div class='offer seven'>
     <h3 class='offer-title'>Lekcje Makijażu</h3>
     <Image class='offer-image' src={makecourse} alt='makeup-tools' />
@@ -204,7 +204,7 @@ import beautymen from '../../assets/formen.png';
       </svg>
     </a>
   </div>
-
+  <span class="star"></span>
   <div class='offer eight'>
     <h3 class='offer-title'>Dla Panów</h3>
     <Image class='offer-image' src={beautymen} alt='beauty-men' />
@@ -244,7 +244,7 @@ import beautymen from '../../assets/formen.png';
     align-items: center;
     padding: 40px 10px;
     margin-bottom: 50px;
-    gap: 50px;
+    gap: 40px;
   }
   .offer {
     margin: 5px;
@@ -311,11 +311,35 @@ import beautymen from '../../assets/formen.png';
     transform: translateX(5px);
     stroke: var(--main-pink);
   }
+  .star {
+    background-image: url('../../assets/star.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    opacity: .3;
+  }
 
   @media (min-width: 900px) {
     .offer-container {
       flex-direction: row;
       justify-content: center;
+      position: relative;
+    }
+    /* .offer-container::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../assets/sketch.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: .1;
+    } */
+    .star {
+      display: none;
     }
   }
 </style>
