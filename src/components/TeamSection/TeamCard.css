@@ -22,10 +22,14 @@
 .person-info {
   position: absolute;
   top: 40%;
+  font-family: var(--main-font);
   padding-inline: 5px;
   text-align: center;
   background: var(--second-pink);
   border-radius: 7px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+  gap: 15px;
   color: var(--text-font);
 }
 .person-info-title {
