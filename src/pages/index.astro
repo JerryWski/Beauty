@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection/Hero.astro';
 import AboutSection from '../components/AboutSection/About.astro';
 import OfferSection from '../components/OfferSection/Offer.astro';
 import TeamSection from '../components/TeamSection/Team.astro';
+import GallerySection from '../components/GallerySection/Gallery';
 ---
 
 <Layout title="Witaj na stronie Aloha BeautyLogic">
@@ -12,6 +13,7 @@ import TeamSection from '../components/TeamSection/Team.astro';
     <AboutSection />
     <OfferSection />
     <TeamSection />
+    <GallerySection client:load/>
 </main>
 </Layout>
 
