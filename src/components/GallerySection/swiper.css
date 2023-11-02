@@ -37,7 +37,10 @@
     background: red;
   }
   .swiper-pagination-bullet-active {
-    background-color: rgb(102, 26, 39);
+    background: var(--main-pink) !important;
+  }
+  .swiper-button-next::after, .swiper-button-prev::after {
+    color: var(--main-pink);
   }
   @media (min-width:900px) {
     .swiper {

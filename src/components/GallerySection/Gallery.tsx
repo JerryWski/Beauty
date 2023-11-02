@@ -77,42 +77,42 @@ const Gallery = () => {
             <div className='swiper-wrapper'>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img.png' alt='beauty-salon' />
+                  <img src='/gallery-img.png' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img2.png' alt='beauty-salon' />
+                  <img src='/gallery-img2.png' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img3.png' alt='beauty-salon' />
+                  <img src='/gallery-img3.png' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img4.png' alt='beauty-salon' />
+                  <img src='/gallery-img4.png' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img5.png' alt='beauty-salon' />
+                  <img src='/gallery-img5.png' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img6.png' alt='beauty-salon' />
+                  <img src='/gallery-img6.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img7.png' alt='beauty-salon' />
+                  <img src='/gallery-img7.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img8.png' alt='beauty-salon' />
+                  <img src='/gallery-img8.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
