@@ -11,12 +11,12 @@
   color: var(--text-font);
   text-align: center;
   letter-spacing: -0.5px;
-  font-size: 2.1rem;
+  font-size: clamp(2.2rem,3vw,3.5rem);
 }
 .gallery-welcome-text {
   margin-top: 30px;
   color: var(--text-font);
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   text-align: center;
   font-family: var(--dance-font);
 }

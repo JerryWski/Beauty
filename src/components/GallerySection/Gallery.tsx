@@ -117,7 +117,7 @@ const Gallery = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='../../public/gallery-img9.png' alt='beauty-salon' />
+                  <img src='../../public/gallery-img9.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
             </div>
