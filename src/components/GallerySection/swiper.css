@@ -5,7 +5,7 @@
     padding-top: 30px;
   }
   .swiper-wrapper {
-    height: 300px;
+    max-height: 400px;
   }
   .swiper-slide {
     text-align: center;
@@ -13,14 +13,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    
   }
   
   .swiper-slide img {
     border-radius: 7px;
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .swiper {
@@ -31,5 +32,8 @@
     color: var(--text-font);
   }
   .swiper-pagination-bullet {
-    background: var(--text-font);
+    background: red;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgb(102, 26, 39);
   }

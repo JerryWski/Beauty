@@ -31,35 +31,91 @@ const Gallery = () => {
           </a>
         </p>
       </div>
+
       <div className='gallery-container'>
-        <div className='swiper mySwiper'>
-          <div className='swiper-wrapper'>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img.png' alt='beauty-salon' />
+        <Swiper
+          className='mySwiper'
+          effect='coverflow'
+          breakpoints={{
+            220: {
+              slidesPerView: 1,
+            },
+            480: {
+              slidesPerView: 2,
+            },
+            640: {
+              slidesPerView: 3,
+            },
+            950: {
+              slidesPerView: 4,
+            },
+            1250: {
+              slidesPerView: 4,
+            },
+            
+          }}
+          slidesPerView={1}
+          loop={true}
+          spaceBetween={20}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Autoplay]}
+        >
+          <div className='swiper mySwiper'>
+            <div className='swiper-wrapper'>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img2.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img3.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img4.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img5.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img6.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img7.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img8.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='../../public/gallery-img9.png' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
             </div>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img2.png' alt='beauty-salon' />
-            </div>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img3.png' alt='beauty-salon' />
-            </div>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img4.png' alt='beauty-salon' />
-            </div>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img5.png' alt='beauty-salon' />
-            </div>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img6.png' alt='beauty-salon' />
-            </div>
-            <div className='swiper-slide'>
-              <img src='../../public/gallery-img6.png' alt='beauty-salon' />
-            </div>
+            <div className='swiper-button-next'></div>
+            <div className='swiper-button-prev'></div>
+            <div className='swiper-pagination'></div>
           </div>
-          <div className='swiper-button-next'></div>
-          <div className='swiper-button-prev'></div>
-          <div className='swiper-pagination'></div>
-        </div>
+        </Swiper>
       </div>
     </section>
   );
