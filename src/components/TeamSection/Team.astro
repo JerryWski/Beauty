@@ -5,8 +5,48 @@ import TeamCards from './TeamCards.astro';
 <section id='team' class='team-section'>
   <div class='team-welcome'>
     <div class='team-welcome-bg'></div>
-    <h2 class='team-header'>Zaopiekujemy się Tobą</h2>
+    <h2 class='team-header'>Nasz Team</h2>
     <h3 class='team-subheader'>Poznaj nasze specjalistki</h3>
   </div>
-<TeamCards />
+  <TeamCards />
 </section>
+
+<style>
+  .team-section {
+    padding: 100px 20px 60px 20px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-white);
+  }
+  .team-welcome {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .team-welcome-bg {
+    position: absolute;
+    height: 130px;
+    width: 100%;
+    background-image: url(../img/floral3.svg);
+    background-position: center -2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+  }
+  .team-header {
+    display: block;
+    font-family: var(--logo-font);
+    color: var(--main-pink);
+    text-align: center;
+    font-size: clamp(4.2rem, 6vw, 6rem);
+  }
+  .team-subheader {
+    font-family: var(--dance-font);
+    color: var(--main-pink);
+    font-size: 1.8rem;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+</style>

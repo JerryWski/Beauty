@@ -1,0 +1,73 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--text-font);
+  /* background: var(--second-pink); */
+  margin: auto;
+  border-radius: 7px;
+  width: 260px;
+  height: 350px;
+  position: relative;
+}
+.person-foto {
+  margin: 0 auto 0 auto;
+}
+.person-photo-worker {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--second-pink);
+}
+.person-info {
+  position: absolute;
+  top: 40%;
+  padding-inline: 5px;
+  text-align: center;
+  background: var(--second-pink);
+  border-radius: 7px;
+  color: var(--text-font);
+}
+.person-info-title {
+  background: transparent;
+  padding: 17px 17px 0px 17px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--main-pink);
+}
+.person-info-text {
+  max-width: 340px;
+  padding: 7px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.person-info-link {
+  color: var(--bg-white);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 0.8rem;
+  font-family: var(--main-font);
+  width: 50%;
+  background-color: var(--main-pink);
+ 
+  padding: 4px 12px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.person-info-link:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #e105ec,
+    #d710d1,
+    #cb1cb8,
+    #be25a1,
+    #ae2d8c
+  );
+  color: var(--bg-white);
+}
