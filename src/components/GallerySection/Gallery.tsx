@@ -3,8 +3,9 @@ import './swiper.css';
 import './Gallery.css';
 // import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import {Navigation, Pagination, EffectCoverflow } from 'swiper/modules';
 
 const Gallery = () => {
   return (
@@ -35,7 +36,15 @@ const Gallery = () => {
       <div className='gallery-container'>
         <Swiper
           className='mySwiper'
-          effect='coverflow'
+          effect={'coverflow'}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          grabCursor={true}
           breakpoints={{
             220: {
               slidesPerView: 1,
@@ -54,14 +63,15 @@ const Gallery = () => {
             },
             
           }}
-          slidesPerView={1}
+          slidesPerView={'auto'}
           loop={true}
-          spaceBetween={20}
+          spaceBetween={10}
+          navigation={true}
           centeredSlides={true}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination,Navigation, EffectCoverflow]}
         >
           <div className='swiper mySwiper'>
             <div className='swiper-wrapper'>
