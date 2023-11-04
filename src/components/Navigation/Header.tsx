@@ -71,21 +71,21 @@ const Header: React.FC = () => {
         {/* check if we are on mobile or not */}
         {matches && (
           <div className='nav-links'>
-            <a className='link' href='/about'>
+            <a className='link' href='#about'>
               O Nas
             </a>
             <a className='link' href='/offers'>
               Cennik
             </a>
-            <a className='link' href='/blog'>
+            <a className='link' href='#gallery'>
               Galeria
             </a>
-            
+
             <a className='logo-link-mobile' href='/'>
-          <div className='logo-wrapper-mobile'>
-            <img src='../../src/assets/base_logo.png' alt='logo-icon' />
-          </div>
-        </a>
+              <div className='logo-wrapper-mobile'>
+                <img src='../../src/assets/base_logo.png' alt='logo-icon' />
+              </div>
+            </a>
 
             <a className='link' href=''>
               Blog
@@ -130,16 +130,36 @@ const Header: React.FC = () => {
             exit={{ opacity: 0 }}
             className='nav-links-mobile'
           >
-            <motion.a variants={item} className='link-mobile' href=''>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href='#about'
+              onClick={handleMenuClick}
+            >
               O Nas
             </motion.a>
-            <motion.a variants={item} className='link-mobile' href=''>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href=''
+              onClick={handleMenuClick}
+            >
               Cennik
             </motion.a>
-            <motion.a variants={item} className='link-mobile' href=''>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href=''
+              onClick={handleMenuClick}
+            >
               Blog
             </motion.a>
-            <motion.a variants={item} className='link-mobile' href=''>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href=''
+              onClick={handleMenuClick}
+            >
               Sklep
             </motion.a>
             <motion.a
@@ -153,7 +173,7 @@ const Header: React.FC = () => {
           </motion.div>
         )}
       </nav>
-        {/* <span className='navbar-underline'></span> */}
+      {/* <span className='navbar-underline'></span> */}
     </header>
   );
 };
