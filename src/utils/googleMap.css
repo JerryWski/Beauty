@@ -1,0 +1,28 @@
+.mapouter {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    min-height: 340px;
+  }
+  .gmap_canvas {
+    width: 100%;
+    overflow: hidden;
+    background: none !important;
+    height: 340px;
+  }
+  .gmap-frame {
+    width: 100%;
+    min-height:340px;
+  }
+  
+  @media (min-width:900px) {
+    .mapouter {
+      min-height: 440px;
+    }
+    .gmap_canvas {
+      min-height: 440px;
+    }
+    .gmap-frame {
+      min-height:440px;
+    }
+  }
