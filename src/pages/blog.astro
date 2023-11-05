@@ -8,36 +8,37 @@ const posts = await getCollection('posts');
 ---
 
 <Layout title='#Blog'>
-  <h1>
-   Agata Beauty Blog
-  </h1>
-  <article class='blog-section'>
-    <PostList posts={posts} />
-  </article>
+  <h1>Agata Beauty Blog</h1>
+  <div>
+    <article class='blog-section'>
+      <PostList posts={posts} />
+    </article>
+  </div>
 </Layout>
 
 <style>
   h1 {
     padding: 180px 20px 0 20px;
   }
+
   .blog-section {
     background-color: var(--base-white);
     padding: 20px;
     display: flex;
     flex-direction: column;
   }
-  @media (min-width:900px) {
-    body {
+  @media (min-width: 900px) {
+    h1 {
+      padding-top: 40px;
+      text-align: center;
+    }
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
     }
-    h1 {
-      padding-top: 40px;
-    }
     .blog-section {
-      
       max-width: 1140px;
     }
   }
