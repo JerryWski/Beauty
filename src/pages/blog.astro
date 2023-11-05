@@ -9,10 +9,7 @@ const posts = await getCollection('posts');
 
 <Layout title='#Blog'>
   <h1>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quis
-    pariatur provident perferendis optio laudantium nemo non eius quasi mollitia
-    fugit quae, maxime blanditiis aspernatur. Incidunt repellendus quis eaque
-    sit?
+   Agata Beauty Blog
   </h1>
   <article class='blog-section'>
     <PostList posts={posts} />
@@ -20,10 +17,28 @@ const posts = await getCollection('posts');
 </Layout>
 
 <style>
+  h1 {
+    padding: 180px 20px 0 20px;
+  }
   .blog-section {
     background-color: var(--base-white);
-    padding: 25px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+  }
+  @media (min-width:900px) {
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      padding-top: 40px;
+    }
+    .blog-section {
+      
+      max-width: 1140px;
+    }
   }
 </style>
