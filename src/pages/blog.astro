@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import PostList from '../components/Posts/PostList.astro';
+
+const posts = await getCollection('posts');
+---
+
+<Layout title='#Blog'>
+  <h1>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quis
+    pariatur provident perferendis optio laudantium nemo non eius quasi mollitia
+    fugit quae, maxime blanditiis aspernatur. Incidunt repellendus quis eaque
+    sit?
+  </h1>
+  <article class='blog-section'>
+    <PostList posts={posts} />
+  </article>
+</Layout>
+
+<style>
+  .blog-section {
+    background-color: var(--base-white);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+</style>

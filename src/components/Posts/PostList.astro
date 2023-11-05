@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Post from './Post.astro';
+import Card from './CardPost/Card.astro';
+
+type Props = {
+  posts: CollectionEntry<'posts'>[];
+};
+
+const { posts } = Astro.props;
+const sortedPosts = [...Astro.props.posts].sort((a, b) =>
+  a.data.date < b.data.date ? 1 : -1,
+);
+---
+
+<section class='blog-section'>
+  {
+    sortedPosts.map((post) => (
+      <Card>
+        <Post post={post} />
+      </Card>
+    ))
+  }
+</section>
+
+<style></style>
