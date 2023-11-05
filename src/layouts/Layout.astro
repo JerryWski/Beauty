@@ -1,7 +1,7 @@
 ---
 import Header from '../components/Navigation/Header';
 import Contact from '../components/ContactSection/Contact.astro';
-
+import Footer from '../components/FooterSection/Footer';
 interface Props {
   title: string;
 }
@@ -34,6 +34,7 @@ const { title } = Astro.props;
     <Header client:only='react' />
     <slot />
     <Contact />
+    <Footer />
   </body>
 </html>
 <script src='https://kit.fontawesome.com/4619b49638.js'></script>
