@@ -24,13 +24,13 @@ const { post } = Astro.props;
       <span>{new Date(post.data.date).toLocaleDateString()}</span>
     </div>
     <span class='span-line'></span>
-    <div class='contact-wrapper'>
+    <div class='contacts-wrapper'>
       <a class='contact-link' href='mailto:kontakt@maciejmartowicz.pl'>
         <span class='email-span'>zuokontakt@coachsamozuo.com</span>
       </a>
       <div class='contact-links'>
         <a class='contact-link' href='tel:+48602649588'>
-          tel. <span>602-649-588</span> oraz na
+          tel. <span class="phone-span">602-649-588</span> oraz na
         </a>
         <a
           class='contact-social-icon'
@@ -102,7 +102,7 @@ const { post } = Astro.props;
     width: 85%;
     border-top: 1px solid var(--text-font);
   }
-  .contact-wrapper {
+  .contacts-wrapper {
     margin-top: 15px;
     margin-left: 0;
     display: flex;
@@ -111,17 +111,18 @@ const { post } = Astro.props;
     justify-content: center;
     align-items: flex-start;
   }
-  .contact-wrapper :is(span) {
-    color: var(--text-font);
-    font-size: 1rem;
-  }
+ 
   .contact-link {
-    color: var(--main-pink);
+    color: var(--text-font);;
     font-family: var(--main-font);
     font-size: 1rem;
   }
   .email-span {
     text-decoration: underline;
+    color: var(--main-pink);
+  }
+  .phone-span {
+    color: var(--main-pink);
   }
   .contact-links {
     display: flex;
@@ -171,7 +172,7 @@ const { post } = Astro.props;
       padding: 10px 35px;
     }
     .contact-wrapper :is(span) {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 </style>

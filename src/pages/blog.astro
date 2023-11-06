@@ -8,8 +8,8 @@ const posts = await getCollection('posts');
 ---
 
 <Layout title='#Blog'>
-  <h1>Agata Beauty Blog</h1>
-  <div>
+  <h1 class='blog-header'>Agata Beauty Blog</h1>
+  <div class='article-wrapper'>
     <article class='blog-section'>
       <PostList posts={posts} />
     </article>
@@ -28,11 +28,11 @@ const posts = await getCollection('posts');
     flex-direction: column;
   }
   @media (min-width: 900px) {
-    h1 {
+    .blog-header {
       padding-top: 40px;
       text-align: center;
     }
-    div {
+    .article-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;

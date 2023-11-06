@@ -80,6 +80,9 @@ const Header: React.FC = () => {
             <a className='link' href='#gallery'>
               Galeria
             </a>
+            <a className='link' href='#gallery'>
+              Zespół
+            </a>
 
             <a className='logo-link-mobile' href='/'>
               <div className='logo-wrapper-mobile'>
@@ -145,6 +148,14 @@ const Header: React.FC = () => {
               onClick={handleMenuClick}
             >
               Cennik
+            </motion.a>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href='/'
+              onClick={handleMenuClick}
+            >
+              Zespół
             </motion.a>
             <motion.a
               variants={item}
