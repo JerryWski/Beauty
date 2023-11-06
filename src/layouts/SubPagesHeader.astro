@@ -12,8 +12,17 @@ const { heading = 'Welcome' } = Astro.props as Props;
 
 <style>
   h1 {
+    background-image: linear-gradient(
+      to right bottom,
+      #e105ec,
+      #cc11d5,
+      #b717bf,
+      #a21aa9,
+      #8e1b94
+    );
+    color: var(--bg-white);
     font-size: clamp(1.8rem, 3vw, 4rem);
-    padding: 180px 20px 40px 20px;
+    padding: 180px 20px 60px 20px;
     text-align: left;
   }
   @media (min-width: 900px) {
