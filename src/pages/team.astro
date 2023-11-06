@@ -10,7 +10,9 @@ import worker4 from '../assets/worker4.png';
 
 <Layout title='Poznaj nasz zespół ekspertek'>
   <main>
-    <SubPagesHeader heading='Nasza kadra' />
+    <div class='heading-wrapper'>
+      <SubPagesHeader heading='Nasza kadra' />
+    </div>
     <section class='workers-section'>
       <h2 class='workers-subheader'>Zespół do zadań specjalnych</h2>
       <div class='workers container'>
@@ -175,21 +177,24 @@ import worker4 from '../assets/worker4.png';
     flex-direction: column;
     background: var(--bg-white);
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+  }
+  .heading-wrapper {
+    display: flex;
+    justify-content: center;
   }
   .workers-subheader {
     font-family: var(--main-font);
     font-weight: 300;
-    align-self: flex-start;
-    /* width: 70%; */
-    margin-top: 80px;
-    margin-bottom: 80px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    width: 70%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
     border-bottom: 12px solid var(--test);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: var(--black);
-    font-size: 1.5rem;
     word-break: break-word;
   }
   .worker {
@@ -202,17 +207,81 @@ import worker4 from '../assets/worker4.png';
     align-items: flex-start;
     color: var(--text-font);
     margin-bottom: 50px;
+    padding: 20px;
     gap: 20px;
   }
   .worker-image {
-    width: fit-content;
+    width: 100%;
   }
   .worker-image-element {
     width: 100%;
-    object-fit: contain;
     height: auto;
+    object-fit: contain;
+    border-radius: 7px;
   }
   .worker-info {
+    padding-bottom: 20px;
     max-width: 450px;
+  }
+  .worker-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--main-pink);
+    margin-bottom: 5px;
+  }
+  .worker-occupation {
+    opacity: 0.8;
+    font-style: italic;
+    margin: 0 0 7px 0;
+  }
+  .worker-description {
+    font-size: .9rem;
+  }
+  .worker-description:nth-of-type(2n-1) {
+    margin-bottom: 10px;
+  }
+  .worker-specialization {
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: .9rem;
+  }
+  .worker-specialization-item {
+    font-style: italic;
+  }
+  .worker:nth-of-type(2n + 2) {
+    background-color: var(--second-pink);
+  }
+  #worker-two .worker-image,
+  #worker-four .worker-image {
+    order: 0;
+  }
+
+  @media (min-width: 900px) {
+    #worker-two .worker-image,
+    #worker-four .worker-image {
+      order: 1;
+    }
+
+    .workers-section {
+      align-items: center;
+      padding: 0;
+    }
+    .workers-subheader {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    .worker {
+      margin-top: 0;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+    }
+    .worker-image {
+      margin: 10px;
+      max-width: 550px;
+    }
+    .worker-info {
+      max-width: 45%;
+    }
   }
 </style>
