@@ -1,165 +1,218 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SubPagesHeader from '../layouts/SubPagesHeader.astro';
+import { Image } from 'astro:assets';
+import worker1 from '../assets/worker1.png';
+import worker2 from '../assets/worker2.png';
+import worker3 from '../assets/worker3.png';
+import worker4 from '../assets/worker4.png';
 ---
+
 <Layout title='Poznaj nasz zespół ekspertek'>
-<main>
-  <section class='workers-section'>
-    <div class='workers-welcome'>
-      <h1 class='workers-welcome__header'>Nasza Kadra</h1>
-    </div>
-
-    <h2 class='workers-subheader'>Zespół do zadań specjalnych</h2>
-
-    <div class='workers container'>
-      <div class='worker' id='worker-one'>
-        <div class='worker_image'>
-          <img
-            class='worker_image__element'
-            src='./src/img/worker4.png'
-            alt=''
-          />
+  <main>
+    <SubPagesHeader heading='Nasza kadra' />
+    <section class='workers-section'>
+      <h2 class='workers-subheader'>Zespół do zadań specjalnych</h2>
+      <div class='workers container'>
+        <div class='worker' id='worker-one'>
+          <div class='worker-image'>
+            <Image
+              class='worker-image-element'
+              src={worker1}
+              alt='beauty-worker'
+            />
+          </div>
+          <div class='worker-info'>
+            <h3 class='worker-name'>Dominika Wiśniewska</h3>
+            <p class='worker-occupation'>mgr kosmetologii</p>
+            <p class='worker-occupation'>manager salonu Beauty Logic</p>
+            <p class='worker-description'>
+              Z wykształcenia kosmetolog, na co dzień mama i doskonały kucharz.
+              Kobieta od zadań specjalnych. Posiada nie tylko imponującą wiedzę
+              z zakresu kosmetologii ale również doskonale wykorzystuje ją w
+              swoich zdolnościach manualnych. Ekspert od pielęgnacji twarzy w
+              zabiegach inwazyjnych jak i w kosmetyce białej.
+            </p>
+            <p class='worker-description'>
+              Swoją pokaźną wiedzę zawdzięcza przede wszystkim sobie ponieważ z
+              wielką dociekliwością i ogromnym zaangażowaniem ukończyła
+              dziesiątki kursów i szkoleń. Nieustannie podąża za trendami w
+              branży beauty dzięki czemu wykonuje wszystkie najbardziej pożądane
+              zabiegi z zakresu kosmetyki i kosmetologii estetycznej.
+            </p>
+            <ul class='worker-specialization'>
+              Ekspert od:
+              <li class='worker-specialization-item'>
+                Kosmetologia estetyczna
+              </li>
+              <li class='worker-specialization-item'>
+                Zabiegi pielęgnacyjne twarzy
+              </li>
+              <li class='worker-specialization-item'>Makijaż permanentny</li>
+              <li class='worker-specialization-item'>Manicure hybrydowy</li>
+              <li class='worker-specialization-item'>
+                Pedicure hybrydowy i medyczny
+              </li>
+              <li class='worker-specialization-item'>Depilacja laserowa</li>
+              <li class='worker-specialization-item'>Piercing</li>
+              <li class='worker-specialization-item'>Laminacja rzęs</li>
+            </ul>
+          </div>
         </div>
-        <div class='worker_info'>
-          <h3 class='worker_name'>Dominika Wiśniewska</h3>
-          <p class='worker_occupation'>mgr kosmetologii</p>
-          <p class='worker_occupation'>manager salonu Beauty Logic</p>
-          <p class='worker_description'>
-            Z wykształcenia kosmetolog, na co dzień mama i doskonały kucharz.
-            Kobieta od zadań specjalnych. Posiada nie tylko imponującą wiedzę z
-            zakresu kosmetologii ale również doskonale wykorzystuje ją w swoich
-            zdolnościach manualnych. Ekspert od pielęgnacji twarzy w zabiegach
-            inwazyjnych jak i w kosmetyce białej.
-          </p>
-          <p class='worker_description'>
-            Swoją pokaźną wiedzę zawdzięcza przede wszystkim sobie ponieważ z
-            wielką dociekliwością i ogromnym zaangażowaniem ukończyła dziesiątki
-            kursów i szkoleń. Nieustannie podąża za trendami w branży beauty
-            dzięki czemu wykonuje wszystkie najbardziej pożądane zabiegi z
-            zakresu kosmetyki i kosmetologii estetycznej.
-          </p>
-          <ul class='worker_specialization'>
-            Ekspert od:
-            <li class='worker_specialization__item'>Kosmetologia estetyczna</li>
-            <li class='worker_specialization__item'>
-              Zabiegi pielęgnacyjne twarzy
-            </li>
-            <li class='worker_specialization__item'>Makijaż permanentny</li>
-            <li class='worker_specialization__item'>Manicure hybrydowy</li>
-            <li class='worker_specialization__item'>
-              Pedicure hybrydowy i medyczny
-            </li>
-            <li class='worker_specialization__item'>Depilacja laserowa</li>
-            <li class='worker_specialization__item'>Piercing</li>
-            <li class='worker_specialization__item'>Laminacja rzęs</li>
-          </ul>
+
+        <div class='worker' id='worker-two'>
+          <div class='worker-image'>
+            <Image
+              class='worker-image-element'
+              src={worker2}
+              alt='beauty-worker'
+            />
+          </div>
+          <div class='worker-info'>
+            <h3 class='worker-name'>Aleksandra Bojarowicz</h3>
+            <p class='worker-occupation'>kosmetyczka</p>
+            <p class='worker-occupation'>stylistka paznokci</p>
+            <p class='worker-description'>
+              Jeśli oprócz profesjonalnej usługi szukasz ukojenia i mentalnego
+              wsparcia to idealnie trafiłaś. Ola ponad wszystko ceni sobie
+              zadowolenie klienta dlatego ustawiają się do niej kolejki.
+              Manualna perfekcjonistka, która zadba o każdy szczegół. Niebywała
+              kultura osobista i niezwykła gościnność to jej znak rozpoznawczy.
+            </p>
+            <ul class='worker-specialization'>
+              Ekspert od:
+              <li class='worker-specialization-item'>Masaż Kobido</li>
+              <li class='worker-specialization-item'>
+                Manicure hybrydowy i klasyczny
+              </li>
+              <li class='worker-specialization-item'>
+                Pedicure hybrydowy i klasyczny
+              </li>
+              <li class='worker-specialization-item'>Stylizacja oprawy oka</li>
+              <li class='worker-specialization-item'>
+                Zabiegi pielęgnacyjne twarzy
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='worker' id='worker-three'>
+          <div class='worker-image'>
+            <Image
+              class='worker-image-element'
+              src={worker3}
+              alt='beauty-worker'
+            />
+          </div>
+          <div class='worker-info'>
+            <h3 class='worker-name'>Milena Jackowska</h3>
+            <p class='worker-occupation'>stylistka paznokci</p>
+            <p class='worker-occupation'>stylistka rzęs</p>
+            <p class='worker-description'>
+              Kobieta „błyskawica”, która w ekspresowym tempie wykonuje usługi
+              na najwyższym możliwym poziomie. Z wielką pasją tworzy
+              najpiękniejsze rzęsy w Olsztynie czyniąc spojrzenia kobiet
+              powalającymi. Z niezwykłą starannością zagęszcza i przedłuża rzęsy
+              mając na uwadze indywidualne preferencje klienta. Jej specjalność
+              to również manicure ekspres, który wykonuje w błyskawicznym
+              tempie, wykorzystując swoją kreatywną naturę. Dlatego do niej
+              możesz również zapisać się na tzw. wzorki.
+            </p>
+            <p class='worker-description'>
+              Miłośniczka zwierząt, prywatne życie w większości spędza u boku
+              labradorki Kofi , z którą przemierza długie spacerowe trasy.
+            </p>
+            <ul class='worker-specialization'>
+              Ekspert od:
+              <li class='worker-specialization-item'>Stylizacja rzęs</li>
+              <li class='worker-specialization-item'>
+                Manicure hybrydowy i żelowy
+              </li>
+              <li class='worker-specialization-item'>
+                Pedicure hybrydowy i klasyczny
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='worker' id='worker-four'>
+          <div class='worker-image'>
+            <Image
+              class='worker-image-element'
+              src={worker4}
+              alt='beauty-worker'
+            />
+          </div>
+          <div class='worker-info'>
+            <h3 class='worker-name'>Kinga Wowk</h3>
+            <p class='worker-occupation'>kosmetolog</p>
+            <p class='worker-occupation'>stylistka paznokci</p>
+            <p class='worker-description'>
+              „Królowa paznokci” to jej drugie imię, ponieważ jej niebywała
+              precyzja jest zachwycająca. Serdeczna i zawsze uśmiechnięta co
+              sprawia, że po wizycie u niej czujesz zastrzyk endorfin
+            </p>
+            <ul class='worker-specialization'>
+              Ekspert od:
+              <li class='worker-specialization-item'>
+                Stylizacja paznokci hybrydowa i żelowa
+              </li>
+              <li class='worker-specialization-item'>
+                Pedicure hybrydowy i klasyczny
+              </li>
+              <li class='worker-specialization-item'>Stylizacja oprawy oka</li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div class='worker' id='worker-two'>
-        <div class='worker_image'>
-          <img
-            class='worker_image__element'
-            src='./src/img/worker5.png'
-            alt=''
-          />
-        </div>
-        <div class='worker_info'>
-          <h3 class='worker_name'>Aleksandra Bojarowicz</h3>
-          <p class='worker_occupation'>kosmetyczka</p>
-          <p class='worker_occupation'>stylistka paznokci</p>
-          <p class='worker_description'>
-            Jeśli oprócz profesjonalnej usługi szukasz ukojenia i mentalnego
-            wsparcia to idealnie trafiłaś. Ola ponad wszystko ceni sobie
-            zadowolenie klienta dlatego ustawiają się do niej kolejki. Manualna
-            perfekcjonistka, która zadba o każdy szczegół. Niebywała kultura
-            osobista i niezwykła gościnność to jej znak rozpoznawczy.
-          </p>
-          <ul class='worker_specialization'>
-            Ekspert od:
-            <li class='worker_specialization__item'>Masaż Kobido</li>
-            <li class='worker_specialization__item'>
-              Manicure hybrydowy i klasyczny
-            </li>
-            <li class='worker_specialization__item'>
-              Pedicure hybrydowy i klasyczny
-            </li>
-            <li class='worker_specialization__item'>Stylizacja oprawy oka</li>
-            <li class='worker_specialization__item'>
-              Zabiegi pielęgnacyjne twarzy
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class='worker' id='worker-three'>
-        <div class='worker_image'>
-          <img
-            class='worker_image__element'
-            src='./src/img/worker8.png'
-            alt=''
-          />
-        </div>
-        <div class='worker_info'>
-          <h3 class='worker_name'>Milena Jackowska</h3>
-          <p class='worker_occupation'>stylistka paznokci</p>
-          <p class='worker_occupation'>stylistka rzęs</p>
-          <p class='worker_description'>
-            Kobieta „błyskawica”, która w ekspresowym tempie wykonuje usługi na
-            najwyższym możliwym poziomie. Z wielką pasją tworzy najpiękniejsze
-            rzęsy w Olsztynie czyniąc spojrzenia kobiet powalającymi. Z
-            niezwykłą starannością zagęszcza i przedłuża rzęsy mając na uwadze
-            indywidualne preferencje klienta. Jej specjalność to również
-            manicure ekspres, który wykonuje w błyskawicznym tempie,
-            wykorzystując swoją kreatywną naturę. Dlatego do niej możesz również
-            zapisać się na tzw. wzorki.
-          </p>
-          <p class='worker_description'>
-            Miłośniczka zwierząt, prywatne życie w większości spędza u boku
-            labradorki Kofi , z którą przemierza długie spacerowe trasy.
-          </p>
-          <ul class='worker_specialization'>
-            Ekspert od:
-            <li class='worker_specialization__item'>Stylizacja rzęs</li>
-            <li class='worker_specialization__item'>
-              Manicure hybrydowy i żelowy
-            </li>
-            <li class='worker_specialization__item'>
-              Pedicure hybrydowy i klasyczny
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class='worker' id='worker-four'>
-        <div class='worker_image'>
-          <img
-            class='worker_image__element'
-            src='./src/img/worker6.png'
-            alt=''
-          />
-        </div>
-        <div class='worker_info'>
-          <h3 class='worker_name'>Kinga Wowk</h3>
-          <p class='worker_occupation'>kosmetolog</p>
-          <p class='worker_occupation'>stylistka paznokci</p>
-          <p class='worker_description'>
-            „Królowa paznokci” to jej drugie imię, ponieważ jej niebywała
-            precyzja jest zachwycająca. Serdeczna i zawsze uśmiechnięta co
-            sprawia, że po wizycie u niej czujesz zastrzyk endorfin
-          </p>
-          <ul class='worker_specialization'>
-            Ekspert od:
-            <li class='worker_specialization__item'>
-              Stylizacja paznokci hybrydowa i żelowa
-            </li>
-            <li class='worker_specialization__item'>
-              Pedicure hybrydowy i klasyczny
-            </li>
-            <li class='worker_specialization__item'>Stylizacja oprawy oka</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  .workers-section {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-white);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .workers-subheader {
+    font-family: var(--main-font);
+    font-weight: 300;
+    align-self: flex-start;
+    /* width: 70%; */
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-bottom: 12px solid var(--test);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: var(--black);
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+  .worker {
+    scroll-margin-top: 100px;
+    margin-top: 20px;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-font);
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  .worker-image {
+    width: fit-content;
+  }
+  .worker-image-element {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+  .worker-info {
+    max-width: 450px;
+  }
+</style>
