@@ -10,7 +10,9 @@ import worker4 from '../assets/worker4.png';
 
 <Layout title='Poznaj nasz zespół ekspertek'>
   <main>
-    <SubPagesHeader heading='Nasza kadra' />
+    <div class='heading-wrapper'>
+      <SubPagesHeader heading='Nasza kadra' />
+    </div>
     <section class='workers-section'>
       <h2 class='workers-subheader'>Zespół do zadań specjalnych</h2>
       <div class='workers container'>
@@ -178,6 +180,14 @@ import worker4 from '../assets/worker4.png';
     align-items: center;
   }
   .heading-wrapper {
+    background-image: linear-gradient(
+        hsla(0, 0%, 100%, 0.7),
+        hsla(0, 0%, 100%, .7)
+      ),
+      url('../assets//flower-bg3.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 0px;
     /* background-image: linear-gradient(
       to right bottom,
       #e105ec,
@@ -199,16 +209,17 @@ import worker4 from '../assets/worker4.png';
   }
   .workers-subheader {
     font-family: var(--main-font);
-    font-weight: 300;
+    font-weight: 400;
     font-size: clamp(1rem, 2vw, 1.5rem);
     width: 70%;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
-    border-bottom: 12px solid var(--test);
+    border-bottom: 12px solid var(--second-pink);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: var(--black);
+    color: var(--text-font);
+    padding-bottom: 10px;
     word-break: break-word;
   }
   .worker {
@@ -275,7 +286,30 @@ import worker4 from '../assets/worker4.png';
     #worker-four .worker-image {
       order: 1;
     }
-
+    .heading-wrapper {
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 250px;
+      color: white;
+      background-image: linear-gradient(
+        hsla(0, 0%, 100%, 0.7),
+        hsla(0, 0%, 100%, 0.7)
+      ),
+      url('../assets//flower-bg4.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: -15px center;
+      height: 300px;
+      /* background-image: none;
+       background-image: linear-gradient(
+      to right bottom,
+      #e105ec,
+      #cc11d5,
+      #b717bf,
+      #a21aa9,
+      #8e1b94
+    ); */
+    }
     .workers-section {
       align-items: center;
       padding: 0;

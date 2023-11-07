@@ -12,24 +12,35 @@ const { heading = 'Welcome' } = Astro.props as Props;
 
 <style>
   h1 {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right bottom,
       #e105ec,
       #cc11d5,
       #b717bf,
       #a21aa9,
       #8e1b94
-    );
-    color: var(--bg-white);
-    font-size: clamp(1.8rem, 3vw, 4rem);
+    ); */
+    /* background-image: linear-gradient(
+      to right bottom,
+      #e105ec,
+      #cc0fd6,
+      #b815c1,
+      #a418ac,
+      #911997
+    ); */
+    /* text-shadow: 1px 1px 1px #6d225e; */
+    color: var(--main-pink);
+    font-size: clamp(2.3rem, 3vw, 4rem);
     padding: 180px 20px 60px 20px;
     text-align: left;
+    font-family: var(--main-font);
   }
   @media (min-width: 900px) {
     h1 {
       padding-top: 60px;
-      padding-bottom: 80px;
-      text-align: center;
+      padding-bottom: 60px;
+      color: var(--main-pink);
+
     }
   }
 </style>
