@@ -8,6 +8,19 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     <div class='header-wrapper'>
       <SubPagesHeader heading='Cennik Usług' />
     </div>
+
+    <div class='info-header-wrapper'>
+      <h3 class='prices-subheader'>
+        Jeżeli masz pytania dotyczące oferowanych przez nas usług
+      </h3>
+      <a class='prices-link' href='#contact'
+        >Skontakuj się z nami!
+        <div class='prices-link-arrow'>
+          <i class='fa-solid fa-circle-arrow-down'></i>
+        </div>
+      </a>
+    </div>
+
     <div class='content-wrapper'>
       <h2 class='content-header'>Sprawdź naszą najnowszą ofertę</h2>
       <div class='prices-container'>
@@ -375,7 +388,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
             </tr>
           </tbody>
         </table>
-        <div class='prices-photo'>
+        <!-- <div class='prices-photo'>
           <img
             class='prices-photo-img uno'
             src='./src/img/lipstick-medium.jpg'
@@ -396,12 +409,57 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
             src='./src/img/gallery-img4.png'
             alt='cosmetics'
           />
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 </Layout>
+
 <style>
+  .prices-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .info-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .prices-subheader {
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 300;
+    color: var(--text-font);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  .prices-link {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-font);
+    font-family: var(--main-font);
+    font-style: italic;
+    font-weight: 500;
+    transition: 0.3s opacity ease-in;
+    position: relative;
+    transition: 0.3s all ease;
+  }
+  .prices-link:hover {
+    color: var(--text-font);
+  }
+  .prices-link-arrow {
+    margin-top: 15px;
+    font-size: 2rem;
+    color: var(--main-pink);
+    transform: translateY(0);
+    animation: jumping 2s infinite ease both;
+  }
   .header-wrapper {
     background-image: linear-gradient(
         hsla(0, 0%, 100%, 0.7),
@@ -417,11 +475,54 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     height: 300px;
   }
   @media (min-width: 900px) {
+    .prices-section {
+    }
+    .prices-subheader,
+    .prices-link {
+      color: var(--bg-white);
+      font-size: 1.3rem;
+    }
+    .info-header-wrapper {
+      width: 600px;
+      margin-left: auto;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 1px 14px -6px rgba(0, 0, 0, 1);
+      background-image: linear-gradient(
+        to right bottom,
+        #e105ec,
+        #cc11d5,
+        #b717bf,
+        #a21aa9,
+        #8e1b94
+      );
+    }
+
     .header-wrapper {
+      background-image: linear-gradient(
+          hsla(0, 0%, 100%, 0.8),
+          hsla(0, 0%, 100%, 0.2)
+        ),
+        url('../assets//flower-bg5.png');
       background-size: cover;
       background-position: center;
       justify-content: left;
-      padding-left: 250px;
+      padding-left: 300px;
+      background-size: 400px;
+      background-position: 100px -100px;
+      height: 280px;
     }
   }
+
+  @keyframes jumping {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 </style>

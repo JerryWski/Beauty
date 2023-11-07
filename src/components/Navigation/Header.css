@@ -73,7 +73,7 @@
 .link-mobile:hover {
   color: var(--main-pink);
 }
-a[href='#contact'] {
+/* a[href='#contact'] {
   padding: 8px 25px;
   background-color: var(--bg-white);
   color: var(--main-pink);
@@ -81,9 +81,8 @@ a[href='#contact'] {
   transition: 0.3s all ease;
 }
 a[href='#contact']:hover {
-  color: var(--second-tur);
   outline: 1px solid var(--base-white);
-}
+} */
 .logo-link-mobile {
   display: none;
 }
