@@ -71,13 +71,13 @@ const Header: React.FC = () => {
         {/* check if we are on mobile or not */}
         {matches && (
           <div className='nav-links'>
-            <a className='link' href='#about'>
+            <a className='link' href='/#about'>
               O Nas
             </a>
-            <a className='link' href='/offers'>
+            <a className='link' href='/prices'>
               Cennik
             </a>
-            <a className='link' href='#gallery'>
+            <a className='link' href='/#gallery'>
               Galeria
             </a>
             <a className='link' href='/team'>
@@ -136,7 +136,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href='#about'
+              href='/#about'
               onClick={handleMenuClick}
             >
               O Nas
@@ -144,7 +144,7 @@ const Header: React.FC = () => {
             <motion.a
               variants={item}
               className='link-mobile'
-              href=''
+              href='/prices'
               onClick={handleMenuClick}
             >
               Cennik
