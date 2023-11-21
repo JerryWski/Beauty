@@ -9,7 +9,15 @@
   padding: 10px;
   z-index: 1000;
   backdrop-filter: blur(18px);
-  background-color: rgb(255, 255, 255, .6);
+  /* background-color: rgb(255, 255, 255, .6); */
+  background-image: linear-gradient(
+    to right top,
+    #8e19ca,
+    #9618c6,
+    #9d18c2,
+    #a319bf,
+    #a91bbb
+  );
 }
 .nav-links {
   display: flex;
@@ -34,11 +42,11 @@
 }
 
 .logo-wrapper {
-  margin: 5px 0 0px 15px;
+  margin: 0px 0 0px 15px;
   max-width: 130px;
 }
 .logo-wrapper img {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
 }
 .contact-wrapper {
@@ -46,7 +54,7 @@
   margin-left: auto;
 }
 .contact-icon {
-  color: var(--main-pink);
+  color: var(--bg-white);
   padding: 2.5px;
 }
 .fa-solid {
@@ -59,7 +67,7 @@
   font-weight: 300;
   text-decoration: none;
   outline: none;
-  color: var(--text-font);
+  color: var(--bg-white);
   font-size: 1.1rem;
   transition: 0.3s all ease;
 }
@@ -73,16 +81,6 @@
 .link-mobile:hover {
   color: var(--main-pink);
 }
-/* a[href='#contact'] {
-  padding: 8px 25px;
-  background-color: var(--bg-white);
-  color: var(--main-pink);
-  border-radius: 20px;
-  transition: 0.3s all ease;
-}
-a[href='#contact']:hover {
-  outline: 1px solid var(--base-white);
-} */
 .logo-link-mobile {
   display: none;
 }
@@ -98,7 +96,7 @@ a[href='#contact']:hover {
   z-index: 100;
 }
 .burger-line {
-  background-color: var(--main-pink);
+  background-color: var(--bg-white);
 }
 .burger-line:nth-child(1) {
   width: 34px;
@@ -136,9 +134,11 @@ a[href='#contact']:hover {
   }
   .logo-link-desktop {
     display: none;
+    outline: none;
   }
   .logo-link-mobile {
     display: block;
+    outline: none;
   }
   .logo-wrapper-mobile {
     max-width: 200px;
@@ -147,14 +147,16 @@ a[href='#contact']:hover {
     width: 100%;
   }
   .nav-links a:last-child {
-    background-color: var(--second-tur);
+    background-color: var(--main-pink);
     color: var(--bg-white);
+    outline: none;
     padding: 8px 15px;
     border-radius: 20px;
     transition: 0.3s all ease;
   }
-  .nav-links a:last-child:hover {
-    background-color: var(--main-pink);
+  .nav-links a:last-child:hover, .nav-links a:last-child:focus {
+    background-color: var(--bg-white);
+    color: var(--text-font);
   }
   .contact-wrapper {
     margin-left: 20px;
