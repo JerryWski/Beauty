@@ -37,10 +37,10 @@
     background: red;
   }
   .swiper-pagination-bullet-active {
-    background: var(--main-pink) !important;
+    background: var(--logo-color) !important;
   }
   .swiper-button-next::after, .swiper-button-prev::after {
-    color: var(--main-pink);
+    color: var(--logo-color);
   }
   @media (min-width:900px) {
     .swiper {

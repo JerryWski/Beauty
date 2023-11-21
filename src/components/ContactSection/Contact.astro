@@ -98,9 +98,9 @@ import './src/utils/googleMap.css';
 
 <style>
   .contact-section {
-    color: var(--main-pink);
+    color: var(--bg-white);
     padding: 20px 20px 1px 20px;
-    background: var(--second-pink);
+    background: var(--text-font);
     font-family: var(--main-font);
   }
   .contact-wrapper {
@@ -124,7 +124,7 @@ import './src/utils/googleMap.css';
     font-size: clamp(3.2rem, 5vw, 7rem);
     max-width: 230px;
     padding-bottom: 0px;
-    border-bottom: 23px solid var(--main-pink);
+    border-bottom: 23px solid var(--logo-color);
     margin-bottom: 50px;
     position: relative;
     gap: 35px;
@@ -136,7 +136,7 @@ import './src/utils/googleMap.css';
   }
   .contact-welcome-link {
     text-decoration: none;
-    color: var(--main-pink);
+    color: rgb(211, 156, 165);
     opacity: 0.8;
     transition: color 0.2s ease-in-out;
     margin: 3px;
@@ -162,6 +162,7 @@ import './src/utils/googleMap.css';
   }
   .contacts-mail i {
     margin-left: 0;
+    
   }
   .contacts {
     width: 100%;
@@ -182,13 +183,17 @@ import './src/utils/googleMap.css';
     color: var(--text-font);
     text-transform: uppercase;
   }
+  .contacts-title-header {
+    color: var(--logo-color);
+  }
   .contacts-address,
   .contacts-phone {
+   
     font-size: 1.1rem;
     font-weight: 700;
   }
   .contacts-phone-link {
-    color: var(--main-pink);
+    color: var(--logo-color);
     text-decoration: none;
   }
   .contacts-open-info {
@@ -211,7 +216,7 @@ import './src/utils/googleMap.css';
   .fa-square-facebook,
   .fa-square-instagram,
   .fa-linkedin {
-    color: var(--main-pink);
+    color: var(--logo-color);
     transition: color 0.3s ease;
     margin: 5px;
   }

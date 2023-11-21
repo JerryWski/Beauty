@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import heroImg from '../../assets/hero2.png';
+import heroImg from '../../assets/hero2-color.png';
 ---
 
 <section class='hero-container'>
@@ -10,8 +10,8 @@ import heroImg from '../../assets/hero2.png';
   <div class='wrapper-one'>
     <div class='texts-container'>
       <h1 class='hero-header'>
-        <span class="span-header"> Aloha</span>
-         BEauty<span class="span-header">Logic</span>
+        <span class='span-header'> Aloha</span>
+         BEauty<span class='span-header'>Logic</span>
          Clinic
       </h1>
       <h2 class='hero-text'>
@@ -30,7 +30,6 @@ import heroImg from '../../assets/hero2.png';
 <style>
   .hero-container {
     background-color: var(--second-pink);
-    /* background-image: url('../../assets/test3.jpg'); */
     background-repeat: no-repeat;
     padding: 0 20px;
     padding-top: 114px;
@@ -43,18 +42,11 @@ import heroImg from '../../assets/hero2.png';
     margin: auto;
     margin-top: 60px;
     margin-bottom: 30px;
-    /* background-image: url('../../assets/fancy-border.png');
-    background-position: 50px center;
-    background-size: contain;
-    background-repeat: no-repeat; */
-    
   }
   .wrapper-two img {
     width: 100%;
     height: fit-content;
     object-fit: contain;
-    /* box-shadow: 1px 2px 3px 0px rgb(136, 128, 128); */
-    /* border-radius: 50px 5px 50px 5px; */
   }
   .wrapper-one {
     display: flex;
@@ -68,16 +60,16 @@ import heroImg from '../../assets/hero2.png';
     font-family: var(--logo-font);
     text-align: left;
     letter-spacing: 2.5px;
-    line-height:64px;
+    line-height: 64px;
     font-weight: 700;
     color: var(--text-font);
     font-size: clamp(3.9rem, 7vw, 9rem);
     margin-bottom: 20px;
   }
-  
+
   .span-header {
     font-size: clamp(3.9rem, 7vw, 9rem);
-    color: var(--main-pink);
+    color: var(--logo-color);
   }
   .texts-container {
     display: flex;
@@ -106,15 +98,15 @@ import heroImg from '../../assets/hero2.png';
     text-align: center;
     padding: 14px 22px;
     background-color: transparent;
-    color: var(--text-font);
-    outline: 1px solid var(--text-font);
+    color: var(--bg-white);
+    box-shadow: 2px 7px 18px -12px rgba(87, 80, 86, 1);
     font-family: var(--main-font);
+    background-color: var(--logo-color);
     border-radius: 10px;
     transition: 0.3s all ease;
   }
   .hero-link:hover {
-    outline: none;
-    color: var(--bg-white);
+  
     background-color: var(--main-pink);
   }
   @media (min-width: 900px) {

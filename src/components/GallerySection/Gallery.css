@@ -21,7 +21,7 @@
   font-family: var(--dance-font);
 }
 .gallery-welcome-text_link {
-  color: var(--main-pink);
+  color: var(--logo-color);
   font-weight: 900;
 }
 .gallery-welcome-text_link:hover {

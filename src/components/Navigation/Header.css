@@ -18,6 +18,7 @@
     #a319bf,
     #a91bbb
   );
+  box-shadow: 0px 7px 18px -7px rgba(87, 80, 86, 1);
 }
 .nav-links {
   display: flex;
@@ -153,6 +154,7 @@
     padding: 8px 15px;
     border-radius: 20px;
     transition: 0.3s all ease;
+    box-shadow: 0px 7px 18px -7px rgba(27, 3, 25, 1);
   }
   .nav-links a:last-child:hover, .nav-links a:last-child:focus {
     background-color: var(--bg-white);

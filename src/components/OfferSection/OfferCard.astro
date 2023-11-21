@@ -265,7 +265,8 @@ import beautymen from '../../assets/formen.png';
     padding: 20px;
     transform: scale(1);
     transition: all 0.3s linear;
-    box-shadow: 8px 10px 31px 5px rgb(231, 216, 236, .5);
+    box-shadow: 18px 10px 31px 15px rgba(159, 139, 166, 0.5);
+    /* box-shadow: 8px 10px 31px 5px rgb(231, 216, 236, .5); */
   }
   
   .offer:hover {
@@ -282,36 +283,37 @@ import beautymen from '../../assets/formen.png';
     object-fit: contain;
   }
   .offer-link {
-    outline: 1px solid black;
+    background-color: var(--text-font);
     padding: 8px 20px 8px 15px;
     border-radius: 20px;
     margin-bottom: 10px;
     transition: all 0.3s ease;
   }
   .offer-link:hover {
-    outline: 1px solid var(--main-pink);
+    background-color: var(--main-pink);
+    
   }
   .offer-link-text {
-    color: var(--text-font);
+    color: var(--bg-white);
     padding-right: 10px;
     transition: 0.3s all ease;
   }
   .offer-link:hover span {
-    color: var(--main-pink);
+   
   }
   .offer-link-svg {
     width: auto;
     fill: none;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: var(--text-font);
+    stroke: var(--bg-white);
     stroke-width: 1;
     transform: translateX(-5px);
     transition: all 0.3s ease;
   }
   .offer-link:hover svg {
     transform: translateX(5px);
-    stroke: var(--main-pink);
+
   }
   .star {
     background-image: url('../../assets/star.png');
