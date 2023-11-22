@@ -12,7 +12,7 @@ import heroImg from '../../assets/hero2-color.png';
       <h1 class='hero-header'>
         <span class='span-header'> Aloha</span>
          BEauty<span class='span-header'>Logic</span>
-         Clinic
+         Clinic <img class="header-img" src="/aloha-entrance.png" alt="obrazek">
       </h1>
       <h2 class='hero-text'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit
@@ -28,6 +28,15 @@ import heroImg from '../../assets/hero2-color.png';
 </section>
 
 <style>
+  .header-img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 40px;
+    outline: 5px solid var(--logo-color);
+    object-fit: contain;
+    box-shadow: 12px 7px 18px -12px rgb(49, 48, 49);
+    margin-bottom: 0px !important;
+  }
   .hero-container {
     background-color: var(--second-pink);
     background-repeat: no-repeat;
@@ -112,7 +121,6 @@ import heroImg from '../../assets/hero2-color.png';
   @media (min-width: 900px) {
     .hero-container {
       flex-direction: row;
-      gap: 40px;
       justify-content: center;
       padding: 0 60px;
       padding-top: 30px;
@@ -150,6 +158,11 @@ import heroImg from '../../assets/hero2-color.png';
   @media (min-width: 2000px) {
     .wrapper-one {
       width: fit-content;
+    }
+  }
+  @media (max-width: 1050px) {
+    .header-img {
+      display: none;
     }
   }
 </style>
