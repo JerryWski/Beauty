@@ -17,7 +17,7 @@
 .person-photo-worker {
   width: 150px;
   border-radius: 50%;
-  border: 2px solid var(--logo-color);
+  border: 2px solid var(--second-pink);
 }
 .person-info {
   position: absolute;

@@ -5,8 +5,8 @@
     gap: 5px;
     font-size: clamp(.7rem, .5vw, 1.2rem);
     font-family: var(--main-font);
-    color: var(--text-font);
-    background-color: var(--second-pink);
+    color: var(--bg-white);
+    background-color: var(--text-font);
     padding: 22px 0 12px 0;
     position: relative;
 }
@@ -14,7 +14,7 @@
     margin: 0 auto;
     margin-top: 15px;
     width: 76%;
-    border-top: 1px solid var(--main-pink);
+    border-top: 1px solid var(--bg-white);
     position: absolute;
     top: 0%;
     left: 50%;
