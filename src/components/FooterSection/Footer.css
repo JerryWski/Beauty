@@ -6,7 +6,7 @@
     font-size: clamp(.7rem, .5vw, 1.2rem);
     font-family: var(--main-font);
     color: var(--bg-white);
-    background-color: var(--text-font);
+    background-color: #1c181b;
     padding: 22px 0 12px 0;
     position: relative;
 }

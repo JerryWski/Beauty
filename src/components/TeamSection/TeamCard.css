@@ -37,7 +37,7 @@
   padding: 30px 17px 0px 17px;
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--logo-color);
+  color: var(--bg-black);
 }
 .person-info-text {
   max-width: 340px;
@@ -48,15 +48,16 @@
   margin-bottom: 5px;
 }
 .person-info-link {
-  color: var(--bg-white);
+  color: var(--text-font);
   display: flex;
   justify-content: center;
   margin: auto;
   font-size: 0.8rem;
   font-family: var(--main-font);
   width: 50%;
-  background-color: var(--logo-color);
+  background-color: transparent;
   padding: 6px 12px;
+  outline: 1px solid var(--text-font);
   margin-top: 10px;
   margin-bottom: 30px;
   cursor: pointer;
@@ -66,4 +67,5 @@
 .person-info-link:hover {
   background-color: var(--main-pink);
   color: var(--bg-white);
+  outline: none;
 }

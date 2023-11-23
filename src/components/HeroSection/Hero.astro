@@ -38,7 +38,7 @@ import heroImg from '../../assets/hero2-color.png';
     margin-bottom: 0px !important;
   }
   .hero-container {
-    background-color: var(--second-pink);
+    background-color: var(--bg-white);
     background-repeat: no-repeat;
     padding: 0 20px;
     padding-top: 114px;
@@ -107,15 +107,17 @@ import heroImg from '../../assets/hero2-color.png';
     text-align: center;
     padding: 14px 22px;
     background-color: transparent;
-    color: var(--bg-white);
     box-shadow: 2px 7px 18px -12px rgba(87, 80, 86, 1);
     font-family: var(--main-font);
-    background-color: var(--logo-color);
+    border: none;
+    color: var(--logo-color);
+    outline: 1px solid var(--logo-color);
+    background-color: var(--bg-white);
     border-radius: 10px;
     transition: 0.3s all ease;
   }
   .hero-link:hover {
-  
+    color: var(--bg-white);
     background-color: var(--main-pink);
   }
   @media (min-width: 900px) {
