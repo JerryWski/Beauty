@@ -419,20 +419,24 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
   .prices-section {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
   }
   .info-header-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 7px;
+    padding: 30px 20px 20px 20px;
     flex-direction: column;
-    padding: 20px;
+    margin-bottom: 15px;
+    margin-top: 80px;
   }
+
   .prices-subheader {
     text-align: center;
     font-family: var(--main-font);
     font-weight: 300;
-    color: var(--text-font);
+    color: var(--medium-pink);
     font-style: italic;
     font-weight: 500;
     font-size: 1rem;
@@ -442,7 +446,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
   .prices-link {
     text-align: center;
     font-size: 1.1rem;
-    color: var(--text-font);
+    color: var(--medium-pink);
     font-family: var(--main-font);
     font-style: italic;
     font-weight: 500;
@@ -450,82 +454,76 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     position: relative;
     transition: 0.3s all ease;
   }
-  .prices-link:hover {
-    color: var(--text-font);
-  }
+
   .prices-link-arrow {
     margin-top: 15px;
     font-size: 2rem;
-    color: var(--main-pink);
+    color: var(--text-font);
     transform: translateY(0);
     animation: jumping 2s infinite ease both;
   }
+  .prices-link:hover {
+    color: var(--text-font);
+  }
   .header-wrapper {
     background-image: linear-gradient(
-        hsla(0, 0%, 100%, 0.7),
-        hsla(0, 0%, 100%, 0.7)
+        hsla(0, 0%, 100%, 0.5),
+        hsla(0, 0%, 100%, 0.5)
       ),
-      url('../assets//flower-bg5.png');
+      url('/bg-prices2.webp');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center 100px;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 350px;
+    text-transform: uppercase;
   }
+
+  /* table styling */
+  .content-wrapper {
+    background-color: var(--bg-white);
+    padding: 20px;
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+  }
+
   @media (min-width: 900px) {
-    .prices-section {
-    }
     .prices-subheader,
     .prices-link {
-      color: var(--bg-white);
       font-size: 1.3rem;
     }
-    .prices-link-arrow {
-        color: var(--bg-white);
-    }
+
     .info-header-wrapper {
       width: 600px;
       margin-left: auto;
+      margin-right: 280px;
+      margin-top: -80px;
       justify-content: center;
       align-items: center;
-      box-shadow: 1px 1px 14px -6px rgba(0, 0, 0, 1);
-      background-image: linear-gradient(
-        to right bottom,
-        #e105ec,
-        #cc11d5,
-        #b717bf,
-        #a21aa9,
-        #8e1b94
-      );
+      background-color: var(--bg-grey);
+      box-shadow: 1px 9px 15px -14px rgba(110, 111, 118, 1);
     }
 
     .header-wrapper {
-      background-image: linear-gradient(
-          hsla(0, 0%, 100%, 0.8),
-          hsla(0, 0%, 100%, 0.2)
-        ),
-        url('../assets//flower-bg5.png');
-      background-size: cover;
-      background-position: center;
       justify-content: left;
       padding-left: 300px;
-      background-size: 400px;
-      background-position: 100px -100px;
-      height: 280px;
+      background-size: cover;
+      height: 360px;
     }
   }
 
   @keyframes jumping {
-  0% {
-    transform: translateY(0px);
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 </style>
