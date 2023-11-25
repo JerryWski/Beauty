@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SubPagesHeader from '../layouts/SubPagesHeader.astro';
+import Icon from 'astro-icon';
 ---
 
 <Layout title='Cennik naszych usług'>
@@ -22,9 +23,10 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     </div>
 
     <div class='content-wrapper'>
-      <h2 class='content-header'>Sprawdź naszą ofertę</h2>
+      <h2 class='content-header'>Sprawdź naszą ofertę dla <a class="prices-ladies gender" href="#ladies">Pań </a>oraz <a class="prices-men gender" href="#men">Panów</a></h2>
+      <h3 class="content-subheader-her">Dla Niej</h3>
       <div class='prices-container'>
-        <table class='table table-left'>
+        <table id="ladies" class='table table-left'>
           <caption> Kosmetologia Estetyczna</caption>
           <thead>
             <tr>
@@ -720,6 +722,131 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
           </tbody>
         </table>
       </div>
+
+      <h3 class="content-subheader-his">Dla Niego</h3>
+
+      <table class='table table-down'>
+        <caption> Kosmetyka Biała</caption>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>Oczyszczanie wodorowe</td>
+            <td>od 200 zł</td>
+          </tr>
+          <tr>
+            <td>Oczyszczanie manualne</td>
+            <td>od 180 zł</td>
+          </tr>
+          <tr>
+            <td>Oczyszczanie medyczne</td>
+            <td>od 200 zł</td>
+          </tr>
+          <tr>
+            <td>Peeling Węglowy Laser Q switch</td>
+            <td>od 180 zł</td>
+          </tr>
+          <tr>
+            <td>Mikrodermabrazja</td>
+            <td>od 160 zł</td>
+          </tr>
+          <tr>
+            <td>Infuzja tlenowa</td>
+            <td>od 200 zł</td>
+          </tr>
+          <tr>
+            <td>Peeling Kawitacyjny</td>
+            <td>od 130 zł</td>
+          </tr>
+          <tr>
+            <td>Mezoterapia bezigłowa</td>
+            <td>od 120 zł</td>
+          </tr>
+          <tr>
+            <td>Karboksyterapia bezigłowa</td>
+            <td>200 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia na przebarwienia</td>
+            <td>od 300 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia na trądzik</td>
+            <td>od 200 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia przecistarzeniowa i liftingująca</td>
+            <td>od 200 zł</td>
+          </tr>
+          <tr>
+            <td>
+              Terapia skóry wrażliwej, naczyniowej i z trądzikiem różowatym
+            </td>
+            <td>od 250 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia skóry z przebarwieniami</td>
+            <td>od 250 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia Medestelle</td>
+            <td>od 230 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia Larens - opatentowany kompleks liposomalny</td>
+            <td>od 230 zł</td>
+          </tr>
+          <tr>
+            <td>Terapia Estgen - inżynieria tankowa</td>
+            <td>od 220 zł</td>
+          </tr>
+          <tr>
+            <td>
+              Zabiegi z Kwasami
+              <span class='td-microtext'
+                >(mlekowy, migdałowy, azelainowy, kwiatowy, pirogonowy)</span
+              >
+            </td>
+            <td>od 180 zł</td>
+          </tr>
+          <tr>
+            <td>
+              Kwasy medyczne
+              <span class='td-microtext'
+                >(PgAge, BioRePeelCI3, M.E.L.A., Jessner, qpeel)</span
+              >
+            </td>
+            <td>od 250 zł</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Laser Q Switch</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Laserowy peeling węglowy</td>
+            <td>od 180 zł</td>
+          </tr>
+          <tr>
+            <td>Laserowe usuwanie makijażu permanentnego i tatuażu</td>
+            <td>250 zł</td>
+          </tr>
+        </tbody>
+        <thead>
+          <tr>
+            <th>Masaż</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Masaż Kobido</td>
+            <td>150 zł</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 </Layout>
@@ -740,7 +867,8 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     margin: 80px 20px 15px 20px;
     color: var(--bg-white);
     background: var(--logo-color-md);
-    border: 1px solid var(--logo-color-md);
+    background-image: linear-gradient(to bottom, #eeabf0, #e196e3, #d481d7, #c76bca, #ba55be);
+    /* border: 1px solid var(--logo-color-md); */
   }
 
   .prices-subheader {
@@ -790,6 +918,22 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     height: 350px;
     text-transform: uppercase;
   }
+  .gender {
+    font-size: clamp(2rem, 2vw, 3rem);
+    color: var(--logo-color-md);
+   
+  }
+  .content-subheader-her, .content-subheader-his {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 5rem;
+    color: var(--text-font);
+    font-family: var(--logo-font);
+  }
+  .content-subheader-his {
+    margin-top: 100px;
+    margin-bottom: 50px
+  }
 
   /* table styling */
   .content-wrapper {
@@ -802,17 +946,18 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
   .content-header {
     text-align: center;
     padding: 0 5px 0px 5px;
-    font-family: var(--main-font);
+    font-family: var(--dance-font);
     font-weight: 500;
     width: 70%;
     margin: auto;
+    margin-top: 40px;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 10px solid var(--bg-grey);
+    border-bottom: 10px solid var(--logo-color-md);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: var(--text-font);
-    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-size: clamp(2rem, 2vw, 3rem);
   }
   .prices-container {
     margin-top: 50px;
@@ -821,9 +966,6 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
-  }
-  .prices-photo {
-    display: none;
   }
   .table {
     text-align: left;
@@ -887,6 +1029,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     border-bottom-right-radius: 7px;
     border: none;
   }
+  
 
   @media (min-width: 900px) {
     .prices-subheader,
@@ -902,8 +1045,8 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
       justify-content: center;
       align-items: center;
       color: var(--bg-white);
-      background: var(--logo-color-md);
-      border: 1px solid var(--logo-color-md);
+      
+      /* border: 1px solid var(--logo-color-md); */
       box-shadow: 1px 9px 15px -14px rgba(110, 111, 118, 1);
     }
     .header-wrapper {
@@ -947,6 +1090,9 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     .prices-header {
       text-transform: uppercase;
     }
+    .table-down {
+    max-width: 50%;
+  }
   }
 
   @keyframes jumping {
