@@ -429,25 +429,25 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     padding: 30px 20px 20px 20px;
     flex-direction: column;
     margin: 80px 20px 15px 20px;
-    border: 1px solid var(--second-pink);
-    background-color: var(--bg-white);
+    color: var(--bg-white);
+    background: var(--logo-color-md);
+    border: 1px solid var(--logo-color-md);
   }
 
   .prices-subheader {
     text-align: center;
     font-family: var(--main-font);
     font-weight: 300;
-    color: var(--text-font);
     font-style: italic;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 5px;
     margin-bottom: 15px;
   }
   .prices-link {
     text-align: center;
-    font-size: 1.1rem;
-    color: var(--text-font);
+    font-size: 1.2rem;
+    color: var(--bg-white);
     font-family: var(--main-font);
     font-style: italic;
     font-weight: 500;
@@ -459,12 +459,12 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
   .prices-link-arrow {
     margin-top: 15px;
     font-size: 2rem;
-    color: var(--text-font);
+    color: var(--bg-white);
     transform: translateY(0);
     animation: jumping 2s infinite ease both;
   }
   .prices-link:hover {
-    color: var(--medium-pink);
+    opacity: .7;
   }
   .header-wrapper {
     background-image: linear-gradient(
@@ -499,7 +499,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     margin: auto;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 10px solid var(--logo-color);
+    border-bottom: 10px solid var(--bg-grey);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: var(--text-font);
@@ -592,8 +592,9 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
       margin-top: -80px;
       justify-content: center;
       align-items: center;
-      border: 1px solid var(--second-pink);
-      background-color: var(--bg-white);
+      color: var(--bg-white);
+      background: var(--logo-color-md);
+      border: 1px solid var(--logo-color-md);
       box-shadow: 1px 9px 15px -14px rgba(110, 111, 118, 1);
     }
     .header-wrapper {
