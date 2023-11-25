@@ -723,7 +723,7 @@ import Icon from 'astro-icon';
         </table>
       </div>
 
-      <h3 class="content-subheader-his">Dla Niego</h3>
+      <h3 id="men" class="content-subheader-his">Dla Niego</h3>
 
       <table class='table table-down'>
         <caption> Kosmetyka Biała</caption>
@@ -855,13 +855,12 @@ import Icon from 'astro-icon';
   .prices-section {
     display: flex;
     flex-direction: column;
-    /* padding: 20px; */
   }
   .info-header-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     padding: 30px 20px 20px 20px;
     flex-direction: column;
     margin: 80px 20px 15px 20px;
@@ -921,7 +920,10 @@ import Icon from 'astro-icon';
   .gender {
     font-size: clamp(2rem, 2vw, 3rem);
     color: var(--logo-color-md);
-   
+    transition: .3s color ease-in;
+  }
+  .gender:hover {
+    color: var(--logo-color);
   }
   .content-subheader-her, .content-subheader-his {
     margin-top: 50px;
