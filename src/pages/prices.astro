@@ -22,7 +22,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     </div>
 
     <div class='content-wrapper'>
-      <h2 class='content-header'>Sprawdź naszą najnowszą ofertę</h2>
+      <h2 class='content-header'>Sprawdź naszą ofertę</h2>
       <div class='prices-container'>
         <table class='table table-left'>
           <caption> Kosmetologia Estetyczna</caption>
@@ -428,15 +428,16 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     border-radius: 7px;
     padding: 30px 20px 20px 20px;
     flex-direction: column;
-    margin-bottom: 15px;
-    margin-top: 80px;
+    margin: 80px 20px 15px 20px;
+    border: 1px solid var(--second-pink);
+    background-color: var(--bg-white);
   }
 
   .prices-subheader {
     text-align: center;
     font-family: var(--main-font);
     font-weight: 300;
-    color: var(--medium-pink);
+    color: var(--text-font);
     font-style: italic;
     font-weight: 500;
     font-size: 1rem;
@@ -446,7 +447,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
   .prices-link {
     text-align: center;
     font-size: 1.1rem;
-    color: var(--medium-pink);
+    color: var(--text-font);
     font-family: var(--main-font);
     font-style: italic;
     font-weight: 500;
@@ -463,7 +464,7 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     animation: jumping 2s infinite ease both;
   }
   .prices-link:hover {
-    color: var(--text-font);
+    color: var(--medium-pink);
   }
   .header-wrapper {
     background-image: linear-gradient(
@@ -489,6 +490,94 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
     padding-top: 80px;
     flex-direction: column;
   }
+  .content-header {
+    text-align: center;
+    padding: 0 5px 0px 5px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 10px solid var(--logo-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: var(--text-font);
+    font-size: clamp(1.4rem, 2vw, 2rem);
+  }
+  .prices-container {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .prices-photo {
+    display: none;
+  }
+  .table {
+    text-align: left;
+    background-color: var(--bg-white);
+    /* max-width: 45%; */
+    font-family: var(--main-font);
+    table-layout: auto;
+    width: 100%;
+    border-bottom-left-radius: 7px;
+    border-collapse: collapse;
+  }
+  caption {
+    background-color: var(--bg-grey);
+    color: var(--text-font);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    padding: 20px 0 20px 0;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-weight: 900;
+  }
+  th {
+    background-color: var(--lightgrey);
+    color: var(--bg-white);
+    padding: 5px 0 5px 5px;
+    font-size: 1.1rem;
+  }
+  .sub-caption {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--bg-grey);
+    color: var(--text-font);
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--lightgrey);
+    border-spacing: 10px;
+  }
+  td {
+    background-color: var(--bg-grey);
+    padding: 5px 0 5px 5px;
+    font-size: 0.9rem;
+    color: var(--black);
+    border-bottom: 1px solid var(--lightgrey);
+  }
+  td:nth-child(2) {
+    min-width: 77px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .td-transparent {
+    color: transparent;
+  }
+  .td-microtext {
+    font-size: 0.7rem;
+    font-style: italic;
+  }
+  .last-cell-left {
+    border-bottom-left-radius: 7px;
+    border: none;
+  }
+  .last-cell-right {
+    border-bottom-right-radius: 7px;
+    border: none;
+  }
 
   @media (min-width: 900px) {
     .prices-subheader,
@@ -503,15 +592,50 @@ import SubPagesHeader from '../layouts/SubPagesHeader.astro';
       margin-top: -80px;
       justify-content: center;
       align-items: center;
-      background-color: var(--bg-grey);
+      border: 1px solid var(--second-pink);
+      background-color: var(--bg-white);
       box-shadow: 1px 9px 15px -14px rgba(110, 111, 118, 1);
     }
-
     .header-wrapper {
       justify-content: left;
       padding-left: 300px;
       background-size: cover;
       height: 360px;
+    }
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 60px 20px;
+      padding-bottom: 60px;
+      width: 100%;
+    }
+
+    /* table styling */
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 60px 20px;
+      padding-bottom: 60px;
+      width: 100%;
+    }
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px 60px 20px;
+      padding-bottom: 60px;
+      width: 100%;
+    }
+    .content-header {
+      font-size: 2.1rem;
+    }
+    .prices-container {
+      align-items: flex-start;
+      justify-content: center;
+      width: 80%;
+      flex-wrap: nowrap;
+    }
+    .prices-header {
+      text-transform: uppercase;
     }
   }
 
