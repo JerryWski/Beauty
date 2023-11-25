@@ -75,7 +75,7 @@ const Header: React.FC = () => {
               O Nas
             </a>
             <a className='link' href='/prices'>
-              Cennik
+              Oferta
             </a>
             <a className='link' href='/#gallery'>
               Galeria
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               href='/prices'
               onClick={handleMenuClick}
             >
-              Cennik
+              Oferta
             </motion.a>
             <motion.a
               variants={item}
