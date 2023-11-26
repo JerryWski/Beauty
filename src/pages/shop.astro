@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SubPagesHeader from '../layouts/SubPagesHeader.astro';
+import Icon from 'astro-icon';
+---
+
+<Layout title='Sklep internetowy Aloha Beauty Logic Clinic'>
+  <div class='heading-wrapper'>
+    <SubPagesHeader heading='Sklep w trakcie budowy' />
+    <Icon name="tools" width="300px"/>
+  </div>
+  <section>
+
+  </section>
+</Layout>
+
+<style>
+  .heading-wrapper {
+    background-image: linear-gradient(
+        hsla(0, 0%, 100%, 0.7),
+        hsla(0, 0%, 100%, 0.7)
+      ),
+      url('/bg-prices2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0px;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+</style>

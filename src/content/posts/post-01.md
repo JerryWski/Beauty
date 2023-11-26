@@ -1,9 +1,10 @@
 ---
 title: Odkryj piękno z Aloha BeautyLogic Clinic w Olsztynie!
 slug: post-1
-excerpt: Kolejna konferencja na przestrzeni 2 tygodni gdzie było Mega Motoryzacyjnie. Tym razem miałem przyjemność brać udział...
+excerpt: 🌟 Czy wiesz, że nasz nowy salon i 3 gabinety kosmetologii estetycznej oferuje coś specjalnego zarówno dla Pań, jak i Panów?... 
+
 date: 2023-11-21
-image: ./images/logo-img.webp
+image: ./images/entrance-beauty.webp
 author: Agata
 ---
 
