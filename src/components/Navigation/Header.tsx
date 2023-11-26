@@ -55,10 +55,24 @@ const Header: React.FC = () => {
         <div className='contact-wrapper'>
           <a
             className='contact-icon'
-            href='mailto:kontakt@maciejmartowicz.pl'
-            aria-label='Link to email'
+            href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
+            aria-label='Link to linkedin'
           >
-            <i className='fa-solid fa-envelope'></i>
+            <i className='fa-brands fa-linkedin-in' />
+          </a>
+          <a
+            className='contact-icon'
+            href='https://www.instagram.com/p/CoFEx07NS2H/'
+            aria-label='Link to instagram'
+          >
+            <i className='fa-brands fa-square-instagram' />
+          </a>
+          <a
+            className='contact-icon'
+            href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
+            aria-label='Link to facebook'
+          >
+            <i className='fa-brands fa-square-facebook' />
           </a>
           <a
             className='contact-icon'
@@ -71,9 +85,9 @@ const Header: React.FC = () => {
         {/* check if we are on mobile or not */}
         {matches && (
           <div className='nav-links'>
-            <a className='link' href='/#about'>
-              O Nas
-            </a>
+            {/* <a className='link' href='/#about'>
+                O Nas
+              </a> */}
             <a className='link' href='/prices'>
               Oferta
             </a>
@@ -83,21 +97,25 @@ const Header: React.FC = () => {
             <a className='link' href='/team'>
               Zespół
             </a>
-
             <a className='logo-link-mobile' href='/'>
               <div className='logo-wrapper-mobile'>
                 <img src='/base-logo-wh-dt.png' alt='logo-icon' />
               </div>
             </a>
-
             <a className='link' href='/blog'>
               Blog
             </a>
             <a className='link' href='/shop'>
               Sklep
             </a>
-            <a className='link' href=''>
+            <a className='link' href='#contact'>
               Kontakt
+            </a>
+            <a
+              className='link'
+              href='https://booksy.com/pl-pl/191015_aloha-beautylogic-clinic_salon-kosmetyczny_4934_olsztyn?do=invite&_branch_match_id=1256892990917705528&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FV908yz8zPtXANck0CAMIQtnQiAAAA'
+            >
+              Zarezerwuj wizytę
             </a>
           </div>
         )}
@@ -133,14 +151,14 @@ const Header: React.FC = () => {
             exit={{ opacity: 0 }}
             className='nav-links-mobile'
           >
-            <motion.a
+            {/* <motion.a
               variants={item}
               className='link-mobile'
               href='/#about'
               onClick={handleMenuClick}
             >
               O Nas
-            </motion.a>
+            </motion.a> */}
             <motion.a
               variants={item}
               className='link-mobile'
@@ -181,8 +199,27 @@ const Header: React.FC = () => {
             >
               Kontakt
             </motion.a>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href='https://booksy.com/pl-pl/191015_aloha-beautylogic-clinic_salon-kosmetyczny_4934_olsztyn?do=invite&_branch_match_id=1256892990917705528&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FV908yz8zPtXANck0CAMIQtnQiAAAA'
+              onClick={handleMenuClick}
+            >
+              Zarezerwuj wizytę
+            </motion.a>
           </motion.div>
         )}
+        <div className='social-icons'>
+          <a href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'>
+            <i className='fa-brands fa-linkedin-in fa-2x' />
+          </a>
+          <a href='https://www.instagram.com/p/CoFEx07NS2H/'>
+            <i className='fa-brands fa-square-instagram fa-2x' />
+          </a>
+          <a href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'>
+            <i className='fa-brands fa-square-facebook fa-2x' />
+          </a>
+        </div>
       </nav>
       {/* <span className='navbar-underline'></span> */}
     </header>
