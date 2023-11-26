@@ -10,13 +10,14 @@ const { post } = Astro.props;
 ---
 
 <article class='blog-frontmatter-wrapper'>
+  
   <div class='post-left'>
     <div class='image-wrapper'>
       <Image class='image-blog' src={post.data.image} alt={post.data.title} />
     </div>
   </div>
   <div class='post-right'>
-    <h2>{post.data.title}</h2>
+    <h2 class="post-title">{post.data.title}</h2>
     <p class='body-text'>{post.data.excerpt}</p>
     <a class='blog-link' href={`/blog/${post.slug}`}>Czytaj dalej</a>
     <div class='blog-author-wrapper'>
@@ -77,11 +78,12 @@ const { post } = Astro.props;
     height: auto;
     object-fit: contain;
   }
-  h2 {
+  .post-title {
     font-size: 1.1rem;
-    line-height: 36px;
+    line-height: 26px;
+    text-align: center;
     color: var(--logo-color-md);
-    /* padding: 10px; */
+    padding: 10px;
     border-radius: 7px;
     background-color: var(--second-pink);
     letter-spacing: 1px;
@@ -151,6 +153,7 @@ const { post } = Astro.props;
     transform: translate(-50%, -50%);
     color: var(--bg-white);
   }
+  
   @media (min-width: 900px) {
     .blog-frontmatter-wrapper {
       display: grid;
@@ -159,6 +162,7 @@ const { post } = Astro.props;
       gap: 40px;
     }
     .post-left {
+      max-width: 40%;
       text-align: center;
       align-self: center;
     }
@@ -167,6 +171,9 @@ const { post } = Astro.props;
     }
     .image-wrapper {
       width: 540px;
+    }
+    .image-blog {
+      
     }
     .body-text {
       font-size: 1.3rem;

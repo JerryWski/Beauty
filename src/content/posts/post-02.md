@@ -1,56 +1,33 @@
 ---
-title: Nowa Marka w Olsztynie
+title: Jedyną stałą rzeczą w życiu są zmiany
 slug: post-2
-excerpt: Nadchodzi Nowe Miejsce Pìękna i Szczęścia - dla Kobiet i nie tylko - w Olsztynie 🥰🌺🥰🌺🤩🌺
-date: 2023-09-28
-image: ./images/blog-image4-mobile.png
+excerpt: My zmieniamy się dla Was aby ugościć Was w niezwykle wyjątkowym miejscu, z niesamowitym klimatem i pięknym przesłaniem..☘️💚
+date: 2023-10-26
+image: ./images/logo-img.webp
 author: Agata
 ---
+Jedyną stałą rzeczą w życiu są zmiany 🌊😃 
 
-Nowa Marka w Olsztynie 🤗
-🌺🌺🌺🌺
+My zmieniamy się dla Was aby ugościć Was w niezwykle wyjątkowym miejscu, z niesamowitym klimatem i pięknym przesłaniem..☘️💚
 
-Nadchodzi Nowe Miejsce #Pìękna i #Szczęścia - dla Kobiet i nie tylko - w Olsztynie 🥰🌺🥰🌺🤩🌺
+Tworzymy miejsce, w którym piękno spotyka się z radością. 🌸😄
 
-Salon Kosmetyki i Kosmetologii Estetycznej
+Zadbamy o to aby wizyta w naszej beauty klinice była nie tylko profesjonalną usługą ale również ucztą dobrego samopoczucia. 💁‍♀️🧖‍♀️💆💆‍♀️🙋‍♀️
+ 
+Nasza nowa lokalizacja urzekła mnie od pierwszego wejrzenia więc nie mogłam wybrać inaczej..
 
-⭐️ BeautyLogic ⭐️
+📍Koszary Park 💘
 
-zmieni się w
+Ul. Marka Kotańskiego 4 
 
-👇👇👇
+Olsztyn
 
-🌺 #AlohaBeautyLogicClinic 🌺
-by Agata ... ( cdn 😁 )
+🏛klimatyczne lofty, oryginalne wnętrza, urokliwa przestrzeń oraz ogromny parking 😉👌
 
-Gdzie ? #Olsztyn
+Do nowego miejsca zapraszamy w listopadzie, dokładną datę podamy jak tylko będziemy gotowe Was ugościć ☕️🧁🍰
 
-Od kiedy ? od #listopada
+Dlaczego Aloha ?
 
-Co ? salon #kosmetologiii i #medycynyestetycznej
+Zdradzimy w następnym poście 😃😉
 
-Miejsce, w którym spotkasz atmosferę #ALOHA i #HAWAII
-gdzie będzie się unosić filozofia hawajskiej #huny 🤙😍🥰🌺🌊
-
-🌺 Witaj w Aloha BeautyLogic Clinic ...
-
-miejscu, gdzie Twoje piękno kwitnie w harmonii z naturą! 🌿
-
-Czy pragniesz poczuć się piękniejsza i szczęśliwsza każdego dnia?
-
-Jeśli tak, to mamy dla Ciebie coś wyjątkowego!
-
-Zanurz się w głęboko zakorzenionych tradycjach hawajskiej Huny i doświadcz terapii, które są jak fala oceanu – odżywcze, odprężające i pełne życia! 🌊...
-
-cdn
-
-Stay Tuned
-
-Aloha 🤙
-
-#CoachSamoZuo 😈🏴‍☠️
-
-ps.
-uspokajam zaniepokojonych - ja tam nie będę pracował, nie grożą Wam zabiegi wykonywanę moją ZUOręką 😜🙈
-
-Ja tu tylko nosze paczki, wożę i sprzątam
+Pięknego dnia ❤️😘

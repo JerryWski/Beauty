@@ -1,9 +1,9 @@
 ---
-title: Moi Klienci w jednym miejscu
+title: Odkryj piękno z Aloha BeautyLogic Clinic w Olsztynie!
 slug: post-1
 excerpt: Kolejna konferencja na przestrzeni 2 tygodni gdzie było Mega Motoryzacyjnie. Tym razem miałem przyjemność brać udział...
 date: 2023-09-30
-image: ./images/blog-image3-mobile.png
+image: ./images/logo-img.webp
 author: Agata
 ---
 

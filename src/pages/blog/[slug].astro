@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Card from '../../components/Posts/CardPost/Card.astro';
+import SubPagesHeader from '../../layouts/SubPagesHeader.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -27,8 +28,11 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
+  <div class='header-wrapper'>
+    <SubPagesHeader heading='Agata Beauty Blog' />
+  </div>
   <article>
-    <div>
+    <div class="article-container">
       <Card>
         <h2>{post.data.title}</h2>
         <Image class='image-blog' src={post.data.image} alt={post.data.title} />
@@ -38,20 +42,37 @@ const { Content } = await post.render();
           }
         </div>
         <Content />
-        <a class='blog-link' href='/blog'>Powrót</a>
+        <a class='blog-link' href='/blog'>&larr; Powrót</a>
       </Card>
     </div>
   </article>
 </Layout>
 
 <style>
-  article {
-    background-color: var(--base-white);
-    padding: 25px;
+  
+  .article-container {
+    padding: 20px;
   }
   h2 {
+    margin-top: 50px;
+    color: var(--text-font);
     font-size: clamp(2rem, 3vw, 4rem);
   }
+  .header-wrapper {
+      background-image: linear-gradient(
+          hsla(0, 0%, 100%, 0.5),
+          hsla(0, 0%, 100%, 0.5)
+        ),
+        url('/bg-prices2.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      text-transform: uppercase;
+    }
   .image-blog {
     border-radius: 7px;
     width: 100%;
@@ -62,8 +83,9 @@ const { Content } = await post.render();
     width: fit-content;
     margin-top: 20px;
     padding: 15px 45px;
-    color: var(--base-white);
+    color: var(--text-font);
     border-radius: 7px;
+    border: 1px solid var(--logo-color);
     background-color: var(--base-orange);
     transition: 0.3s all ease;
   }
