@@ -9,7 +9,9 @@ const posts = await getCollection('posts');
 
 <Layout title='#Blog'>
   <main>
-    <SubPagesHeader heading='Agata Beauty Blog' />
+    <div class='header-wrapper'>
+      <SubPagesHeader heading='Agata Beauty Blog' />
+    </div>
     <div class='article-wrapper'>
       <article class='blog-section'>
         <PostList posts={posts} />
@@ -25,6 +27,21 @@ const posts = await getCollection('posts');
     display: flex;
     flex-direction: column;
   }
+  .header-wrapper {
+      background-image: linear-gradient(
+          hsla(0, 0%, 100%, 0.5),
+          hsla(0, 0%, 100%, 0.5)
+        ),
+        url('/bg-prices2.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      text-transform: uppercase;
+    }
   @media (min-width: 900px) {
     .article-wrapper {
       display: flex;
