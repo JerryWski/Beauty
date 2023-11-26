@@ -85,9 +85,9 @@ const Header: React.FC = () => {
         {/* check if we are on mobile or not */}
         {matches && (
           <div className='nav-links'>
-            {/* <a className='link' href='/#about'>
+            <a className='link' href='/#about'>
                 O Nas
-              </a> */}
+              </a>
             <a className='link' href='/prices'>
               Oferta
             </a>
