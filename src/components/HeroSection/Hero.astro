@@ -1,22 +1,23 @@
 ---
 import { Image } from 'astro:assets';
-import heroImg from '../../assets/hero2-color.png';
+import model from '../../assets/model.webp';
+import agata from '../../assets/agata.webp';
 ---
 
 <section class='hero-container'>
   <div class='wrapper-two'>
-    <Image class='wrapper__image' src={heroImg} alt='woman' />
+    <Image class='wrapper__image' src={model} alt='woman' />
   </div>
   <div class='wrapper-one'>
     <div class='texts-container'>
       <h1 class='hero-header'>
         <span class='span-header'> Aloha</span>
-         BEauty<span class='span-header'>Logic</span>
-         Clinic <img class="header-img" src="/aloha-entrance.png" alt="obrazek">
+         BEauty<span class='span-header'> Logic</span>
+         Clinic <span class='span-brand-name'>by Agata Ambroziak</span>
       </h1>
-      <h2 class='hero-text'>
+      <p class='hero-text'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit
-      </h2>
+      </p>
       <p class='hero-text'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ad
         nemo repudiandae voluptatum porro inventore soluta ratione maxime
@@ -49,8 +50,9 @@ import heroImg from '../../assets/hero2-color.png';
   }
   .wrapper-two {
     margin: auto;
+    max-width: 40%;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: -60px;
   }
   .wrapper-two img {
     width: 100%;
@@ -68,17 +70,33 @@ import heroImg from '../../assets/hero2-color.png';
   .hero-header {
     font-family: var(--logo-font);
     text-align: left;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     line-height: 64px;
     font-weight: 700;
     color: var(--text-font);
-    font-size: clamp(3.9rem, 7vw, 9rem);
-    margin-bottom: 20px;
+    font-size: clamp(3.9rem, 5vw, 6rem);
+    position: relative;
+    margin-bottom: 60px;
   }
 
   .span-header {
-    font-size: clamp(3.9rem, 7vw, 9rem);
+    font-size: clamp(4rem, 7vw, 8rem);
     color: var(--logo-color);
+    position: relative;
+  }
+  .span-brand-name {
+    font-size: clamp(1.7rem, 2vw, 3rem);
+    color: var(--logo-color);
+    font-family: var(--dance-font);
+    letter-spacing: 0;
+    margin-bottom: 0;
+    line-height: normal;
+    top: 90%;
+    left: 31%;
+    /* width: auto; */
+
+    transform: rotate(-10deg);
+    position: absolute;
   }
   .texts-container {
     display: flex;
@@ -87,18 +105,21 @@ import heroImg from '../../assets/hero2-color.png';
     align-items: flex-start;
     margin-bottom: 60px;
   }
-  .texts-container :nth-child(3) {
-    margin-bottom: 30px;
-    color: grey;
+  .hero-text:first-of-type {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
   }
   .hero-text {
     text-align: left;
     font-family: var(--main-font);
     line-height: normal;
     color: var(--text-font);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     max-width: 600px;
+    font-size: 1rem;
   }
+
   .hero-link {
     width: 100%;
     max-width: 300px;
@@ -107,13 +128,13 @@ import heroImg from '../../assets/hero2-color.png';
     text-align: center;
     padding: 14px 22px;
     background-color: transparent;
-    box-shadow: 2px 7px 18px -12px rgba(87, 80, 86, 1);
+    box-shadow: 2px 7px 18px -12px rgb(0, 0, 0);
     font-family: var(--main-font);
     border: none;
-    color: var(--logo-color);
-    outline: 1px solid var(--logo-color);
-    background-color: var(--bg-white);
+    color: var(--bg-white);
+    background-color: var(--logo-color);
     border-radius: 10px;
+    margin-top: 10px;
     transition: 0.3s all ease;
   }
   .hero-link:hover {
@@ -127,16 +148,29 @@ import heroImg from '../../assets/hero2-color.png';
       padding: 0 60px;
       padding-top: 30px;
       padding-bottom: 30px;
+      background-size: cover;
+      background-position: center;
+      background-image: linear-gradient(
+          hsla(0, 0%, 100%, 0.5),
+          hsla(0, 0%, 100%, 0.4)
+        ),
+        url('/tropic.webp');
+      background-repeat: no-repeat;
     }
     .hero-header {
       text-align: left;
       font-weight: 900;
-      line-height: 96px;
-      max-width: 800px;
+      line-height: 60px;
+      /* max-width: 800px; */
+      letter-spacing: 5px;
     }
     .hero-text {
       text-align: left;
       max-width: 600px;
+      margin-bottom: 30px;
+    }
+    .hero-text:first-of-type {
+      font-size: 1.5rem;
     }
     .hero-link {
       font-weight: 300;
@@ -146,15 +180,19 @@ import heroImg from '../../assets/hero2-color.png';
       align-items: flex-start;
     }
     .wrapper-one {
-      /* width: fit-content; */
+      width: 60%;
       justify-content: flex-start;
       align-content: flex-start;
     }
     .wrapper-two {
       margin: 60px 0;
+      margin-bottom: -100px;
       order: 1;
       max-width: 600px;
       background-position: 70px center;
+    }
+    .span-brand-name {
+      top: 110%;
     }
   }
   @media (min-width: 2000px) {
