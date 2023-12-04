@@ -12,8 +12,11 @@ const { heading = 'Welcome' } = Astro.props as Props;
 
 <style>
   h1 {
-    color: var(--logo-color-md);
-    font-size: clamp(2.3rem, 4vw, 4.5rem);
+    font-size: 72px;
+    background: -webkit-linear-gradient(#cc93be, hsl(300, 83%, 39%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(3.5rem, 4vw, 4.5rem);
     padding: 180px 20px 60px 20px;
     text-align: center;
     font-family: var(--main-font);
@@ -21,6 +24,7 @@ const { heading = 'Welcome' } = Astro.props as Props;
   @media (min-width: 900px) {
     h1 {
       padding-top: 60px;
+      color: var(--logo-color-dark);
     }
   }
 </style>
