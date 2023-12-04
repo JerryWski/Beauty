@@ -65,7 +65,7 @@
   transition: all 0.3s ease;
 }
 .person-info-link:hover {
-  background-color: var(--main-pink);
+  background-color: var(--logo-color);
   color: var(--bg-white);
   outline: none;
 }
