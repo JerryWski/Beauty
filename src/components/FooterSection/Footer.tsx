@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
             className="footer_link"
             href='https://jerrywski.github.io/Portfolio-Site/'
           >
-            Jerry_Wski
+            <span className='footer-name'>Jerry_Wski</span> 
           </a>
         </p>
         <p className="footer_year">© Copyright {currentYear()}</p>

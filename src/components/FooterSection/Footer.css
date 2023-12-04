@@ -6,15 +6,18 @@
     font-size: clamp(.7rem, .5vw, 1.2rem);
     font-family: var(--main-font);
     color: var(--bg-white);
-    background-color: #1c181b;
+    background-color: var(--darkgrey);
     padding: 22px 0 12px 0;
     position: relative;
+}
+.footer-name {
+  color: var(--medium-pink);
 }
 .footer_overline {
     margin: 0 auto;
     margin-top: 15px;
     width: 76%;
-    border-top: 1px solid var(--medium-pink);
+    border-top: 1px solid var(--bg-white);
     position: absolute;
     top: 0%;
     left: 50%;

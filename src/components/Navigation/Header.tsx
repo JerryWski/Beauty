@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       <nav className='nav-container'>
         <a className='logo-link-desktop' href='/'>
           <div className='logo-wrapper'>
-            <img src='/base-logo-wh.png' alt='logo-icon' />
+            <img src='/base-logo-wh-dt.webp' alt='logo-icon' />
           </div>
         </a>
 
@@ -85,29 +85,27 @@ const Header: React.FC = () => {
         {/* check if we are on mobile or not */}
         {matches && (
           <div className='nav-links'>
-            <a className='link' href='/#about'>
-                O Nas
-              </a>
             <a className='link' href='/prices'>
               Oferta
             </a>
-            <a className='link' href='/#gallery'>
-              Galeria
+            <a className='link' href='/shop'>
+              Sklep
             </a>
             <a className='link' href='/team'>
               Zespół
             </a>
+            <a className='link' href='/#gallery'>
+              Galeria
+            </a>
             <a className='logo-link-mobile' href='/'>
               <div className='logo-wrapper-mobile'>
-                <img src='/base-logo-wh-dt.png' alt='logo-icon' />
+                <img src='/base-logo-wh-dt.webp' alt='logo-icon' />
               </div>
             </a>
             <a className='link' href='/blog'>
               Blog
             </a>
-            <a className='link' href='/shop'>
-              Sklep
-            </a>
+            
             <a className='link' href='#contact'>
               Kontakt
             </a>
@@ -151,14 +149,6 @@ const Header: React.FC = () => {
             exit={{ opacity: 0 }}
             className='nav-links-mobile'
           >
-            {/* <motion.a
-              variants={item}
-              className='link-mobile'
-              href='/#about'
-              onClick={handleMenuClick}
-            >
-              O Nas
-            </motion.a> */}
             <motion.a
               variants={item}
               className='link-mobile'
@@ -166,6 +156,14 @@ const Header: React.FC = () => {
               onClick={handleMenuClick}
             >
               Oferta
+            </motion.a>
+            <motion.a
+              variants={item}
+              className='link-mobile'
+              href='/shop'
+              onClick={handleMenuClick}
+            >
+              Sklep
             </motion.a>
             <motion.a
               variants={item}
@@ -183,14 +181,7 @@ const Header: React.FC = () => {
             >
               Blog
             </motion.a>
-            <motion.a
-              variants={item}
-              className='link-mobile'
-              href='/shop'
-              onClick={handleMenuClick}
-            >
-              Sklep
-            </motion.a>
+            
             <motion.a
               variants={item}
               className='link-mobile'
