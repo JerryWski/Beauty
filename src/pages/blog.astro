@@ -32,18 +32,19 @@ const posts = await getCollection('posts');
   }
   .header-wrapper {
       background-image: linear-gradient(
-          hsla(0, 0%, 100%, 0.5),
-          hsla(0, 0%, 100%, 0.5)
+          hsla(0, 0%, 100%, 0.3),
+          hsla(0, 0%, 100%, 0.3)
         ),
-        url('/bg-prices2.webp');
+        url('/blog-bg.webp');
+        padding-top: 40px;
+        padding-bottom:40px;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: center 100px;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 450px;
-      text-transform: uppercase;
+
     }
   @media (min-width: 900px) {
     .article-wrapper {
@@ -54,6 +55,11 @@ const posts = await getCollection('posts');
     }
     .blog-section {
       max-width: 1140px;
+    }
+    .header-wrapper {
+      padding-top: 100px;
+        padding-bottom: 100px;
+        background-position: center;
     }
   }
 </style>
