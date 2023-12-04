@@ -20,7 +20,7 @@ const { title } = Astro.props;
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/logo-icon.webp' />
     <link
-      href='https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,900&family=Dancing+Script:wght@400;500&display=swap'
+      href='https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,900&display=swap'
       rel='stylesheet'
     />
     <link
@@ -81,7 +81,8 @@ const { title } = Astro.props;
     /* fonts */
     --main-font: 'Noto Sans', sans-serif;
     --logo-font: 'fontaine_regularregular', sans-serif;
-    --dance-font: 'Dancing Script', cursive;
+    --dance-font: 'dancing_regular', cursive;
+    /* --dance-font: 'Dancing Script', cursive; */
   }
 
   /* fonts */
@@ -94,5 +95,25 @@ const { title } = Astro.props;
     font-style: normal;
     font-display: swap;
   }
- 
+  @font-face {
+    font-family: 'dancing_medium';
+    src:
+      url('/fonts/dancing-script-v25-latin_latin-ext-500-webfont.woff2')
+        format('woff2'),
+      url('/fonts/dancing-script-v25-latin_latin-ext-500-webfont.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'dancing_regular';
+    src:
+      url('/fonts/dancing-script-v25-latin_latin-ext-regular-webfont.woff2')
+        format('woff2'),
+      url('/fonts/dancing-script-v25-latin_latin-ext-regular-webfont.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 </style>
