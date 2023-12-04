@@ -878,26 +878,29 @@ import Icon from 'astro-icon';
         opacity: 0.7;
       }
       .header-wrapper {
+        /* background-color: var(--second-pink); */
         background-image: linear-gradient(
-            hsla(0, 0%, 100%, 0.5),
-            hsla(0, 0%, 100%, 0.5)
+            hsla(0, 0%, 100%, 0.6),
+            hsla(0, 0%, 100%, 0.6)
           ),
-          url('/bg-prices2.webp');
+          url('/bg-prices3.webp');
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-size: 300px;
+        background-position: center 160px;
         display: flex;
+        padding-top: 70px;
+        padding-bottom: 70px;
         justify-content: center;
         align-items: center;
-        height: 350px;
+        
       }
       .gender {
         font-size: clamp(2rem, 2vw, 3rem);
-        color: var(--logo-color-md);
+        color: var(--logo-color-dark);
         transition: 0.3s color ease-in;
       }
       .gender:hover {
-        color: var(--logo-color);
+        color: var(--logo-color-md);
       }
       .content-subheader-her,
       .content-subheader-his {
@@ -920,12 +923,12 @@ import Icon from 'astro-icon';
       }
       .icon {
         width: 60px;
-        fill: var(--logo-color-md);
+        fill: var(--logo-color-dark);
       }
 
       /* table styling */
       .content-wrapper {
-        background-color: var(--bg-white);
+        background-color: var(--bg-grey);
         padding: 20px;
         display: flex;
         padding-top: 80px;
@@ -941,7 +944,7 @@ import Icon from 'astro-icon';
         margin-top: 40px;
         padding-bottom: 10px;
         margin-bottom: 20px;
-        border-bottom: 10px solid var(--logo-color-md);
+        border-bottom: 10px solid var(--logo-color-dark);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         color: var(--text-font);
@@ -1042,10 +1045,11 @@ import Icon from 'astro-icon';
           box-shadow: 1px 9px 15px -14px rgba(110, 111, 118, 1);
         }
         .header-wrapper {
+          margin-top: 30px;
+          margin-bottom: 30px;
           justify-content: left;
           padding-left: 300px;
-          background-size: cover;
-          height: 360px;
+          background-position: 100px center;
         }
         .content-wrapper {
           flex-direction: column;
