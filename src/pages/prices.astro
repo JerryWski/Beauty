@@ -17,7 +17,8 @@ import Icon from 'astro-icon';
         </a>oraz <a class='prices-men gender' href='#men'>Panów</a>
       </h2>
       <h3 class='content-subheader-her subheader'>
-        Dla Niej <Icon class='icon' name='woman' />
+        Dla Niej 
+        <!-- <Icon class='icon' name='woman' /> -->
       </h3>
       <div class='prices-container'>
         <table id='estetic' class='table table-left'>
@@ -880,8 +881,8 @@ import Icon from 'astro-icon';
       .header-wrapper {
         /* background-color: var(--second-pink); */
         background-image: linear-gradient(
-            hsla(0, 0%, 100%, 0.6),
-            hsla(0, 0%, 100%, 0.6)
+            hsla(0, 0%, 100%, 0.4),
+            hsla(0, 0%, 100%, 0.4)
           ),
           url('/bg-prices3.webp');
         background-repeat: no-repeat;
@@ -889,9 +890,10 @@ import Icon from 'astro-icon';
         background-position: center 160px;
         display: flex;
         padding-top: 70px;
+        height: 350px;
         padding-bottom: 70px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         
       }
       .gender {
@@ -1048,7 +1050,9 @@ import Icon from 'astro-icon';
           margin-top: 30px;
           margin-bottom: 30px;
           justify-content: left;
+          align-items: center;
           padding-left: 300px;
+          height: auto;
           background-image: linear-gradient(
             hsla(0, 0%, 100%, 0.3),
             hsla(0, 0%, 100%, 0.3)

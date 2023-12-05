@@ -6,24 +6,37 @@ export interface Props {
 const { heading = 'Welcome' } = Astro.props as Props;
 ---
 
-<h1>
-  {heading}
-</h1>
+<div>
+  <h1>
+    {heading}
+  </h1>
+
+</div>
 
 <style>
   h1 {
     font-size: 72px;
-    background: -webkit-linear-gradient(#cc93be, hsl(300, 83%, 39%));
+    background: -webkit-linear-gradient(#cc93be, hsl(300, 92%, 28%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(3.5rem, 4vw, 4.5rem);
-    padding: 180px 20px 60px 20px;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    /* padding: 180px 20px 60px 20px; */
     text-align: center;
     font-family: var(--main-font);
   }
+  div {
+    background-color: rgba(25, 2, 31, 0.1);
+    backdrop-filter: blur(2px);
+    width: 100%;
+  }
   @media (min-width: 900px) {
+    div {
+      background-color: transparent;
+      backdrop-filter: none;
+      width: auto;
+    }
     h1 {
-      padding-top: 60px;
+      margin-top: 60px;
       color: var(--logo-color-dark);
     }
   }
