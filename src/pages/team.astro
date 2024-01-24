@@ -15,10 +15,11 @@ import worker4 from '../assets/worker4.png';
       <SubPagesHeader heading='Aloha Team' />
     </div>
     <section class='about-section'>
-      <h2 class='about-title'>Trochę o Nas</h2>
+      
       <div class="team-present">
         <Image class='team-image' src={team} alt='beauty clinic woman workers' />
         <div>
+          <h2 class='about-title'>Trochę o Nas...</h2>
           <p class='about-text'>
             " Coś o skrobne o nas Lorem ipsum, dolor sit amet consectetur
             adipisicing elit. Inventore commodi, totam porro molestiae, cumque
@@ -218,9 +219,6 @@ import worker4 from '../assets/worker4.png';
     align-items: flex-end;
     justify-content: center;
   }
-.team-image {
-
-}
   .workers-subheader {
     font-family: var(--main-font);
     font-weight: 300;
@@ -298,10 +296,11 @@ import worker4 from '../assets/worker4.png';
     color: hsl(297deg 36.4% 45.61%);
   }
   .about-title {
-    font-size: clamp(3rem, 5vw, 6rem);
+    font-size: clamp(3rem, 3.5vw, 4rem);
     font-family: var(--main-font);
     padding-left: 0px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
   .about-text {
     max-width: 1000px;
@@ -310,7 +309,7 @@ import worker4 from '../assets/worker4.png';
     margin-bottom: 20px;
     font-family: var(--main-font);
     font-size: clamp(1rem, 1.2vw, 1.3rem);
-    line-height: 25px;
+    line-height: 29px;
     font-weight: 300;
   }
 
@@ -320,8 +319,9 @@ import worker4 from '../assets/worker4.png';
       order: 1;
     }
     .about-title {
+      margin-top: 0px;
       padding-right: 160px;
-      text-align: right;
+      text-align: left;
     }
     .about-text {
       text-align: left;
