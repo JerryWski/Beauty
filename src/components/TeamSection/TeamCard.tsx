@@ -4,10 +4,10 @@ import  './TeamCard.css';
 const teamCard = [
   {
     id:1,
-    image: '/person-small1.png',
-    name: 'Dominika Wiśniewska',
+    image: '/person-small1.webp',
+    name: 'Justyna Zienkiewicz',
     link: '/team#worker-one',
-    info: 'Kobieta od zadań specjalnych. Dominika posiada nie tylko imponującą wiedzę z zakresu kosmetologii ale również doskonale wykorzystuje ją w swoich zdolnościach manualnych.',
+    info: 'Kobieta od zadań specjalnych. Justyna posiada nie tylko imponującą wiedzę z zakresu kosmetologii ale również doskonale wykorzystuje ją w swoich zdolnościach manualnych.',
   },
   {
     id:2,
