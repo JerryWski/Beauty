@@ -192,6 +192,7 @@ const Header: React.FC = () => {
             </motion.a>
             <motion.a
               variants={item}
+              aria-label='link to booksy site'
               className='link-mobile'
               href='https://booksy.com/pl-pl/191015_aloha-beautylogic-clinic_salon-kosmetyczny_4934_olsztyn?do=invite&_branch_match_id=1256892990917705528&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FV908yz8zPtXANck0CAMIQtnQiAAAA'
               onClick={handleMenuClick}
@@ -201,13 +202,13 @@ const Header: React.FC = () => {
           </motion.div>
         )}
         <div className='social-icons'>
-          <a href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'>
+          <a aria-label='link to linkedin' href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'>
             <i className='fa-brands fa-linkedin-in fa-2x' />
           </a>
-          <a href='https://www.instagram.com/p/CoFEx07NS2H/'>
+          <a aria-label='link to instagram' href='https://www.instagram.com/p/CoFEx07NS2H/'>
             <i className='fa-brands fa-square-instagram fa-2x' />
           </a>
-          <a href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'>
+          <a aria-label='link to facebook' href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'>
             <i className='fa-brands fa-square-facebook fa-2x' />
           </a>
         </div>
