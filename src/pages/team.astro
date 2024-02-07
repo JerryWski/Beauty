@@ -251,9 +251,74 @@ import worker4 from '../assets/worker4.png';
     justify-content: center;
     align-items: flex-start;
     color: var(--text-font);
-    margin-bottom: 50px;
+    overflow: hidden;
     padding: 20px;
+    padding-bottom: 70px;
     gap: 20px;
+  }
+  #worker-one, #worker-two, #worker-three, #worker-four {
+    position: relative;
+    z-index: 10;
+  }
+  #worker-four {
+    margin-top: 0;
+  }
+  #worker-one::before{
+    content: '';
+    position: absolute;
+    background-image: url('./palm_leaf3.webp');
+    background-repeat: no-repeat;
+    filter: brightness(12);
+    transform: rotateY(180deg);
+    background-position: center;
+    background-size: contain;
+    width: 250px;
+    height: 350px;
+    left: -100px;
+    top: 00px;
+  }
+  #worker-two::before {
+    content: '';
+    position: absolute;
+    background-image: url('./monstera-leaf.webp');
+    background-repeat: no-repeat;
+    filter: brightness(12);
+    background-position: center;
+    background-size: contain;
+    width: 250px;
+    height: 350px;
+    right: -100px;
+    top: 0px;
+  }
+  #worker-three::before {
+    content: '';
+    position: absolute;
+    background-image: url('./palm_leaf.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+    right: 50px;
+    bottom: -90px;
+    opacity: .3;
+   z-index: -1;
+  }
+  #worker-four::before {
+    content: '';
+    position: absolute;
+    background-image: url('./palm_leaf3.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotateX(180deg);
+    width: 250px;
+    filter: brightness(10);
+    height: 250px;
+    opacity: .5;
+    right: 50px;
+    bottom: -90px;
+   z-index: -1;
   }
   .worker-image {
     width: 100%;
@@ -308,7 +373,7 @@ import worker4 from '../assets/worker4.png';
   .about-section::before {
     content: '';
     position: absolute;
-    background-image: url('../assets/monstera-leaf.webp');
+    background-image: url('./monstera-leaf.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -358,6 +423,15 @@ import worker4 from '../assets/worker4.png';
     #worker-two .worker-image,
     #worker-four .worker-image {
       order: 1;
+    }
+    #worker-one:before {
+      filter: brightness();
+      left: -130px;
+    }
+    #worker-four::before {
+      left: 0;
+      filter: brightness();
+      opacity: 1;
     }
     .about-title {
       margin-top: 0px;
