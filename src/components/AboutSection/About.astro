@@ -3,10 +3,10 @@ import { Image } from 'astro:assets';
 import flower from '../../assets/welcome2.png';
 ---
 
-<section id="about" class='about-section'>
+<section id='about' class='about-section'>
   <div class='about-welcome'>
     <span class='about-welcome-flower'></span>
-    <p class='about-welcome-text'>"Lorem ipsum, dolor sit amet"</p>
+    <p class='about-welcome-text'>"Aloha- kochaj Siebie!"</p>
   </div>
 
   <div class='about-container'>
@@ -17,16 +17,17 @@ import flower from '../../assets/welcome2.png';
     </div>
     <div class='text-wrapper'>
       <h2 class='text-header'>O Nas</h2>
+      <p class='text'>Nasza klinika istnieje na rynku już ponad 10 lat.</p>
       <p class='text'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-        commodi, totam porro molestiae, cumque quaerat dolorem, possimus quam
-        sint molestias perspiciatis dolores est earum vero a reprehenderit
-        magnam eveniet nobis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-        commodi, totam porro molestiae, cumque quaerat dolorem, possimus quam
-        sint molestias perspiciatis dolores est earum vero a reprehenderit
-        magnam eveniet nobis!
+        Nieustannie się szkolimy, rozwijamy, podążamy za trendami, dbamy o
+        perfekcję i jakość świadczonych przez nas usług. Zapewniam Cię również,
+        że nasz beautyteam nie jest przypadkowy.
       </p>
-      <a href='#contact' class='about-link'> Skontaktuj się z nami</a>
+      <p class='text'>
+        Zapraszam Cię zatem do naszego świata Aloha, zapoznaj się z naszą ofertą
+        i celebruj z nami poczucie piękna
+      </p>
+      <a href='/team' class='about-link'> Poznaj Nas</a>
     </div>
   </div>
 </section>
@@ -56,14 +57,14 @@ import flower from '../../assets/welcome2.png';
     background-image: url('../../assets/flower4.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: contain;
     width: 19%;
     height: 70px;
   }
   .about-welcome-text {
     font-size: clamp(1.4rem, 3vw, 2rem);
     color: var(--logo-color-dark);
-    opacity: .7;
+    opacity: 0.7;
   }
   .about-container {
     display: flex;
@@ -79,7 +80,7 @@ import flower from '../../assets/welcome2.png';
   .text-header {
     margin-bottom: 30px;
     font-family: var(--logo-font);
-    color: var(--text-font);
+    color: var(--dark-violet);
     letter-spacing: 2.5px;
     font-weight: 700;
     font-size: 4.2rem;
@@ -88,11 +89,12 @@ import flower from '../../assets/welcome2.png';
   }
   .text {
     font-family: var(--main-font);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: left;
     font-weight: 400;
-    color: var(--text-font);
-    line-height: 1.5rem;
+    color: var(--dark-violet);
+    line-height: 26px;
+    padding-block: 5px;
   }
   .about-link {
     justify-content: center;
@@ -121,7 +123,6 @@ import flower from '../../assets/welcome2.png';
     width: fit-content;
     align-items: center;
     order: 1;
-    
   }
   .about-image {
     max-width: 100%;
@@ -133,6 +134,7 @@ import flower from '../../assets/welcome2.png';
   .bg-subtitle {
     display: none;
   }
+ 
   @media (min-width: 900px) {
     .about-section {
       align-items: center;
@@ -176,7 +178,7 @@ import flower from '../../assets/welcome2.png';
       padding: 35px;
     }
     .text-header {
-      font-size:6rem
+      font-size: 6rem;
     }
     .about-image-wrapper {
       order: 0;
