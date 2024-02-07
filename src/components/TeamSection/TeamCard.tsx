@@ -4,10 +4,10 @@ import  './TeamCard.css';
 const teamCard = [
   {
     id:1,
-    image: '/person-small1.webp',
-    name: 'Justyna Zienkiewicz',
+    image: '/person-small4.png',
+    name: 'Agata Ambroziak',
     link: '/team#worker-one',
-    info: 'Kobieta od zadań specjalnych. Justyna posiada nie tylko imponującą wiedzę z zakresu kosmetologii ale również doskonale wykorzystuje ją w swoich zdolnościach manualnych.',
+    info: 'Agata -  dumny właściciel kliniki. Zaraża pozytywną energią i rozsiewa aurę aloha, dlatego wizyta u niej na zabiegu to również rodzaj terapii, po której wracasz do domu uszczęśliwiona/ny.',
   },
   {
     id:2,
@@ -18,10 +18,10 @@ const teamCard = [
   },
   {
     id:3,
-    image: '/person-small4.png',
-    name: 'Milena Jackowska',
+    image: '/person-small1.webp',
+    name: 'Jolanta Zienkiewicz',
     link: '/team#worker-three',
-    info: 'Kobieta „błyskawica”, która w ekspresowym tempie wykonuje usługi na najwyższym możliwym poziomie. Z wielką pasją tworzy najpiękniejsze rzęsy w Olsztynie ',
+    info: 'Bardzo pozytywne usposobienie spotyka się z ogromną sympatią wśród klientek. Zaangażowana, staranna z imponującą branżową wiedzą. Jeśli trafisz w jej ręce z pewnością pozostaniesz jej wierna.',
   },
   {
     id:4,

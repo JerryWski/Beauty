@@ -28,9 +28,10 @@
   background: var(--second-pink);
   border-radius: 7px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(292px,1fr));
   gap: 15px;
   color: var(--text-font);
+  /* min-height: 292px; */
 }
 .person-info-title {
   background: transparent;

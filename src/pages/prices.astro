@@ -17,7 +17,7 @@ import Icon from 'astro-icon';
         </a>oraz <a class='prices-men gender' href='#men'>Panów</a>
       </h2>
       <h3 class='content-subheader-her subheader'>
-        Dla Niej 
+        Dla Niej
         <Icon class='icon' name='woman' />
       </h3>
       <div class='prices-container'>
@@ -894,7 +894,6 @@ import Icon from 'astro-icon';
         padding-bottom: 70px;
         justify-content: center;
         align-items: flex-end;
-        
       }
       .gender {
         font-size: clamp(2rem, 2vw, 3rem);
@@ -971,7 +970,14 @@ import Icon from 'astro-icon';
         border-collapse: collapse;
       }
       caption {
-        background-color: var(--logo-color);
+        background-image: linear-gradient(
+          to right top,
+          #8e19ca,
+          #9618c6,
+          #9d18c2,
+          #a319bf,
+          #a91bbb
+        );
         color: var(--bg-white);
         font-size: clamp(1.2rem, 1.2vw, 1.2rem);
         padding: 20px 0 20px 0;
@@ -990,7 +996,14 @@ import Icon from 'astro-icon';
         text-align: center;
         width: 100%;
         padding: 20px 0;
-        background-color: var(--logo-color);
+        background-image: linear-gradient(
+          to right top,
+          #8e19ca,
+          #9618c6,
+          #9d18c2,
+          #a319bf,
+          #a91bbb
+        );
         color: var(--bg-white);
         font-size: 1.2rem;
         border-bottom: 1px solid var(--lightgrey);
@@ -1054,10 +1067,10 @@ import Icon from 'astro-icon';
           padding-left: 300px;
           height: auto;
           background-image: linear-gradient(
-            hsla(0, 0%, 100%, 0.3),
-            hsla(0, 0%, 100%, 0.3)
-          ),
-          url('/bg-prices3.webp');
+              hsla(0, 0%, 100%, 0.3),
+              hsla(0, 0%, 100%, 0.3)
+            ),
+            url('/bg-prices3.webp');
           background-position: 100px center;
         }
         .content-wrapper {
