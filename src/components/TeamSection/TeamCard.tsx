@@ -39,7 +39,7 @@ const teamCard = [
   },
   {
     id:6,
-    image: '/person-small5.webp',
+    image: '/person-small6.webp',
     name: 'Koleta Głowacka',
     link: '/team#worker-six',
     info: 'Swoją ekspercką wiedzę i umiejętności pozyskała na stanowisku szkoleniowca beuty. Robi piorunujące pierwsze wrażenie i wytrwale je podtrzymuje ponieważ przyciąga klientów jak magnes',

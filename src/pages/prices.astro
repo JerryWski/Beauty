@@ -20,7 +20,13 @@ import Icon from 'astro-icon';
         Dla Niej
         <Icon class='icon' name='woman' />
       </h3>
+      <p class='download-text'>
+        <a href="/cennik.pdf" download="/cennik.pdf">(Ściągnij cennik na swój telefon)
+          <Icon name="arrow-down" width="20" />
+        </a>
+      </p>
       <div class='prices-container'>
+
         <table id='estetic' class='table table-left'>
           <caption> Kosmetologia Estetyczna</caption>
           <thead>
@@ -36,7 +42,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Dwie okolice</td>
-              <td>800 zł</td>
+              <td>700 zł</td>
             </tr>
             <tr>
               <td>Trzy okolice</td>
@@ -51,8 +57,8 @@ import Icon from 'astro-icon';
           </thead>
           <tbody>
             <tr>
-              <td>Modelowanie ust na płasko</td>
-              <td>700 zł</td>
+              <td>Modelowanie ust</td>
+              <td>od 750 zł</td>
             </tr>
             <tr>
               <td>Bruzdy nosowo wargowe</td>
@@ -60,15 +66,15 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Linie marionetek</td>
-              <td>od 650 zł</td>
+              <td>od 700 zł</td>
             </tr>
             <tr>
               <td>Wolumetria twarzy</td>
-              <td>od 1300 zł</td>
+              <td>od 1400 zł</td>
             </tr>
             <tr>
               <td>Podbródek</td>
-              <td>od 650 zł</td>
+              <td>od 700 zł</td>
             </tr>
             <tr>
               <td>Dolina łez</td>
@@ -100,7 +106,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Profihlo</td>
-              <td>850 zł</td>
+              <td>800 zł</td>
             </tr>
             <tr>
               <td>Ejal</td>
@@ -117,6 +123,14 @@ import Icon from 'astro-icon';
             <tr>
               <td>Crystalys (hydroksyapatyt wapnia)</td>
               <td>750 zł</td>
+            </tr>
+            <tr>
+              <td>Dives Med Platinium 4 Ultra</td>
+              <td>650 zł</td>
+            </tr>
+            <tr>
+              <td>Dives Med SHA</td>
+              <td>650 zł</td>
             </tr>
             <tr>
               <td
@@ -212,7 +226,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Brzuch</td>
-              <td>od 500 zł</td>
+              <td>od 700 zł</td>
             </tr>
             <tr>
               <td>Blizny i rozstępy</td>
@@ -285,7 +299,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Infuzja tlenowa</td>
-              <td>od 200 zł</td>
+              <td>od 220 zł</td>
             </tr>
             <tr>
               <td>Peeling Kawitacyjny</td>
@@ -293,7 +307,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Mezoterapia bezigłowa</td>
-              <td>od 120 zł</td>
+              <td>od 150 zł</td>
             </tr>
             <tr>
               <td>Karboksyterapia bezigłowa</td>
@@ -313,25 +327,12 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>
-                Terapia skóry wrażliwej, naczyniowej i z trądzikiem różowatym
+                Terapia skóry wrażliwej naczynkowej <span class='td-microtext'
+                >(Medestelle, Larens, PhFormula, Dives, Estgen, Mondunique, Chamine Rose)</span
+              >
               </td>
               <td>od 250 zł</td>
             </tr>
-            <tr>
-              <td>Terapia skóry z przebarwieniami</td>
-              <td>od 250 zł</td>
-            </tr>
-            <tr>
-              <td>Terapia Medestelle</td>
-              <td>od 230 zł</td>
-            </tr>
-            <tr>
-              <td>Terapia Larens - opatentowany kompleks liposomalny</td>
-              <td>od 230 zł</td>
-            </tr>
-            <tr>
-              <td>Terapia Estgen - inżynieria tankowa</td>
-              <td>od 220 zł</td>
             </tr>
             <tr>
               <td>
@@ -346,7 +347,7 @@ import Icon from 'astro-icon';
               <td>
                 Kwasy medyczne
                 <span class='td-microtext'
-                  >(PgAge, BioRePeelCI3, M.E.L.A., Jessner, qpeel)</span
+                  >(PgAge, BioRePeelCI3, M.E.L.A., Jessner, qpeel,Dives)</span
                 >
               </td>
               <td>od 250 zł</td>
@@ -361,11 +362,11 @@ import Icon from 'astro-icon';
           <tbody>
             <tr>
               <td>Laserowy peeling węglowy</td>
-              <td>od 180 zł</td>
+              <td>od 200 zł</td>
             </tr>
             <tr>
               <td>Laserowe usuwanie makijażu permanentnego i tatuażu</td>
-              <td>250 zł</td>
+              <td>300 zł</td>
             </tr>
           </tbody>
           <thead>
@@ -393,7 +394,7 @@ import Icon from 'astro-icon';
               <td>800 zł</td>
             </tr>
             <tr>
-              <td>korekta do 1,5 roku</td>
+              <td>Korekta do 1,5 roku</td>
               <td>400 zł</td>
             </tr>
             <tr>
@@ -413,11 +414,11 @@ import Icon from 'astro-icon';
           </thead>
           <tbody>
             <tr>
-              <td>zagęszczanie linii rzęs</td>
+              <td>Zagęszczanie linii rzęs</td>
               <td>500 zł</td>
             </tr>
             <tr>
-              <td>kreska dekoracyjna i ceniowana</td>
+              <td>Kreska dekoracyjna i ceniowana</td>
               <td>600 zł</td>
             </tr>
           </tbody>
@@ -430,6 +431,10 @@ import Icon from 'astro-icon';
           </thead>
           <tbody>
             <tr>
+              <td>Twarz</td>
+              <td>200 zł</td>
+            </tr>
+            <tr>
               <td>Wąsik</td>
               <td>100 zł</td>
             </tr>
@@ -438,8 +443,8 @@ import Icon from 'astro-icon';
               <td>100 zł</td>
             </tr>
             <tr>
-              <td>Twarz</td>
-              <td>200 zł</td>
+              <td>Baczki</td>
+              <td>100 zł</td>
             </tr>
             <tr>
               <td>Plecy</td>
@@ -458,12 +463,12 @@ import Icon from 'astro-icon';
               <td>od 200 zł</td>
             </tr>
             <tr>
-              <td>Łydki</td>
-              <td>od 300 zł</td>
+              <td>Bikini głębokie</td>
+              <td>350 zł</td>
             </tr>
             <tr>
-              <td>Nogi Całe</td>
-              <td>od 500 zł</td>
+              <td>Łydki</td>
+              <td>od 300 zł</td>
             </tr>
             <tr>
               <td>Ręce</td>
@@ -505,6 +510,10 @@ import Icon from 'astro-icon';
               <td>70 zł</td>
             </tr>
             <tr>
+              <td>Bikini głębokie</td>
+              <td>100 zł</td>
+            </tr>
+            <tr>
               <td>Plecy</td>
               <td>od 90 zł</td>
             </tr>
@@ -530,6 +539,14 @@ import Icon from 'astro-icon';
               <td>110 zł</td>
             </tr>
             <tr>
+              <td>- malowanie french i baby boomer</td>
+              <td>+ 10 zł</td>
+            </tr>
+            <tr>
+              <td>- wzorki i ozdoby</td>
+              <td>od 10 zł</td>
+            </tr>
+            <tr>
               <td>Przedłużanie paznokci bazą</td>
               <td>130 zł</td>
             </tr>
@@ -546,12 +563,8 @@ import Icon from 'astro-icon';
               <td>30 zł</td>
             </tr>
             <tr>
-              <td>Zdjęcie hybrydy + manicure</td>
-              <td>70 zł</td>
-            </tr>
-            <tr>
-              <td>Wzorki</td>
-              <td>od 10 zł</td>
+              <td>Zdjęcie hybrydy i manicure japoński</td>
+              <td>80 zł</td>
             </tr>
             <tr>
               <td>Manicure klasyczny</td>
@@ -567,11 +580,11 @@ import Icon from 'astro-icon';
                   usuwanie przebarwień</span
                 ></td
               >
-              <td>od 180 zł</td>
+              <td>od 200 zł</td>
             </tr>
             <tr>
               <td>Mezoterapia dłoni</td>
-              <td>od 200 zł</td>
+              <td>od 250 zł</td>
             </tr>
             <tr>
               <td>Zabieg parafinowy na dłonie</td>
@@ -587,6 +600,10 @@ import Icon from 'astro-icon';
             <tr>
               <td>Pedicure hybrydowe</td>
               <td>150 zł</td>
+            </tr>
+            <tr>
+              <td>- malowanie french</td>
+              <td>+ 10 zł</td>
             </tr>
             <tr>
               <td>Malowanie hybrydowe</td>
@@ -623,7 +640,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Konsultacja podologiczna</td>
-              <td>30 zł</td>
+              <td>50 zł</td>
             </tr>
             <tr>
               <td>Tamponada</td>
@@ -635,15 +652,15 @@ import Icon from 'astro-icon';
                   klamra</span
                 ></td
               >
-              <td>od 200 zł</td>
+              <td>od 250 zł</td>
             </tr>
             <tr>
               <td>Usunięcie odcisku</td>
-              <td>od 30 zł</td>
+              <td>od 50 zł</td>
             </tr>
             <tr>
               <td>Usunięcie kurzajki/brodawki</td>
-              <td>od 40 zł</td>
+              <td>od 60 zł</td>
             </tr>
           </tbody>
           <thead>
@@ -666,7 +683,7 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Henna komplet</td>
-              <td>60 zł</td>
+              <td>70 zł</td>
             </tr>
             <tr>
               <td>Henna pudrowa</td>
@@ -696,8 +713,19 @@ import Icon from 'astro-icon';
               <td>150 zł</td>
             </tr>
             <tr>
-              <td>Lekcje makijażu</td>
-              <td>100 zł/1h</td>
+              <td>Kępki rzęs</td>
+              <td>+ 50 zł</td>
+            </tr>
+            <tr>
+              <th class='sub-caption' colspan='2'>Przekłucia</th>
+              <tr>
+                <td>Uszy</td>
+                <td>90 zł</td>
+              </tr>
+              <tr>
+                <td>Pojedyncze</td>
+                <td>50 zł</td>
+              </tr>
             </tr>
             <tr>
               <th class='sub-caption' colspan='2'>Pielęgnacja Ciała</th>
@@ -712,20 +740,25 @@ import Icon from 'astro-icon';
             </tr>
             <tr>
               <td>Hi'Fusion</td>
-              <td>od 300 zł</td>
+              <td>od 400 zł</td>
             </tr>
             <tr>
               <td class='last-cell-left'>Radiofrekwencja mikroigłowa</td>
-              <td class='last-cell-right'>od 300 zł</td>
+              <td class='last-cell-right'>od 400 zł</td>
             </tr>
           </tbody>
         </table>
+
       </div>
 
       <h3 id='men' class='content-subheader-his subheader'>
         Dla Niego <Icon class='icon' name='man' />
       </h3>
-
+      <p class='download-text'>
+        <a href="/cennik.pdf" download="/cennik.pdf">(Ściągnij cennik na swój telefon)
+          <Icon name="arrow-down" width="20" />
+        </a>
+      </p>
       <table id="table-man" class='table table-down'>
         <tbody>
           <tr>
@@ -821,6 +854,17 @@ import Icon from 'astro-icon';
     </div>
 
     <style>
+      .download-text a {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        font-family: var(--main-font);
+        text-decoration: none;
+        color: var(--dark-violet);
+      }
+      .download-text a:hover {
+        color: var(--logo-color-dark);
+      } 
       #estetic tbody tr td:nth-child(2) {
         font-weight: 600;
       }
@@ -920,12 +964,11 @@ import Icon from 'astro-icon';
         margin-top: 50px;
         text-align: center;
         font-size: 5rem;
-        color: var(--text-font);
+        color: var(--dark-violet);
         font-family: var(--logo-font);
       }
       .content-subheader-his {
-        margin-top: 100px;
-        margin-bottom: 50px;
+        margin: 100px auto 0px auto;
         display: flex;
         justify-self: center;
         align-items: center;
@@ -1007,7 +1050,7 @@ import Icon from 'astro-icon';
       .sub-caption {
         text-align: center;
         width: 100%;
-        padding: 20px 0;
+        padding: 10px 0;
         background-image: linear-gradient(
           to right top,
           #8e19ca,
@@ -1051,6 +1094,9 @@ import Icon from 'astro-icon';
       .table-down th:nth-child(2) {
         padding: 5px 5px 5px 5px;
         text-align: right;
+      }
+      .table-down {
+        margin-top: 40px;
       }
 
       @media (min-width: 900px) {
