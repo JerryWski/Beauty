@@ -30,6 +30,20 @@ const teamCard = [
     link: '/team#worker-four',
     info: '„Królowa paznokci” to jej drugie imię, ponieważ jej niebywała precyzja jest zachwycająca. Serdeczna i zawsze uśmiechnięta co sprawia, że po wizycie u niej czujesz zastrzyk endorfin',
   },
+  {
+    id:5,
+    image: '/person-small5.webp',
+    name: 'Klaudia Kołecka',
+    link: '/team#worker-five',
+    info: 'Aktywna i uśmiechnięta. Specjalizuje się w pielęgnacji twarzy i ciała, nieustannie poszerzając swoje kompetencje. Jak to się mawia  „stworzona do swojego zawodu”.',
+  },
+  {
+    id:6,
+    image: '/person-small5.webp',
+    name: 'Koleta Głowacka',
+    link: '/team#worker-six',
+    info: 'Swoją ekspercką wiedzę i umiejętności pozyskała na stanowisku szkoleniowca beuty. Robi piorunujące pierwsze wrażenie i wytrwale je podtrzymuje ponieważ przyciąga klientów jak magnes',
+  },
 ];
 
 const TeamCard = () => {
