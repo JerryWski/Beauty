@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       <nav className='nav-container'>
         <a className='logo-link-desktop' href='/'>
           <div className='logo-wrapper'>
-            <img src='/base-logo-wh-dt.webp' alt='logo-icon' />
+            <img src='/base-logo-wh-dt2.webp' alt='logo-icon' />
           </div>
         </a>
 
