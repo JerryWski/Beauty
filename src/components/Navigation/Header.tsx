@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { useMediaQuery } from '../../utils/useMediaQuery';
 import { motion } from 'framer-motion';
+import { FacebookIcon } from '../../utils/FaceIcon';
+import { LinkIcon } from '../../utils/LinkIcon';
+import { InstaIcon } from '../../utils/InstaIcon';
+import { PhoneIcon} from '../../utils/PhoneIcon'
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -58,28 +62,32 @@ const Header: React.FC = () => {
             href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
             aria-label='Link to linkedin'
           >
-            <i className='fa-brands fa-linkedin-in' />
+            {/* <i className='fa-brands fa-linkedin-in' /> */}
+            <LinkIcon />
           </a>
           <a
             className='contact-icon'
             href='https://www.instagram.com/p/CoFEx07NS2H/'
             aria-label='Link to instagram'
           >
-            <i className='fa-brands fa-square-instagram' />
+            {/* <i className='fa-brands fa-square-instagram' /> */}
+            <InstaIcon />
           </a>
           <a
             className='contact-icon'
             href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
             aria-label='Link to facebook'
           >
-            <i className='fa-brands fa-square-facebook' />
+            {/* <i className='fa-brands fa-square-facebook' /> */}
+            <FacebookIcon />
           </a>
           <a
             className='contact-icon'
             href='tel:+48602649588'
             aria-label='Link to phone'
           >
-            <i className='fa-solid fa-phone'></i>
+            {/* <i className='fa-solid fa-phone'></i> */}
+            <PhoneIcon />
           </a>
         </div>
         {/* check if we are on mobile or not */}
@@ -105,7 +113,7 @@ const Header: React.FC = () => {
             <a className='link' href='/blog'>
               Blog
             </a>
-            
+
             <a className='link' href='#contact'>
               Kontakt
             </a>
@@ -181,7 +189,7 @@ const Header: React.FC = () => {
             >
               Blog
             </motion.a>
-            
+
             <motion.a
               variants={item}
               className='link-mobile'
@@ -202,13 +210,22 @@ const Header: React.FC = () => {
           </motion.div>
         )}
         <div className='social-icons'>
-          <a aria-label='link to linkedin' href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'>
+          <a
+            aria-label='link to linkedin'
+            href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
+          >
             <i className='fa-brands fa-linkedin-in fa-2x' />
           </a>
-          <a aria-label='link to instagram' href='https://www.instagram.com/p/CoFEx07NS2H/'>
+          <a
+            aria-label='link to instagram'
+            href='https://www.instagram.com/p/CoFEx07NS2H/'
+          >
             <i className='fa-brands fa-square-instagram fa-2x' />
           </a>
-          <a aria-label='link to facebook' href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'>
+          <a
+            aria-label='link to facebook'
+            href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
+          >
             <i className='fa-brands fa-square-facebook fa-2x' />
           </a>
         </div>

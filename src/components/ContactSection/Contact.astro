@@ -1,6 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../../assets/base-logo-wh.webp';
+import { FacebookIcon } from '../../utils/FaceIcon';
+import { LinkIcon } from '../../utils/LinkIcon';
+import { InstaIcon } from '../../utils/InstaIcon';
 ---
 
 <section id='contact' class='contact-section'>
@@ -68,18 +71,25 @@ import logo from '../../assets/base-logo-wh.webp';
         <a aria-label="facebook icon"
           class='media-social-facebook'
           href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
-          ><i class='fa-brands fa-square-facebook fa-2x'></i></a
+          >
+          <!-- <i class='fa-brands fa-square-facebook fa-2x'></i> -->
+          <FacebookIcon />
+          </a
         >
         <a aria-label="instagram icon"
           class='media-social-instagram'
           href='https://www.instagram.com/p/CoFEx07NS2H/'
         >
-          <i class='fa-brands fa-square-instagram fa-2x'></i>
+          <!-- <i class='fa-brands fa-square-instagram fa-2x'></i> -->
+          <InstaIcon />
         </a>
         <a aria-label="linkedin icon"
-          class='navbar-social-linkedln--link'
+          class='media-social-linkedin'
           href='https://www.linkedin.com/in/agatabeautylogicclinic/'
-          ><i class='fa-brands fa-linkedin fa-2x'></i></a
+          >
+          <!-- <i class='fa-brands fa-linkedin fa-2x'></i> -->
+          <LinkIcon />
+          </a
         >
       </div>
       <div class='media-quote'>
@@ -233,21 +243,22 @@ import logo from '../../assets/base-logo-wh.webp';
     align-items: left;
     order: -1;
   }
-  .media-social-facebook i {
-    margin-left: 0;
+  .media-social {
+    margin-top: 5px;
+    display: flex;
+    gap: 15px;
   }
-  .fa-square-facebook,
-  .fa-square-instagram,
-  .fa-linkedin {
+  .media-social a {
+    transition: .3s color linear;
+  }
+  .media-social a:hover {
+    color: var(--medium-pink);
+  }
+  .media-social-facebook, .media-social-instagram, .media-social-linkedin {
     color: var(--bg-white);
-    transition: color 0.3s ease;
-    margin: 5px;
+    font-size: 2rem;
   }
-  .fa-square-facebook:hover,
-  .fa-square-instagram:hover,
-  .fa-linkedin:hover {
-    opacity: 0.8;
-  }
+  
   .media-quote {
     display: none;
   }

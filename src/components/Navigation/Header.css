@@ -55,15 +55,18 @@
 }
 .contact-wrapper {
   display: flex;
-  gap: 10px;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-left: auto;
 }
 .contact-icon {
   color: var(--bg-white);
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 1.4vw, 2.5rem);
 }
-
+.contact-icon:hover {
+  color: var(--main-pink);
+}
 .link,
 .link-mobile {
   font-family: var(--main-font);
@@ -86,7 +89,6 @@
   color: var(--main-font);
   font-size: 1.1rem;
   text-transform: uppercase;
-  
 }
 .link-mobile:hover {
   color: var(--main-pink);
@@ -94,7 +96,6 @@
 .logo-link-mobile {
   display: none;
 }
-
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -136,7 +137,7 @@
     #9d18c2,
     #a319bf,
     #a91bbb
-  );;
+  );
   color: var(--bg-white);
 }
 .nav-links-mobile a:last-child:hover {
@@ -147,10 +148,6 @@
 .nav-links a:last-child:focus {
   background-color: var(--main-pink);
   color: var(--bg-white);
-}
-.social-icons {
-  display: none;
-  flex-direction: column;
 }
 
 @media (max-width: 315px) {
@@ -171,7 +168,7 @@
     justify-content: center;
     position: relative;
     padding-block: 5px;
-    flex-direction: column;
+    flex-direction: row;
   }
   .logo-link-desktop {
     display: none;
@@ -191,8 +188,11 @@
     height: auto;
   }
   .contact-wrapper {
-    margin-left: 20px;
-    display: none;
+    margin-left: 0px;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    order: 2;
   }
   .social-icons {
     position: absolute;
@@ -203,7 +203,7 @@
   }
   .social-icons a {
     color: var(--bg-white);
-    transition: .2s color ease-in;
+    transition: 0.2s color ease-in;
   }
   .social-icons a:hover {
     color: var(--main-pink);
