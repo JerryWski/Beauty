@@ -854,16 +854,38 @@ import Icon from 'astro-icon';
     </div>
 
     <style>
+      .content-wrapper::before {
+        display: none;
+      }
+      .content-wrapper::after {
+        content: '';
+        position: absolute;
+        background-image: url('/monstera-leaf3.webp');
+        bottom: 680px;
+        left: -30px;
+        width: 300px;
+        transform: rotate(-90deg);
+        height: 300px;
+        opacity: .5;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }      
       .download-text a {
         display: flex;
         justify-content: center; 
         align-items: center;
         font-family: var(--main-font);
         text-decoration: none;
-        color: var(--dark-violet);
+        background-color: var(--text-font);
+        padding: 5px 10px;
+        border-radius: 9px;
+        color: var(--bg-white);
+        margin: auto;
+        transition: .3s all linear;
       }
       .download-text a:hover {
-        color: var(--logo-color-dark);
+        color: var(--medium-pink);
       } 
       #estetic tbody tr td:nth-child(2) {
         font-weight: 600;
@@ -942,7 +964,7 @@ import Icon from 'astro-icon';
           ),
           url('/bg-prices3.webp');
         background-repeat: no-repeat;
-        background-size: 300px;
+        background-size: contain;
         background-position: center 160px;
         display: flex;
         padding-top: 70px;
@@ -988,6 +1010,9 @@ import Icon from 'astro-icon';
         padding: 20px;
         display: flex;
         padding-top: 80px;
+        position: relative;
+        overflow: hidden;
+        z-index: 100;
         flex-direction: column;
       }
       .content-header {
@@ -1104,7 +1129,20 @@ import Icon from 'astro-icon';
         .prices-link {
           font-size: 1.3rem;
         }
-
+        .content-wrapper::before {
+          display: block;
+        content: '';
+        position: absolute;
+        background-image: url('/palm_leaf4.webp');
+        top: 160px;
+        right: -80px;
+        width: 200px;
+        height: 200px;
+        opacity: .8;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
         .info-header-wrapper {
           width: 600px;
           margin-left: auto;
