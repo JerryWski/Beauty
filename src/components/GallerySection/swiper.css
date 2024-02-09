@@ -42,6 +42,7 @@
   .swiper-button-next::after, .swiper-button-prev::after {
     color: var(--logo-color);
   }
+  
   @media (min-width:900px) {
     .swiper {
       margin-top: 60px;
