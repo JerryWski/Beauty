@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           </div>
         </a>
 
-        <div className='contact-wrapper'>
+        <div className='social-wrapper'>
           <a
             className='contact-icon'
             href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
@@ -209,28 +209,7 @@ const Header: React.FC = () => {
             </motion.a>
           </motion.div>
         )}
-        <div className='social-icons'>
-          <a
-            aria-label='link to linkedin'
-            href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
-          >
-            <i className='fa-brands fa-linkedin-in fa-2x' />
-          </a>
-          <a
-            aria-label='link to instagram'
-            href='https://www.instagram.com/p/CoFEx07NS2H/'
-          >
-            <i className='fa-brands fa-square-instagram fa-2x' />
-          </a>
-          <a
-            aria-label='link to facebook'
-            href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
-          >
-            <i className='fa-brands fa-square-facebook fa-2x' />
-          </a>
-        </div>
       </nav>
-      {/* <span className='navbar-underline'></span> */}
     </header>
   );
 };
