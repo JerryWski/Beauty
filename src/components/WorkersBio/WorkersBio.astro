@@ -1,0 +1,410 @@
+---
+import { Image } from 'astro:assets';
+import worker1 from '../../assets/worker1.png';
+import worker3 from '../../assets/worker3.png';
+import worker4 from '../../assets/worker4.png';
+import worker5 from '../../assets/worker5.webp';
+import worker2 from '../../assets/worker2.png';
+import worker6 from '../../assets/worker6.webp';
+---
+
+<section class='workers-section'>
+  <h2 class='workers-subheader'>Poznaj zespół do zadań specjalnych!</h2>
+  <div class='workers container'>
+
+    <div class='worker' id='worker-one'>
+      <div class='worker-image'>
+        <Image class='worker-image-element' src={worker1} alt='beauty-worker' />
+      </div>
+      <div class='worker-info'>
+        <h3 class='worker-name'>Agata Ambroziak</h3>
+        <p class='worker-occupation'>Właścicielka kliniki</p>
+        <p class='worker-description'>
+          Kosmetolog od zadań specjalnych, dba o urodę twarzy i ciała wykonując
+          bardzo szeroki wachlarz zabiegów pielęgnacyjnych:
+        </p>
+        <p class='worker-description'>
+          Bardzo zaciekle śledzi trendy i wprowadza systematycznie do oferty
+          wszystkie sprawdzone i godne polecenia zabiegi.
+        </p>
+        <p class='worker-description'>
+          Wielka pasjonatka swojego zawodu łączy tym samym pasję z pracą.
+        </p>
+        <p class='worker-description'>
+          Żyje bardzo aktywnie, stawia na sporty i podróże małe i duże.
+        </p>
+        <p class='worker-description'>
+          Zaraża pozytywną energią i rozsiewa aurę aloha, dlatego wizyta u niej
+          na zabiegu to również rodzaj terapii, po której wracasz do domu
+          uszczęśliwiona/ny.
+        </p>
+
+        <p>Ekspertka od:</p>
+        <ul class='worker-specialization'>
+          <li class='worker-specialization-item'>Kosmetologia estetyczna</li>
+          <li class='worker-specialization-item'>Kosmetyka biała</li>
+          <li class='worker-specialization-item'>Makijaż permanentny</li>
+          <li class='worker-specialization-item'>Zabiegi na ciało</li>
+          <li class='worker-specialization-item'>Podologia</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='worker' id='worker-two'>
+      <div class='worker-image'>
+        <Image class='worker-image-element' src={worker2} alt='beauty-worker' />
+      </div>
+      <div class='worker-info'>
+        <h3 class='worker-name'>Aleksandra Bojarowicz</h3>
+        <p class='worker-occupation'>Beauty Manager</p>
+        <p class='worker-occupation'>Kosmetyczka</p>
+        <p class='worker-occupation'>Stylistka paznokci</p>
+        <p class='worker-description'>
+          Jeśli oprócz profesjonalnej usługi szukasz ukojenia i mentalnego
+          wsparcia to idealnie trafiłaś. Ola ponad wszystko ceni sobie
+          zadowolenie klienta dlatego ustawiają się do niej kolejki. Manualna
+          perfekcjonistka, która zadba o każdy szczegół. Niebywała kultura
+          osobista i niezwykła gościnność to jej znak rozpoznawczy.
+        </p>
+        <p class='worker-description'>
+          Prywatnie uwielbia pichcić w kuchni, dlatego często możemy wraz z
+          klientami degustować się jej ciastami w naszej klinice...niestety
+          szybciutko znikają
+        </p>
+        <p>Ekspertka od:</p>
+        <ul class='worker-specialization'>
+          <li class='worker-specialization-item'>Masaż Kobido</li>
+          <li class='worker-specialization-item'>
+            Manicure hybrydowy i klasyczny
+          </li>
+          <li class='worker-specialization-item'>
+            Pedicure hybrydowy i klasyczny
+          </li>
+          <li class='worker-specialization-item'>Stylizacja oprawy oka</li>
+          <li class='worker-specialization-item'>
+            Zabiegi pielęgnacyjne twarzy
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='worker' id='worker-three'>
+      <div class='worker-image'>
+        <Image class='worker-image-element' src={worker3} alt='beauty-worker' />
+      </div>
+      <div class='worker-info'>
+        <h3 class='worker-name'>Jolanta Zienkiewicz</h3>
+        <p class='worker-occupation'>Technik usług kosmetycznych</p>
+        <p class='worker-occupation'>Stylistka rzęs</p>
+        <p class='worker-description'>
+          Jola mimo młodego wieku posiada spore doświadczenie w zawodzie. Bardzo
+          pozytywne usposobienie spotyka się z ogromną sympatią wśród klientek
+          dlatego szybciutko zapełnia się jej grafik. Zaangażowana, staranna z
+          imponującą branżową wiedzą. Jeśli trafisz w jej ręce z pewnością
+          pozostaniesz jej wierna.
+        </p>
+        <p class='worker-description'>
+          Jola uczestniczy również w tworzeniu funpage firmowego, dostarczając
+          m.in. piękne zdjęcia
+        </p>
+        <p class='worker-description'>
+          Prywatnie psia mama, która pasjonuje się rękodziełem oraz fotografią
+        </p>
+        <p>Ekspertka od:</p>
+        <ul class='worker-specialization'>
+          <li class='worker-specialization-item'>
+            Stylizacja paznokci hybrydowa i żelowa
+          </li>
+          <li class='worker-specialization-item'>
+            Pedicure hybrydowy i klasyczny
+          </li>
+          <li class='worker-specialization-item'>Stylizacja oprawy oka</li>
+          <li class='worker-specialization-item'>Stylizacja rzęs</li>
+          <li class='worker-specialization-item'>Zabiegi na twarz i ciało</li>
+          <li class='worker-specialization-item'>Masaż bańką chińską</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='worker' id='worker-four'>
+      <div class='worker-image'>
+        <Image class='worker-image-element' src={worker4} alt='beauty-worker' />
+      </div>
+      <div class='worker-info'>
+        <h3 class='worker-name'>Kinga Wowk</h3>
+        <p class='worker-occupation'>Kosmetolog</p>
+        <p class='worker-occupation'>Stylistka paznokci</p>
+        <p class='worker-description'>
+          „Królowa paznokci” to jej drugie imię, ponieważ jej niebywała precyzja
+          jest zachwycająca. Serdeczna i zawsze uśmiechnięta co sprawia, że po
+          wizycie u niej czujesz zastrzyk endorfin
+        </p>
+        <p class='worker-description'>
+          Jej konikiem jest również stylizacja brwi więc potrafi wydobyć piękno
+          i nadać niebywały charakter każdej twarzy.
+        </p>
+        <p class='worker-description'>
+          Prywatnie uwielba czytać książki, jazdę na rolkach i gotowanie
+        </p>
+        <p>Ekspertka od:</p>
+        <ul class='worker-specialization'>
+          <li class='worker-specialization-item'>
+            Stylizacja paznokci hybrydowa i żelowa
+          </li>
+          <li class='worker-specialization-item'>
+            Pedicure hybrydowy i klasyczny
+          </li>
+          <li class='worker-specialization-item'>Stylizacja oprawy oka</li>
+          <li class='worker-specialization-item'>Zabiegi na twarz i ciało</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='worker' id='worker-five'>
+      <div class='worker-image'>
+        <Image class='worker-image-element' src={worker5} alt='beauty-worker' />
+      </div>
+      <div class='worker-info'>
+        <h3 class='worker-name'>Klaudia Kołecka</h3>
+        <p class='worker-occupation'>Kosmetolog</p>
+        <p class='worker-occupation'>Zabiegowiec</p>
+        <p class='worker-description'>
+          Wielka pasjonatka swojej pracy, porażająco zaangażowana w perfekcyjne
+          wykonanie każdej usługi. Aktywna i uśmiechnięta, wulkan pozytywnej
+          energii. Specjalizuje się w pielęgnacji twarzy i ciała, nieustannie
+          poszerzając swoje kompetencje. Jak to się mawia „stworzona do swojego
+          zawodu”. Bije od niej przyjazna aura dlatego bardzo szybko zdobywa
+          zaufanie klientek i pielęgnuje każdą z tych relacji
+        </p>
+        <p class='worker-description'>
+          Prywatnie kocha podróże i od 15 lat jeździ konno
+        </p>
+        <p>Ekspertka od:</p>
+        <ul class='worker-specialization'>
+          <li class='worker-specialization-item'>
+            Zabiegów pielęgnacyjnych na twarz i ciało
+          </li>
+          <li class='worker-specialization-item'>Stylizacji oprawy oka</li>
+          <li class='worker-specialization-item'>Depilacji</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='worker' id='worker-six'>
+      <div class='worker-image'>
+        <Image class='worker-image-element' src={worker6} alt='beauty-worker' />
+      </div>
+      <div class='worker-info'>
+        <h3 class='worker-name'>Koleta Głowacka</h3>
+        <p class='worker-occupation'>Kosmetolog</p>
+        <p class='worker-description'>
+          Doświadczony zabiegowiec pielęgnacyjny. Specjalizuje się w kosmetyce
+          białej jak i estetycznej.
+        </p>
+        <p class='worker-description'>
+          Swoją ekspercką wiedzę i umiejętności pozyskała na stanowisku
+          szkoleniowca beuty. Robi piorunujące pierwsze wrażenie i wytrwale je
+          podtrzymuje ponieważ przyciąga klientów jak magnes tworząc z nimi
+          trwałe relacje. Profesjonalna, skrupulatna i bardzo staranna
+        </p>
+        <p class='worker-description'>Prywatnie mama</p>
+        <p>Ekspertka od:</p>
+        <ul class='worker-specialization'>
+          <li class='worker-specialization-item'>
+            Zabiegów pielęgnacyjnych na twarz i ciało
+          </li>
+          <li class='worker-specialization-item'>Zabiegów estetycznych</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+    .workers-section {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-white);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .workers-subheader {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    width: 80%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-bottom: 12px solid var(--logo-color-md);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: var(--dark-violet);
+    padding-bottom: 10px;
+    word-break: break-word;
+  }
+  .worker {
+    scroll-margin-top: 100px;
+    margin-top: 20px;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-font);
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 70px;
+    gap: 20px;
+  }
+  #worker-one,
+  #worker-two,
+  #worker-three,
+  #worker-four,
+  #worker-five,
+  #worker-six {
+    position: relative;
+    z-index: 10;
+  }
+  #worker-four {
+    margin-top: 0;
+  }
+  #worker-one::before,
+  #worker-two::before,
+  #worker-three::before,
+  #worker-four::before,
+  #worker-five::before,
+  #worker-six::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 350px;
+  }
+  #worker-one::before {
+    background-image: url('/palm_leaf3.webp');
+    filter: brightness(12);
+    transform: rotateY(180deg);
+    background-position: center;
+    left: -100px;
+    top: 00px;
+  }
+  #worker-two::before {
+    background-image: url('/monstera-leaf.webp');
+    filter: brightness(12);
+    background-position: center;
+    right: -100px;
+    top: 0px;
+  }
+  #worker-six::before {
+    background-image: url('/monstera-leaf2.webp');
+    background-position: center;
+    height: 250px;
+    right: -30px;
+    transform: rotateX(180deg);
+    bottom: -150px;
+    z-index: -1;
+  }
+  #worker-four::before {
+    background-image: url('/palm_leaf3.webp');
+    background-position: center;
+    transform: rotateX(180deg);
+    width: 250px;
+    filter: brightness(10);
+    height: 250px;
+    opacity: 0.5;
+    right: 50px;
+    bottom: -90px;
+    z-index: -1;
+  }
+  .worker-image {
+    width: 100%;
+  }
+  .worker-image-element,
+  .team-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
+  }
+  .worker-info {
+    padding-bottom: 20px;
+    max-width: 450px;
+  }
+  .worker-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-violet);
+    margin-bottom: 5px;
+  }
+  .worker-occupation {
+    opacity: 0.8;
+    font-style: italic;
+    margin: 0 0 7px 0;
+  }
+  .worker-description {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .worker-specialization {
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  .worker-specialization-item {
+    font-style: italic;
+  }
+  .worker:nth-of-type(2n + 2) {
+    background-color: var(--second-pink);
+  }
+  #worker-two .worker-image,
+  #worker-four .worker-image,
+  #worker-six .worker-image {
+    order: 0;
+  }
+  @media (min-width: 900px) {
+    #worker-two .worker-image,
+    #worker-four .worker-image,
+    #worker-six .worker-image {
+      order: 1;
+    }
+    #worker-one:before {
+      filter: brightness();
+      left: -130px;
+    }
+    #worker-four::before {
+      left: 0;
+      filter: brightness();
+      opacity: 1;
+    }
+    #worker-six::before {
+      bottom: -60px;
+    }
+
+    .workers-section {
+      align-items: center;
+      padding: 0;
+    }
+    .workers-subheader {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    .worker {
+      margin-top: 0;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+    }
+    .worker-image {
+      margin: 10px;
+      max-width: 550px;
+    }
+    .worker-info {
+      max-width: 45%;
+    }
+  }
+</style>

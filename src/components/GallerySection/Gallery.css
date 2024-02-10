@@ -8,7 +8,7 @@
 }
 .gallery-welcome-header {
   font-family: var(--main-font);
-  color: var(--text-font);
+  color: var(--dark-violet);
   text-align: center;
   letter-spacing: -0.5px;
   font-size: clamp(2.2rem,3vw,3.5rem);
@@ -28,10 +28,14 @@
   opacity: 0.8;
 }
 .gallery-container {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
 @media (min-width: 900px) {
+  .gallery-container {
+    margin-top: 100px;
+  }
   .gallery-section-bg {
     display: block;
     position: absolute;
@@ -47,6 +51,6 @@
       1px 1px 0 var(--second-pink);
     letter-spacing: 50px;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 1;
   }
 }

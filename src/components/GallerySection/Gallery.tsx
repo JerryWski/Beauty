@@ -77,27 +77,27 @@ const Gallery = () => {
             <div className='swiper-wrapper'>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='/gallery-img.png' alt='beauty-salon' />
+                  <img src='/gallery-img.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='/gallery-img2.png' alt='beauty-salon' />
+                  <img src='/gallery-img2.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='/gallery-img3.png' alt='beauty-salon' />
+                  <img src='/gallery-img3.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='/gallery-img4.png' alt='beauty-salon' />
+                  <img src='/gallery-img4.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='swiper-slide'>
-                  <img src='/gallery-img5.png' alt='beauty-salon' />
+                  <img src='/gallery-img5.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
