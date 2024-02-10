@@ -12,8 +12,15 @@ interface WorkerBioProps {
   specializations: string[];
 }
 
-const { id, imageSrc, altText, name, occupations, descriptions, specializations } =
-  Astro.props as WorkerBioProps;
+const {
+  id,
+  imageSrc,
+  altText,
+  name,
+  occupations,
+  descriptions,
+  specializations,
+} = Astro.props as WorkerBioProps;
 ---
 
 <div class='worker' id={id}>
