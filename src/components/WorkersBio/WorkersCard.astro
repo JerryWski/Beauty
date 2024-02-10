@@ -1,0 +1,207 @@
+---
+import { Image } from 'astro:assets';
+import { type ImageMetadata } from 'astro';
+
+interface WorkerBioProps {
+  id: string;
+  imageSrc: ImageMetadata;
+  altText: string;
+  name: string;
+  occupations: string[];
+  descriptions: string[];
+  specializations: string[];
+}
+
+const { id, imageSrc, altText, name, occupations, descriptions, specializations } =
+  Astro.props as WorkerBioProps;
+---
+
+<div class='worker' id={id}>
+  <div class='worker-image'>
+    <Image class='worker-image-element' src={imageSrc} alt={altText} />
+  </div>
+  <div class='worker-info'>
+    <h3 class='worker-name'>{name}</h3>
+    {
+      Array.isArray(occupations) &&
+        occupations.map((occupation) => (
+          <p class='worker-occupation'>{occupation}</p>
+        ))
+    }
+    {
+      Array.isArray(descriptions) &&
+        descriptions.map((description) => (
+          <p class='worker-description'>{description}</p>
+        ))
+    }
+    <p>Ekspertka od:</p>
+    <ul class='worker-specialization'>
+      {
+        Array.isArray(specializations) &&
+          specializations.map((specialization) => (
+            <li class='worker-specialization-item'>{specialization}</li>
+          ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  .worker {
+    scroll-margin-top: 100px;
+    margin-top: 20px;
+    font-family: var(--main-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--text-font);
+    overflow: hidden;
+    padding: 20px;
+    padding-bottom: 70px;
+    gap: 20px;
+  }
+  #worker-one,
+  #worker-two,
+  #worker-three,
+  #worker-four,
+  #worker-five,
+  #worker-six {
+    position: relative;
+    z-index: 10;
+  }
+  #worker-four {
+    margin-top: 0;
+  }
+  #worker-one::before,
+  #worker-two::before,
+  #worker-three::before,
+  #worker-four::before,
+  #worker-five::before,
+  #worker-six::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 350px;
+  }
+  #worker-one::before {
+    background-image: url('/palm_leaf3.webp');
+    filter: brightness(12);
+    transform: rotateY(180deg);
+    background-position: center;
+    left: -100px;
+    top: 00px;
+  }
+  #worker-two::before {
+    background-image: url('/monstera-leaf.webp');
+    filter: brightness(12);
+    background-position: center;
+    right: -100px;
+    top: 0px;
+  }
+  #worker-six::before {
+    background-image: url('/monstera-leaf2.webp');
+    background-position: center;
+    height: 250px;
+    right: -30px;
+    transform: rotateX(180deg);
+    bottom: -150px;
+    z-index: -1;
+  }
+  #worker-four::before {
+    background-image: url('/palm_leaf3.webp');
+    background-position: center;
+    transform: rotateX(180deg);
+    width: 250px;
+    filter: brightness(10);
+    height: 250px;
+    opacity: 0.5;
+    right: 50px;
+    bottom: -90px;
+    z-index: -1;
+  }
+  .worker-image {
+    width: 100%;
+  }
+  .worker-image-element,
+  .team-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 7px;
+  }
+  .worker-info {
+    padding-bottom: 20px;
+    max-width: 450px;
+  }
+  .worker-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--dark-violet);
+    margin-bottom: 5px;
+  }
+  .worker-occupation {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: var(--logo-color-dark);
+    font-weight: 900;
+  }
+  .worker-description {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .worker-specialization {
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  .worker-specialization-item {
+    font-style: italic;
+  }
+  .worker:nth-of-type(2n + 2) {
+    background-color: var(--second-pink);
+  }
+  #worker-two .worker-image,
+  #worker-four .worker-image,
+  #worker-six .worker-image {
+    order: 0;
+  }
+  @media (min-width: 900px) {
+    #worker-two .worker-image,
+    #worker-four .worker-image,
+    #worker-six .worker-image {
+      order: 1;
+    }
+    #worker-one:before {
+      filter: brightness();
+      left: -130px;
+    }
+    #worker-four::before {
+      left: 0;
+      filter: brightness();
+      opacity: 1;
+    }
+    #worker-six::before {
+      bottom: -60px;
+    }
+    .workers-subheader {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    .worker {
+      margin-top: 0;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+    }
+    .worker-image {
+      margin: 10px;
+      max-width: 550px;
+    }
+    .worker-info {
+      max-width: 45%;
+    }
+  }
+</style>
