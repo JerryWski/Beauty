@@ -6,6 +6,7 @@ import { FacebookIcon } from '../../utils/FaceIcon';
 import { LinkIcon } from '../../utils/LinkIcon';
 import { InstaIcon } from '../../utils/InstaIcon';
 import { PhoneIcon} from '../../utils/PhoneIcon'
+import { TikIcon } from '../../utils/TikIcon';
 
 const Header: React.FC = () => {
   const [toggle, setToggle] = useState(false);
@@ -57,12 +58,18 @@ const Header: React.FC = () => {
         </a>
 
         <div className='social-wrapper'>
+        <a
+            className='contact-icon'
+            href='https://www.tiktok.com/@alohabeautylogicclinic?_t=8jkNjOg37iK&_r=1'
+            aria-label='Link to TikTok'
+          >
+            <TikIcon />
+          </a>
           <a
             className='contact-icon'
             href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
             aria-label='Link to linkedin'
           >
-            {/* <i className='fa-brands fa-linkedin-in' /> */}
             <LinkIcon />
           </a>
           <a
@@ -70,7 +77,6 @@ const Header: React.FC = () => {
             href='https://www.instagram.com/p/CoFEx07NS2H/'
             aria-label='Link to instagram'
           >
-            {/* <i className='fa-brands fa-square-instagram' /> */}
             <InstaIcon />
           </a>
           <a
@@ -78,17 +84,15 @@ const Header: React.FC = () => {
             href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
             aria-label='Link to facebook'
           >
-            {/* <i className='fa-brands fa-square-facebook' /> */}
             <FacebookIcon />
           </a>
-          <a
+          {/* <a
             className='contact-icon'
             href='tel:+48602649588'
             aria-label='Link to phone'
           >
-            {/* <i className='fa-solid fa-phone'></i> */}
             <PhoneIcon />
-          </a>
+          </a> */}
         </div>
         {/* check if we are on mobile or not */}
         {matches && (
