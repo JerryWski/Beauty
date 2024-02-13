@@ -7,7 +7,7 @@ image: ./images/men-offer.webp
 author: Agata
 ---
 
-ANOWIE 📣📣📣
+PANOWIE 📣📣📣
 
 Jest ktoś kto o Was pomyślał 😁 
 

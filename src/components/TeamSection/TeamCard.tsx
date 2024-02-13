@@ -4,14 +4,14 @@ import  './TeamCard.css';
 const teamCard = [
   {
     id:1,
-    image: '/person-small4.png',
+    image: '/person-small4.webp',
     name: 'Agata Ambroziak',
     link: '/team#worker-one',
     info: 'Agata -  dumny właściciel kliniki. Zaraża pozytywną energią i rozsiewa aurę aloha, dlatego wizyta u niej na zabiegu to również rodzaj terapii, po której wracasz do domu uszczęśliwiona/ny.',
   },
   {
     id:2,
-    image: '/person-small3.png',
+    image: '/person-small3.webp',
     name: 'Aleksandra Bojarowicz',
     link: '/team#worker-two',
     info: 'Ola ponad wszystko ceni sobie zadowolenie klienta dlatego ustawiają się do niej kolejki. Niebywała kultura osobista i niezwykła gościnność to jej znak rozpoznawczy.',
@@ -25,7 +25,7 @@ const teamCard = [
   },
   {
     id:4,
-    image: '/person-small2.png',
+    image: '/person-small2.webp',
     name: 'Kinga Wowk',
     link: '/team#worker-four',
     info: '„Królowa paznokci” to jej drugie imię, ponieważ jej niebywała precyzja jest zachwycająca. Serdeczna i zawsze uśmiechnięta co sprawia, że po wizycie u niej czujesz zastrzyk endorfin',

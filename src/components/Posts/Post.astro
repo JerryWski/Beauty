@@ -16,7 +16,7 @@ const { post } = Astro.props;
     </div>
   </div>
   <div class='post-right'>
-    <h2 class="post-title">{post.data.title}</h2>
+    <h2 class='post-title'>{post.data.title}</h2>
     <p class='body-text'>{post.data.excerpt}</p>
     <a class='blog-link' href={`/blog/${post.slug}`}>Czytaj dalej</a>
     <div class='blog-author-wrapper'>
@@ -27,26 +27,35 @@ const { post } = Astro.props;
     <span class='span-line'></span>
     <div class='contacts-wrapper'>
       <div class='contact-links'>
-        <a aria-label="linkedin icon"
+        <a
+          aria-label='linkedin icon'
           class='contact-social-icon'
           href='https://www.linkedin.com/in/agatabeautylogicclinic/recent-activity/all/'
         >
-        <Icon class="icon" name='linkedin' />
+          <Icon class='icon' name='linkedin' />
           <!-- <i class='fa-brands fa-linkedin-in'></i> -->
         </a>
-        <a aria-label="instagram icon"
+        <a
+          aria-label='instagram icon'
           class='contact-social-icon'
           href='https://www.instagram.com/p/CoFEx07NS2H/'
         >
-          <Icon class="icon" name='instagram' />
+          <Icon class='icon' name='instagram' />
           <!-- <i class='fa-brands fa-square-instagram'></i> -->
         </a>
-        <a aria-label="facebook icon"
+        <a
+          aria-label='facebook icon'
           class='contact-social-icon'
           href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
         >
-        <Icon class="icon" name='facebook2' />
-          <!-- <i class='fa-brands fa-square-facebook'></i> -->
+          <Icon class='icon' name='facebook2' />
+        </a>
+        <a
+          aria-label='tiktok icon'
+          class='contact-social-icon'
+          href='https://www.tiktok.com/@alohabeautylogicclinic?_t=8jkNjOg37iK&_r=1'
+        >
+          <Icon class='icon' name='tiktok' />
         </a>
       </div>
     </div>
@@ -66,7 +75,7 @@ const { post } = Astro.props;
     background-color: var(--bg-grey);
     color: var(--text-font);
   }
- 
+
   .post-right {
     display: flex;
     flex-direction: column;
@@ -157,7 +166,7 @@ const { post } = Astro.props;
     transform: translate(-50%, -50%);
     color: var(--bg-white);
   }
-  
+
   @media (min-width: 900px) {
     .blog-frontmatter-wrapper {
       display: grid;
@@ -177,7 +186,6 @@ const { post } = Astro.props;
       width: 540px;
     }
     .image-blog {
-      
     }
     .blog-link {
       padding: 10px 35px;

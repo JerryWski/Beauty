@@ -42,7 +42,9 @@ const { Content } = await post.render();
             new Date(post.data.date).toLocaleDateString()
           }
         </div>
-        <Content />
+        <div class="content">
+          <Content />
+        </div>
         <a class='blog-link' href='/blog'><Icon name="arrow" width="15" /> Powrót</a>
       </Card>
     </div>
@@ -50,8 +52,16 @@ const { Content } = await post.render();
 </Layout>
 
 <style>
-  article {
-    /* background-color: var(--second-pink); */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--main-font);
+    align-items: flex-start;
+    gap: 15px;
+  }
+  body {
+    background-color: var(--second-pink);
   }
   .article-container {
     padding: 20px;
@@ -60,9 +70,11 @@ const { Content } = await post.render();
   }
   h2 {
     margin-top: 50px;
-    max-width: 450px;
-    color: var(--text-font);
-    font-size: clamp(1.9rem, 2vw, 2rem);
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    color: var(--logo-color-dark);
+    font-size: clamp(1.3rem, 2vw, 2rem);
   }
   .header-wrapper {
       background-image: linear-gradient(
@@ -107,7 +119,9 @@ const { Content } = await post.render();
   }
   .author-info {
     margin: 10px 0;
+    font-family: var(--main-font);
   }
+
   @media (min-width: 900px) {
     .image-blog {
       max-width: 70%;
