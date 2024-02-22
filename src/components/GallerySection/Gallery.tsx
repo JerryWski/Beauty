@@ -119,6 +119,46 @@ const Gallery = () => {
                   <img src='/gallery-img9.webp' alt='beauty-salon' />
                 </div>
               </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img10.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img11.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img12.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img13.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img14.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img15.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img16.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='swiper-slide'>
+                  <img src='/gallery-img17.webp' alt='beauty-salon' />
+                </div>
+              </SwiperSlide>
             </div>
             <div className='swiper-button-next'></div>
             <div className='swiper-button-prev'></div>
