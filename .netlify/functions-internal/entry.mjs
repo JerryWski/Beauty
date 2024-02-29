@@ -1,6 +1,6 @@
 import * as adapter from '@astrojs/netlify/netlify-functions.js';
 import { renderers } from './renderers.mjs';
-import { manifest } from './manifest_d7ae82c1.mjs';
+import { manifest } from './manifest_15847303.mjs';
 import 'react';
 import 'react-dom/server';
 import 'cookie';
