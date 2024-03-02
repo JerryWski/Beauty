@@ -4,6 +4,8 @@ import logo from '../../assets/base-logo-wh.webp';
 import { FacebookIcon } from '../../utils/FaceIcon';
 import { LinkIcon } from '../../utils/LinkIcon';
 import { InstaIcon } from '../../utils/InstaIcon';
+import { TikIcon } from '../../utils/TikIcon';
+import { PhoneIcon} from '../../utils/PhoneIcon'
 ---
 
 <section id='contact' class='contact-section'>
@@ -51,7 +53,7 @@ import { InstaIcon } from '../../utils/InstaIcon';
       </div>
       <div class='contacts-phone'>
         <a href='tel:+48887545887' class='contacts-phone-link'
-          ><i class='fa-solid fa-phone'></i> - 887 545 887</a
+          ><PhoneIcon /> - 887 545 887</a
         >
       </div>
       <div class='contacts-mail'>
@@ -60,7 +62,7 @@ import { InstaIcon } from '../../utils/InstaIcon';
       <div class='contacts-open-info'>
         <p class='contats-open'>Czynne:</p>
         <p class='contacts-dates'>Pn.-Pt. 08:00 - 18:00</p>
-        <p class='contacts-dates'>Sb. - Nieczynne</p>
+        <p class='contacts-dates'>Sb. - 08:00 - 15:00</p>
         <p class='contacts-dates contacts-dates-closed'>Nd. - Nieczynne</p>
       </div>
     </div>
@@ -72,7 +74,7 @@ import { InstaIcon } from '../../utils/InstaIcon';
           class='media-social-facebook'
           href='https://www.facebook.com/SalonKosmetykiiKosmetologiiEstetycznej/'
           >
-          <!-- <i class='fa-brands fa-square-facebook fa-2x'></i> -->
+        
           <FacebookIcon />
           </a
         >
@@ -80,17 +82,25 @@ import { InstaIcon } from '../../utils/InstaIcon';
           class='media-social-instagram'
           href='https://www.instagram.com/p/CoFEx07NS2H/'
         >
-          <!-- <i class='fa-brands fa-square-instagram fa-2x'></i> -->
+         
           <InstaIcon />
         </a>
         <a aria-label="linkedin icon"
           class='media-social-linkedin'
           href='https://www.linkedin.com/in/agatabeautylogicclinic/'
           >
-          <!-- <i class='fa-brands fa-linkedin fa-2x'></i> -->
+          
           <LinkIcon />
           </a
         >
+        <a aria-label="tiktok icon"
+        class='media-social-linkedin'
+        href='https://www.tiktok.com/@alohabeautylogicclinic?_t=8jkNjOg37iK&_r=1'
+        >
+        
+        <TikIcon />
+        </a
+      >
       </div>
       <div class='media-quote'>
         <p class='media-quote-text'>"You're never</p>
@@ -220,6 +230,11 @@ import { InstaIcon } from '../../utils/InstaIcon';
   .contacts-phone {
     font-size: 1.1rem;
     font-weight: 700;
+  }
+  .contacts-phone a {
+    display: flex;
+    gap: 3px;
+    align-items: center;
   }
   .contacts-phone-link {
     color: var(--bg-white);
