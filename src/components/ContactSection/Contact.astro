@@ -6,6 +6,7 @@ import { LinkIcon } from '../../utils/LinkIcon';
 import { InstaIcon } from '../../utils/InstaIcon';
 import { TikIcon } from '../../utils/TikIcon';
 import { PhoneIcon} from '../../utils/PhoneIcon'
+import {EmailIcon} from '../../utils/EmailIcon';
 ---
 
 <section id='contact' class='contact-section'>
@@ -57,7 +58,7 @@ import { PhoneIcon} from '../../utils/PhoneIcon'
         >
       </div>
       <div class='contacts-mail'>
-        <i class='fa-solid fa-envelope'></i> agata.ambroziak@o2.pl
+        <a href="mailto:aloha@beautyclinic.pl"><EmailIcon /> - aloha@beautylclinic.pl</a>
       </div>
       <div class='contacts-open-info'>
         <p class='contats-open'>Czynne:</p>
@@ -199,9 +200,14 @@ import { PhoneIcon} from '../../utils/PhoneIcon'
   }
   .contacts-mail {
     color: var(--bg-white);
+    
   }
-  .contacts-mail i {
-    margin-left: 0;
+  
+  .contacts-mail a {
+    color: var(--bg-white);
+    display: flex;
+    gap: 3px;
+    font-weight: 700;
   }
   .contacts {
     width: 100%;
