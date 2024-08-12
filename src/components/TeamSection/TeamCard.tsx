@@ -16,13 +16,13 @@ const teamCard = [
     link: '/team#worker-two',
     info: 'Ola ponad wszystko ceni sobie zadowolenie klienta dlatego ustawiają się do niej kolejki. Niebywała kultura osobista i niezwykła gościnność to jej znak rozpoznawczy.',
   },
-  {
-    id:3,
-    image: '/person-small1.webp',
-    name: 'Jolanta Zienkiewicz',
-    link: '/team#worker-three',
-    info: 'Bardzo pozytywne usposobienie spotyka się z ogromną sympatią wśród klientek. Zaangażowana, staranna z imponującą branżową wiedzą. Jeśli trafisz w jej ręce z pewnością pozostaniesz jej wierna.',
-  },
+  // {
+  //   id:3,
+  //   image: '/person-small1.webp',
+  //   name: 'Jolanta Zienkiewicz',
+  //   link: '/team#worker-three',
+  //   info: 'Bardzo pozytywne usposobienie spotyka się z ogromną sympatią wśród klientek. Zaangażowana, staranna z imponującą branżową wiedzą. Jeśli trafisz w jej ręce z pewnością pozostaniesz jej wierna.',
+  // },
   {
     id:4,
     image: '/person-small2.webp',
@@ -37,13 +37,13 @@ const teamCard = [
     link: '/team#worker-five',
     info: 'Aktywna i uśmiechnięta. Specjalizuje się w pielęgnacji twarzy i ciała, nieustannie poszerzając swoje kompetencje. Jak to się mawia  „stworzona do swojego zawodu”.',
   },
-  {
-    id:6,
-    image: '/person-small6.webp',
-    name: 'Koleta Głowacka',
-    link: '/team#worker-six',
-    info: 'Swoją ekspercką wiedzę i umiejętności pozyskała na stanowisku szkoleniowca beuty. Robi piorunujące pierwsze wrażenie i wytrwale je podtrzymuje ponieważ przyciąga klientów jak magnes',
-  },
+  // {
+  //   id:6,
+  //   image: '/person-small6.webp',
+  //   name: 'Koleta Głowacka',
+  //   link: '/team#worker-six',
+  //   info: 'Swoją ekspercką wiedzę i umiejętności pozyskała na stanowisku szkoleniowca beuty. Robi piorunujące pierwsze wrażenie i wytrwale je podtrzymuje ponieważ przyciąga klientów jak magnes',
+  // },
 ];
 
 const TeamCard = () => {
